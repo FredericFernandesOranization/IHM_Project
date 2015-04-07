@@ -30,15 +30,15 @@ MainWindow::MainWindow(QWidget *parent) :
     leftZoneWidget->setLayout(leftVerticalLayout);
 
     QPushButton *switchButton = new QPushButton("Switch Button", this);
-    switchButton->resize(40, 250);
-
-   // switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+    //switchButton->resize(300, 250);
+    switchButton->setFixedSize(300,90);
+    switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
     switchButton->setStyleSheet("background-color: Blue");
 
 
 
     QScrollArea *leftVScrollArea = new QScrollArea;
-    leftVScrollArea->resize(350,900);
+    leftVScrollArea->resize(330,900);
     leftVScrollArea->setBackgroundRole(QPalette::Dark);
     leftVScrollArea->setStyleSheet("background-color : white");
 
@@ -47,7 +47,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QWidget *leftVScrollAreaWidget = new QWidget();
     leftVScrollAreaWidget->setStyleSheet("background-color: Green");
 
-    leftVScrollAreaWidget->resize(350,900);
+    leftVScrollAreaWidget->resize(300,900);
     leftVScrollArea->setWidget(leftVScrollAreaWidget);
 
     leftVerticalLayout->addWidget(leftVScrollArea);
@@ -59,30 +59,39 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     QPushButton *b1 = new QPushButton("Vertical Button 1", this);
+     b1->setFixedSize(300,90);
     b1->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     QPushButton *b2 = new QPushButton("Vertical Button 2", this);
+    b2->setFixedSize(300,90);
     b2->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     QPushButton *b3 = new QPushButton("Vertical Button 3", this);
+    b3->setFixedSize(300,90);
     b3->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     QPushButton *b4 = new QPushButton("Vertical Button 4", this);
+    b4->setFixedSize(300,90);
     b4->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     QPushButton *b5 = new QPushButton("Vertical Button 5", this);
+    b5->setFixedSize(300,90);
     b5->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     QPushButton *b6 = new QPushButton("Vertical Button 6", this);
+    b6->setFixedSize(300,90);
     b6->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     QPushButton *b7 = new QPushButton("Vertical Button 7", this);
+    b7->setFixedSize(300,90);
     b7->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     QPushButton *b8 = new QPushButton("Vertical Button 8", this);
+    b8->setFixedSize(300,90);
     b8->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     QPushButton *b9 = new QPushButton("Vertical Button 9", this);
+    b9->setFixedSize(300,90);
     b9->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     verticalScrollAreaLayout->addWidget(b1);
@@ -108,15 +117,15 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QScrollArea *rightHScrollArea = new QScrollArea;
     rightHScrollArea->setStyleSheet("background-color: Gray");
-    rightHScrollArea->resize(100,10);
+   // rightHScrollArea->resize(80,10);
     rightHScrollArea->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     rightHScrollArea->setBackgroundRole(QPalette::Dark);
-    //rightHScrollArea->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
 
     QWidget *rightHScrollAreaWidget = new QWidget;
     rightHScrollAreaWidget->setStyleSheet("background-color: Green");
-    rightHScrollAreaWidget->resize(1000, 220);
-    //rightHScrollArea->show();
+    rightHScrollAreaWidget->resize(2000, 140);
+    //rightHScrollAreaWidget->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
 
     QHBoxLayout *horizontalScrollAreaLayout = new QHBoxLayout;
 
@@ -128,24 +137,31 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QPushButton *hb1 = new QPushButton("Horizontal Bouton 1", this);
     hb1->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+    hb1->setFixedSize(300,90);
 
     QPushButton *hb2 = new QPushButton("Horizontal Bouton 2", this);
     hb2->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+    hb2->setFixedSize(300,90);
 
     QPushButton *hb3 = new QPushButton("Horizontal Bouton 3", this);
     hb3->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+    hb3->setFixedSize(300,90);
 
     QPushButton *hb4 = new QPushButton("Horizontal Bouton 4", this);
     hb4->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+    hb4->setFixedSize(300,90);
 
     QPushButton *hb5 = new QPushButton("Horizontal Bouton 5", this);
     hb5->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+    hb5->setFixedSize(300,90);
 
     QPushButton *hb6 = new QPushButton("Horizontal Bouton 6", this);
     hb6->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+    hb6->setFixedSize(300,90);
 
     QPushButton *hb7 = new QPushButton("Horizontal Bouton 7", this);
     hb7->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+    hb7->setFixedSize(300,90);
 
     horizontalScrollAreaLayout->addWidget(hb1);
     horizontalScrollAreaLayout->addWidget(hb2);
