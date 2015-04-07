@@ -2,7 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include<QHBoxLayout>
+#include<QVBoxLayout>
+#include<QScrollArea>
+#include<QPushButton>
 namespace Ui {
 class MainWindow;
 }
