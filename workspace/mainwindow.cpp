@@ -15,34 +15,39 @@ MainWindow::MainWindow(QWidget *parent) :
 
     //mainWidget->setLayout(mainLayout);
 
+    QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
 
 
 
 // THE LEFT PART OF THE SCREEN
 
     QWidget *leftZoneWidget = new QWidget();
-    leftZoneWidget->resize(600, 100);
+    leftZoneWidget->resize(500, 100);
     leftZoneWidget->setStyleSheet("background-color: Orange");
-
+    leftZoneWidget->setSizePolicy(sizePolicy);
     QVBoxLayout *leftVerticalLayout = new QVBoxLayout;
     leftVerticalLayout->sizeConstraint();
     leftZoneWidget->setLayout(leftVerticalLayout);
 
     QPushButton *switchButton = new QPushButton("Switch Button", this);
-    switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+    switchButton->resize(40, 250);
+
+   // switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     switchButton->setStyleSheet("background-color: Blue");
 
 
 
     QScrollArea *leftVScrollArea = new QScrollArea;
-    leftVScrollArea->resize(100,400);
+    leftVScrollArea->resize(350,900);
     leftVScrollArea->setBackgroundRole(QPalette::Dark);
-    leftVScrollArea->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    leftVScrollArea->setStyleSheet("background-color : white");
+
+    leftVScrollArea->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
 
     QWidget *leftVScrollAreaWidget = new QWidget();
     leftVScrollAreaWidget->setStyleSheet("background-color: Green");
 
-    leftVScrollAreaWidget->resize(300,1000);
+    leftVScrollAreaWidget->resize(350,900);
     leftVScrollArea->setWidget(leftVScrollAreaWidget);
 
     leftVerticalLayout->addWidget(leftVScrollArea);
@@ -95,7 +100,8 @@ MainWindow::MainWindow(QWidget *parent) :
 // THE RIGHT PART OF THE SCREEN
 
     QWidget *rightZoneWidget = new QWidget();
-    rightZoneWidget->resize(700,550);
+    rightZoneWidget->resize(1000,50);
+    rightZoneWidget->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     rightZoneWidget->setStyleSheet("background-color: Yellow");
     QVBoxLayout *rightVerticalLayout = new QVBoxLayout;
     rightZoneWidget->setLayout(rightVerticalLayout);
@@ -103,6 +109,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QScrollArea *rightHScrollArea = new QScrollArea;
     rightHScrollArea->setStyleSheet("background-color: Gray");
     rightHScrollArea->resize(100,10);
+    rightHScrollArea->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     rightHScrollArea->setBackgroundRole(QPalette::Dark);
     //rightHScrollArea->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
