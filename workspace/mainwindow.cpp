@@ -10,6 +10,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QWidget *mainWidget = new QWidget();
     mainWidget->setMinimumSize(1000,550);
     mainWidget->setStyleSheet("background-color: Red");
+    mainWidget->setStyleSheet("background-image: url(/home/foudil/IHM_Repository/IHM_Project/workspace/Elegant_Background-3_grey.jpg)");
+
     //QHBoxLayout *mainLayout = new QHBoxLayout;
     QHBoxLayout *mainLayout = new QHBoxLayout (mainWidget);
 
@@ -23,7 +25,9 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QWidget *leftZoneWidget = new QWidget();
     leftZoneWidget->resize(500, 100);
-    leftZoneWidget->setStyleSheet("background-color: Orange");
+    //leftZoneWidget->setStyleSheet("background-color: Orange");
+    leftZoneWidget->setStyleSheet("background-image: url(/home/foudil/IHM_Repository/IHM_Project/workspace/Elegant_Background-3_grey.jpg)");
+
     leftZoneWidget->setSizePolicy(sizePolicy);
     QVBoxLayout *leftVerticalLayout = new QVBoxLayout;
     leftVerticalLayout->sizeConstraint();
@@ -33,7 +37,9 @@ MainWindow::MainWindow(QWidget *parent) :
     //switchButton->resize(300, 250);
     switchButton->setFixedSize(300,90);
     switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
-    switchButton->setStyleSheet("background-color: Blue");
+    //switchButton->setStyleSheet("background-color: Blue");
+    switchButton->setStyleSheet("background-image: url(/home/foudil/IHM_Repository/IHM_Project/workspace/Elegant_Background-3_grey.jpg)");
+
 
 
 
@@ -45,13 +51,15 @@ MainWindow::MainWindow(QWidget *parent) :
     leftVScrollArea->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
 
     QWidget *leftVScrollAreaWidget = new QWidget();
-    leftVScrollAreaWidget->setStyleSheet("background-color: Green");
+    //leftVScrollAreaWidget->setStyleSheet("background-color: Green");
+    leftVScrollAreaWidget->setStyleSheet("background-image: url(/home/foudil/IHM_Repository/IHM_Project/workspace/Elegant_Background-3_grey.jpg)");
 
     leftVScrollAreaWidget->resize(300,900);
     leftVScrollArea->setWidget(leftVScrollAreaWidget);
 
-    leftVerticalLayout->addWidget(leftVScrollArea);
+
     leftVerticalLayout->addWidget(switchButton);
+    leftVerticalLayout->addWidget(leftVScrollArea);
 
     QVBoxLayout *verticalScrollAreaLayout = new QVBoxLayout;
 
@@ -112,6 +120,8 @@ MainWindow::MainWindow(QWidget *parent) :
     rightZoneWidget->resize(1000,50);
     rightZoneWidget->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     rightZoneWidget->setStyleSheet("background-color: Yellow");
+    rightZoneWidget->setStyleSheet("background-image: url(/home/foudil/IHM_Repository/IHM_Project/workspace/Elegant_Background-3_grey.jpg)");
+
     QVBoxLayout *rightVerticalLayout = new QVBoxLayout;
     rightZoneWidget->setLayout(rightVerticalLayout);
 
@@ -123,7 +133,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
 
     QWidget *rightHScrollAreaWidget = new QWidget;
-    rightHScrollAreaWidget->setStyleSheet("background-color: Green");
+    rightHScrollAreaWidget->setStyleSheet("background-color: Grey");
+
     rightHScrollAreaWidget->resize(2000, 140);
     //rightHScrollAreaWidget->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum);
 
@@ -176,7 +187,8 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QPushButton *mainButton = new QPushButton("Main Button", this);
     mainButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
-    mainButton->setStyleSheet("background-color : Purple");
+
+    mainButton->setStyleSheet("background-image: url(/home/foudil/IHM_Repository/IHM_Project/workspace/Elegant_Background-3_grey.jpg)");
     rightVerticalLayout->addWidget(mainButton);
 
 
