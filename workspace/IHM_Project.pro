@@ -22,3 +22,6 @@ HEADERS  += mainwindow.h \
     tsrt.h
 
 FORMS    += mainwindow.ui
+
+RESOURCES += \
+    images.qrc
