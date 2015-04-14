@@ -1,9 +1,26 @@
 #include "plat.h"
 
+int Plat::id = 0;
+
 Plat::Plat()
 {
-
 }
+
+Plat::Plat(QString name, QString description, QString imagePath, QString shortDescription,
+           float price, QStringList ingredientsList, QStringList possibleAllergiesList)
+{
+    this->id++; //id unique incrementé à chaque création du plat
+    this->name = name;
+    this->type = type;
+    this->description = description;
+    this->imagePath = imagePath;
+    this->shortDescription = shortDescription;
+    this->price = price;
+    this->ingredientsList = ingredientsList;
+    this->possibleAllergiesList = possibleAllergiesList;
+}
+
+//getters and setters
 QString Plat::getName() const
 {
     return name;
@@ -22,6 +39,7 @@ void Plat::setDescription(const QString &value)
 {
     description = value;
 }
+
 QString Plat::getImagePath() const
 {
     return imagePath;

@@ -1,19 +1,29 @@
-#ifndef BASEDONNEES_H
-#define BASEDONNEES_H
+#ifndef DATABASE_H
+#define DATABASE_H
 
 #include "plat.h"
+#include <QHash>
+#include <QStringList>
 
 class Database
 {
 public:
     Database(QString databasePath);
     Plat getDish(int dishId); //renvoie le plat
-    QList<Plat*> loadDatabase(); //analyse fichier XML, renvoie la liste des objets Plats
-    QList<Plat*> filter(QListString possibleAllergiesList);
+    void loadDatabase(); //analyse fichier XML, rempli le HashMap
+    QList<Plat*> filter(QStringList clientAllergiesList);
+    QList<Plat*> filterType(QString type); //filtre les plats par type, boissons plats etc ...
+
+    QList<Plat*> getDrinks(); //renvoie la liste que des boissons ...
+    QList<Plat*> getStarters();
+    QList<Plat*> getDishes();
+    QList<Plat*> getDesserts();
+
+
 private:
     QString databasePath;
-    QList<Plat*> dishesList;
-
+    QHash<QString, QList<Plat*> > dishesMap; //dishesMap["boissons"] -> renvoie liste boissons (rempli par loadDatabase)
+    QStringList clientAllergiesList; //on mémorise les allergies parametrées par le client
 };
 
 #endif // BASEDONNEES_H

@@ -4,13 +4,13 @@
 #include <QString>
 #include <QStringList>
 
-
-
 class Plat
 {
 
 public:
     Plat();
+    Plat(QString name, QString description, QString imagePath, QString shortDescription,
+         float price, QStringList ingredientsList, QStringList possibleAllergiesList);
     QString getName() const;
     void setName(const QString &value);
 
@@ -36,7 +36,7 @@ public:
     void setPossibleAllergiesList(const QStringList &value);
 
 private:
-    int id;
+    static int id;
     QString name;
     QString type; //entrees, plats, boissons, desserts -> ce qui il y aura écrit dans le fichier XML!
     QString description;
