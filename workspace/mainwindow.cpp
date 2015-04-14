@@ -38,7 +38,7 @@ MainWindow::MainWindow(QWidget *parent) :
     switchButton->setFixedSize(300,90);
     switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
     //switchButton->setStyleSheet("background-color: Blue");
-    switchButton->setStyleSheet("background-image: url(:/images/Elegant_Background-3_grey.jpg)");
+    switchButton->setStyleSheet("background-image: url(:/images/middleEarth.jpg)");
 
 
 
@@ -126,7 +126,9 @@ MainWindow::MainWindow(QWidget *parent) :
     rightZoneWidget->setLayout(rightVerticalLayout);
 
     QScrollArea *rightHScrollArea = new QScrollArea;
-    rightHScrollArea->setStyleSheet("background-color: Gray");
+    //rightHScrollArea->setStyleSheet("background-color: Gray");
+    rightHScrollArea->setStyleSheet("background-image: url(:/images/aa.jpg)");
+
    // rightHScrollArea->resize(80,10);
     rightHScrollArea->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     rightHScrollArea->setBackgroundRole(QPalette::Dark);
@@ -147,18 +149,22 @@ MainWindow::MainWindow(QWidget *parent) :
     rightHScrollArea->setWidget(rightHScrollAreaWidget);
 
     QPushButton *hb1 = new QPushButton("Horizontal Bouton 1", this);
+    hb1->setStyleSheet("background-image: url(:/images/aa.jpg)");
     hb1->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     hb1->setFixedSize(300,90);
 
     QPushButton *hb2 = new QPushButton("Horizontal Bouton 2", this);
+    hb2->setStyleSheet("background-image: url(:/images/aa.jpg)");
     hb2->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     hb2->setFixedSize(300,90);
 
     QPushButton *hb3 = new QPushButton("Horizontal Bouton 3", this);
+    hb3->setStyleSheet("background-image: url(:/images/aa.jpg)");
     hb3->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     hb3->setFixedSize(300,90);
 
     QPushButton *hb4 = new QPushButton("Horizontal Bouton 4", this);
+    hb4->setStyleSheet("background-image: url(:/images/aa.jpg)");
     hb4->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     hb4->setFixedSize(300,90);
 
@@ -188,7 +194,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QPushButton *mainButton = new QPushButton("Main Button", this);
     mainButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
-    mainButton->setStyleSheet("background-image: url(:/images/Elegant_Background-3_grey.jpg)");
+    mainButton->setStyleSheet("background-image: url(:/images/wlp.jpg)");
     rightVerticalLayout->addWidget(mainButton);
 
 
