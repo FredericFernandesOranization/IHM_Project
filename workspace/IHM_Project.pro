@@ -15,11 +15,13 @@ TEMPLATE = app
 SOURCES += main.cpp\
         mainwindow.cpp \
     test.cpp \
-    tsrt.cpp
+    tsrt.cpp \
+    plat.cpp
 
 HEADERS  += mainwindow.h \
     test.h \
-    tsrt.h
+    tsrt.h \
+    plat.h
 
 FORMS    += mainwindow.ui
 
