@@ -4,6 +4,8 @@
 #include <QString>
 #include <QStringList>
 
+
+
 class Plat
 {
 
@@ -36,6 +38,7 @@ public:
 private:
     int id;
     QString name;
+    QString type; //entrees, plats, boissons, desserts -> ce qui il y aura écrit dans le fichier XML!
     QString description;
     QString imagePath;
     QString shortDescription;
