@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- for <type/> use only : 
+	"boisson"
+	"entree"
+	"plat"
+	"dessert" 
+Template :
+	<plat>
+		<name> </name>
+ 		<description> </description>
+		<shortDescription> </shortDescription>
+  		<imagePath> </imagePath>
+		<price> </price>
+		<ingredientsList>
+			<ingredient> </ingredient>
+			<ingredient> </ingredient>
+			<ingredient> </ingredient>
+		</ingredientsList>
+		<possibleAllergiesList>
+			<possibleAllergie> </possibleAllergie>
+			<possibleAllergie> </possibleAllergie>
+		</possibleAllergiesList>
+	</plat>
+-->
+<lesPlats>
+	<plat>
+		<name> Plat_1</name>
+ 		<description> description_1</description>
+		<shortDescription>shortDescription_1</shortDescription>
+  		<imagePath> /img.png</imagePath>
+		<price> 99.9</price>
+		<ingredientsList>
+			<ingredient> ingredient1_1 </ingredient>
+			<ingredient> ingredient1_2</ingredient>
+			<ingredient> ingredient1_3</ingredient>
+		</ingredientsList>
+		<possibleAllergiesList>
+			<possibleAllergie>possibleAllergie1_1</possibleAllergie>
+			<possibleAllergie>possibleAllergie1_2</possibleAllergie>
+		</possibleAllergiesList>
+	</plat>
+	<plat>
+		<name> Plat_2</name>
+ 		<description> description_2</description>
+		<shortDescription>shortDescription_2</shortDescription>
+  		<imagePath> /img.png</imagePath>
+		<price> 99.9</price>
+		<ingredientsList>
+			<ingredient> ingredient2_1 </ingredient>
+			<ingredient> ingredient2_2</ingredient>
+			<ingredient> ingredient2_3</ingredient>
+		</ingredientsList>
+		<possibleAllergiesList>
+			<possibleAllergie>possibleAllergie2_1</possibleAllergie>
+			<possibleAllergie>possibleAllergie2_2</possibleAllergie>
+		</possibleAllergiesList>
+	</plat>
+</lesPlats>
