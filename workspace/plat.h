@@ -9,6 +9,30 @@ class Plat
 
 public:
     Plat();
+    QString getName() const;
+    void setName(const QString &value);
+
+    QString getDescription() const;
+    void setDescription(const QString &value);
+
+    QString getImagePath() const;
+    void setImagePath(const QString &value);
+
+    QString getShortDescription() const;
+    void setShortDescription(const QString &value);
+
+    int getId() const;
+    void setId(int value);
+
+    float getPrice() const;
+    void setPrice(float value);
+
+    QStringList getIngredientsList() const;
+    void setIngredientsList(const QStringList &value);
+
+    QStringList getPossibleAllergiesList() const;
+    void setPossibleAllergiesList(const QStringList &value);
+
 private:
     int id;
     QString name;
