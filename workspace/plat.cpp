@@ -1,6 +1,6 @@
 #include "plat.h"
 #include <QDebug>
-int Plat::id = 0;
+int Plat::nbPlat = 0;
 
 Plat::Plat()
 {
@@ -10,7 +10,8 @@ Plat::Plat(QString name, QString description, QString imagePath, QString shortDe
            float price, QStringList ingredientsList, QStringList possibleAllergiesList, QString type)
 {
 
-    this->id++; //id unique incrementé à chaque création d'un plat
+    this->id = this->nbPlat; //id unique incrementé à chaque création d'un plat
+    this->nbPlat++;
     //qDebug() << this->id;
     this->name = name;
     this->type = type;
