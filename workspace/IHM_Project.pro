@@ -15,14 +15,10 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    test.cpp \
-    tsrt.cpp \
     plat.cpp \
     database.cpp
 
 HEADERS  += mainwindow.h \
-    test.h \
-    tsrt.h \
     plat.h \
     database.h
 
