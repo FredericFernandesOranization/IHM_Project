@@ -10,7 +10,7 @@ class Plat
 public:
     Plat();
     Plat(QString name, QString description, QString imagePath, QString shortDescription,
-         float price, QStringList ingredientsList, QStringList possibleAllergiesList);
+         float price, QStringList ingredientsList, QStringList possibleAllergiesList,QString type);
     QString getName() const;
     void setName(const QString &value);
 
