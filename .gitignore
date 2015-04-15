@@ -30,4 +30,4 @@ Makefile*
 #QtCtreator Qml
 *.qmlproject.user
 *.qmlproject.user.*
-build-IHM_Project-Desktop-*
+build-IHM_Project-*
