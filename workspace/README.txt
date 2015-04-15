@@ -32,4 +32,21 @@ database.h -> classe qui s'occupe du chargement de la base de données à partir
 plat.h -> classe qui modélise un plat de notre restaurant, indépendamment du type (boissons, dessert) qui est specifié dans son attribut "QString type", donc si on a besoin de traiter des plats, c'est cette classe qu'on utilisera ! (getNom, getType, getDescription ...)
 
 
+Pour la lecture du hashMap qui contient tous les plats voici un example pour le parcourir :
+
+	//    foreach (QString type , dishesMap.keys()){
+	//        qDebug() << "~~~~~~~~~~~~Liste des plats de type : "<< type <<"~~~~~~~~~~~~~~";
+	//        QList<Plat*> listPlat = dishesMap[type];
+	//        foreach (Plat* plat, listPlat){
+	//            qDebug() << plat->toString() << endl;
+	//        }
+	//    }
+
+ou  
+
+	//    foreach (QList<Plat*> listPlat, dishesMap)
+	//        foreach (Plat* plat, listPlat)
+	//            qDebug() << plat->toString() << endl;
+
+
 
