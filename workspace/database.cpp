@@ -1,8 +1,8 @@
 #include "database.h"
-#include <QDomDocument>
+
 #include <QFile>
 #include <qdebug.h>
-#include <QDomAttr>
+#include <QStringList>
 Database::Database(QString databasePath)
 {
     this->databasePath = databasePath; //on sauvegarde le path du database
@@ -23,12 +23,12 @@ void Database::loadDatabase()
     QFile file(this->databasePath);
     if (!file.open(QIODevice::ReadOnly))
     {
-        qDebug() << "error ";
+        qDebug() << "error I can't open .xml file ! ";
         return;
     }
     if (!doc.setContent(&file)) {
         file.close();
-        qDebug() << "error ";
+        qDebug() << "error your .xml file is incorrect !";
         return;
     }
     file.close();
@@ -42,41 +42,61 @@ void Database::loadDatabase()
     while(!n.isNull()) {
         QDomElement e = n.toElement(); // try to convert the node to an element.
         if(!e.isNull()) {
-            qDebug() << e.tagName(); // the node really is an element.
-            //qDebug() << e.text();
-            QDomNode node =  e.firstChild();
-            QDomElement elem = node.toElement();
-            qDebug() <<"tagName :" <<elem.tagName();
-            qDebug() << "texte :" <<elem.text();
+            QString name =  e.firstChildElement("name").text();
+            QString type =  e.firstChildElement("type").text();
+            QString desc =  e.firstChildElement("description").text();
+            QString shortDesc =  e.firstChildElement("shortDescription").text();
+            QString imagePath =  e.firstChildElement("imagePath").text();
+            float price = e.firstChildElement("price").text().toFloat();
+            QStringList ingredientsList = getListsInXML(e.firstChildElement("ingredientsList"));
+            QStringList possibleAllergiesList = getListsInXML(e.firstChildElement("possibleAllergiesList"));
+            Plat *newPlat = new Plat(name,desc,imagePath,shortDesc,price,ingredientsList,possibleAllergiesList,type);
+            //qDebug()<<"type"<<type;
+            dishesMap[type].append(newPlat);
         }
-                        n = n.nextSibling();
-        }
+        n = n.nextSibling();
 
     }
+    // juste verification
+//    foreach (QList<Plat*> listPlat, dishesMap)
+//        foreach (Plat* plat, listPlat)
+//            qDebug() << plat->toString() << endl;
+}
 
-    QList<Plat *> Database::filterType(QString type)
-    {
-        //renvoie seulement la liste des plats qui match le Type
-        return this->dishesMap[type];
-    }
+QList<Plat *> Database::filterType(QString type)
+{
+    //renvoie seulement la liste des plats qui match le Type
+    return this->dishesMap[type];
+}
 
-    QList<Plat *> Database::getDrinks()
-    {
-        return filterType("boisson");
-    }
+QList<Plat *> Database::getDrinks()
+{
+    return filterType("boisson");
+}
 
-    QList<Plat *> Database::getStarters()
-    {
-        return filterType("entree");
-    }
+QList<Plat *> Database::getStarters()
+{
+    return filterType("entree");
+}
 
-    QList<Plat *> Database::getDishes()
-    {
-        return filterType("plat");
-    }
+QList<Plat *> Database::getDishes()
+{
+    return filterType("plat");
+}
 
-    QList<Plat *> Database::getDesserts()
-    {
-        return filterType("dessert");
+QList<Plat *> Database::getDesserts()
+{
+    return filterType("dessert");
+}
+
+QStringList Database::getListsInXML(QDomElement elem)
+{
+    QStringList list;
+    QDomNode node = elem.firstChild(); // recup first Ingredients
+    while(!node.isNull()) {// for each Ingrédients
+        list <<  node.toElement().text();
+        node = node.nextSibling();
     }
+    return list;
+}
 

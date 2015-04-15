@@ -4,7 +4,8 @@
 #include "plat.h"
 #include <QHash>
 #include <QStringList>
-
+#include <QDomDocument>
+#include <QDomAttr>
 class Database
 {
 public:
@@ -24,6 +25,7 @@ private:
     QString databasePath;
     QHash<QString, QList<Plat*> > dishesMap; //dishesMap["boissons"] -> renvoie liste boissons (rempli par loadDatabase)
     QStringList clientAllergiesList; //on mémorise les allergies parametrées par le client
+    QStringList getListsInXML(QDomElement elem);
 };
 
 #endif // BASEDONNEES_H

@@ -37,9 +37,10 @@ public:
 
     QString getType() const;
     void setType(const QString &value);
+    virtual QString toString();
 
-private:
-    static int id;
+    private:
+        static int id;
     QString name;
     QString type; //entrees, plats, boissons, desserts -> ce qui il y aura écrit dans le fichier XML!
     QString description;

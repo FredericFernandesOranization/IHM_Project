@@ -1,5 +1,5 @@
 #include "plat.h"
-
+#include <QDebug>
 int Plat::id = 0;
 
 Plat::Plat()
@@ -9,7 +9,9 @@ Plat::Plat()
 Plat::Plat(QString name, QString description, QString imagePath, QString shortDescription,
            float price, QStringList ingredientsList, QStringList possibleAllergiesList, QString type)
 {
-    this->id++; //id unique incrementé à chaque création du plat
+
+    this->id++; //id unique incrementé à chaque création d'un plat
+    //qDebug() << this->id;
     this->name = name;
     this->type = type;
     this->description = description;
@@ -103,6 +105,40 @@ void Plat::setType(const QString &value)
 {
     type = value;
 }
+
+QString Plat::toString()
+{
+    QString  buffer;
+    buffer.append("id :" + QString::number(this->id)) ;
+    buffer.append("\n");
+    buffer.append( "name : " + this->name);
+    buffer.append("\n");
+    buffer.append( "type : " + this->type);
+    buffer.append("\n");
+    buffer.append( "description : " + this->description);
+    buffer.append("\n");
+    buffer.append( "idimagePath : "+ this->imagePath);
+    buffer.append("\n");
+    buffer.append( "shortDescription : " + this->shortDescription);
+    buffer.append("\n");
+    buffer.append("price : " + QString::number(this->price));
+    buffer.append("\n");
+    buffer.append( "ingredientsList");
+    buffer.append("\n \t");
+    foreach (QString ingredient , ingredientsList)
+    {
+         buffer.append(ingredient);
+    }
+    buffer.append("\n");
+    buffer.append( "possibleAllergiesList");
+    buffer.append("\n \t");
+    foreach (QString allergie , possibleAllergiesList)
+    {
+         buffer.append(allergie);
+    }
+    return buffer;
+}
+
 
 
 
