@@ -9,11 +9,15 @@ Database::Database(QString databasePath)
     this->loadDatabase(); //on charge le database du fichier XML
 }
 
-Plat Database::getDish(int dishId)
+Plat Database::getDish(int dishId) const
 {
-    Plat result;
-    //parcour les liste des plats et renvoie le bon plat grace à l'id
-    return result;
+    foreach (QList<Plat*> listPlat, dishesMap)
+        foreach (Plat* plat, listPlat)
+            if (plat->getId()== dishId)
+                return *plat;
+    qCritical() << "WARNING : your dishId doesn't exist !!";
+    Q_ASSERT(false); // crash now
+    //return Plat();
 }
 
 void Database::loadDatabase()
@@ -58,17 +62,17 @@ void Database::loadDatabase()
 
     }
     // just for verification
-//    foreach (QString type , dishesMap.keys()){
-//        qDebug() << "~~~~~~~~~~~~Liste des plats de type : "<< type <<"~~~~~~~~~~~~~~";
-//        QList<Plat*> listPlat = dishesMap[type];
-//        foreach (Plat* plat, listPlat){
-//            qDebug() << plat->toString() << endl;
-//        }
-//    }
+    //    foreach (QString type , dishesMap.keys()){
+    //        qDebug() << "~~~~~~~~~~~~Liste des plats de type : "<< type <<"~~~~~~~~~~~~~~";
+    //        QList<Plat*> listPlat = dishesMap[type];
+    //        foreach (Plat* plat, listPlat){
+    //            qDebug() << plat->toString() << endl;
+    //        }
+    //    }
 
-//    foreach (QList<Plat*> listPlat, dishesMap)
-//        foreach (Plat* plat, listPlat)
-//            qDebug() << plat->toString() << endl;
+    //    foreach (QList<Plat*> listPlat, dishesMap)
+    //        foreach (Plat* plat, listPlat)
+    //            qDebug() << plat->toString() << endl;
 }
 
 QList<Plat *> Database::filterType(QString type)

@@ -10,12 +10,12 @@ class Database
 {
 public:
     Database(QString databasePath);
-    Plat getDish(int dishId); //renvoie le plat
+    Plat getDish(int dishId)const ; //renvoie le plat
     void loadDatabase(); //analyse fichier XML, rempli le HashMap
     QList<Plat*> filter(QStringList clientAllergiesList);
     QList<Plat*> filterType(QString type); //filtre les plats par type, boissons plats etc ...
 
-    QList<Plat*> getDrinks(); //renvoie la liste que des boissons ...
+    QList<Plat*> getDrinks(); //renvoie la liste des boissons ...
     QList<Plat*> getStarters();
     QList<Plat*> getDishes();
     QList<Plat*> getDesserts();
