@@ -35,6 +35,9 @@ public:
     QStringList getPossibleAllergiesList() const;
     void setPossibleAllergiesList(const QStringList &value);
 
+    QString getType() const;
+    void setType(const QString &value);
+
 private:
     static int id;
     QString name;

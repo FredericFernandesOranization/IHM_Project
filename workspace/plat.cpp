@@ -7,7 +7,7 @@ Plat::Plat()
 }
 
 Plat::Plat(QString name, QString description, QString imagePath, QString shortDescription,
-           float price, QStringList ingredientsList, QStringList possibleAllergiesList)
+           float price, QStringList ingredientsList, QStringList possibleAllergiesList, QString type)
 {
     this->id++; //id unique incrementé à chaque création du plat
     this->name = name;
@@ -94,6 +94,16 @@ void Plat::setPossibleAllergiesList(const QStringList &value)
 {
     possibleAllergiesList = value;
 }
+QString Plat::getType() const
+{
+    return type;
+}
+
+void Plat::setType(const QString &value)
+{
+    type = value;
+}
+
 
 
 

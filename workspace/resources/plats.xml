@@ -7,6 +7,7 @@
 Template :
 	<plat>
 		<name> </name>
+                <type> </type>
  		<description> </description>
 		<shortDescription> </shortDescription>
   		<imagePath> </imagePath>
@@ -25,6 +26,7 @@ Template :
 <lesPlats>
 	<plat>
 		<name> Plat_1</name>
+                <type>boisson</type>
  		<description> description_1</description>
 		<shortDescription>shortDescription_1</shortDescription>
   		<imagePath> /img.png</imagePath>
@@ -41,6 +43,7 @@ Template :
 	</plat>
 	<plat>
 		<name> Plat_2</name>
+                <type>entree</type>
  		<description> description_2</description>
 		<shortDescription>shortDescription_2</shortDescription>
   		<imagePath> /img.png</imagePath>
