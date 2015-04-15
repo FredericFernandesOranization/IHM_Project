@@ -57,7 +57,15 @@ void Database::loadDatabase()
         n = n.nextSibling();
 
     }
-    // juste verification
+    // just for verification
+//    foreach (QString type , dishesMap.keys()){
+//        qDebug() << "~~~~~~~~~~~~Liste des plats de type : "<< type <<"~~~~~~~~~~~~~~";
+//        QList<Plat*> listPlat = dishesMap[type];
+//        foreach (Plat* plat, listPlat){
+//            qDebug() << plat->toString() << endl;
+//        }
+//    }
+
 //    foreach (QList<Plat*> listPlat, dishesMap)
 //        foreach (Plat* plat, listPlat)
 //            qDebug() << plat->toString() << endl;
