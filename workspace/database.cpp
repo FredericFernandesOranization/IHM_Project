@@ -78,7 +78,12 @@ void Database::loadDatabase()
 QList<Plat *> Database::filterType(QString type)
 {
     //renvoie seulement la liste des plats qui match le Type
-    return this->dishesMap[type];
+    if (dishesMap.contains(dishesMap))
+         return this->dishesMap[type];
+    else{
+        qCritical() << "WARNING : dishesMap doesn't contains : "<< type << " !!";
+        Q_ASSERT(false); // crash now
+    }
 }
 
 QList<Plat *> Database::getDrinks()
