@@ -3,6 +3,7 @@ The IHM Project
 For IMH Module 
 
 Liste des taches :
+
 1) drag and drop pour remplir la zone "commande"
 
 2) classe item pour gérér le rendu visuel des plats dans la partie droite de l'interface graphique 
