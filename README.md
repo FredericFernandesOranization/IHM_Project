@@ -10,7 +10,7 @@ Liste des taches :
 
 3) message de validation de la commande (ça doit etre beau!)
 
-4) ~~analyse XML pour charger la base -> se servir de la classe database.cpp et de l'Outil Qt XML (parser déjà~~ existant)~~ c'est bon (Fred) !
+4) ~~analyse XML pour charger la base -> se servir de la classe database.cpp et de l'Outil Qt XML (parser déjà existant)~~ c'est bon (Fred) !
 
 5) effet pour faire disparaitre / apparaitre la zone "commande" qui sera toujours présente mais visible / invisible 
    grace au bouton en haut gauche de l'écran 
