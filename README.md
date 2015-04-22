@@ -4,7 +4,9 @@ For IMH Module
 
 Liste des taches :
 
-1) drag and drop pour remplir la zone "commande"
+1) drag and drop pour remplir la zone "commande"  
+( un geste de class Item vers la Class Commande pour commander ) 
+( un geste d'un item de la classe Commande vers n'importe où pour décommander)
 
 2) ~~classe Item pour gérér le rendu visuel des plats dans la partie droite de l'interface graphique~~  c'est bon (Fred) !
 
