@@ -10,7 +10,7 @@ Template :
                 <type> </type>
  		<description> </description>
 		<shortDescription> </shortDescription>
-  		<imagePath> </imagePath>
+  		<imagePath></imagePath> // name of image in "imagesPlats" dir
 		<price> </price>
 		<ingredientsList>
 			<ingredient> </ingredient>
@@ -25,12 +25,12 @@ Template :
 -->
 <lesPlats>
 	<plat>
-		<name> Plat_1</name>
+		<name>Plat_1</name>
                 <type>boisson</type>
  		<description> description_1</description>
 		<shortDescription>shortDescription_1</shortDescription>
-  		<imagePath> /img.png</imagePath>
-		<price> 99.9</price>
+  		<imagePath> plat1.jpg </imagePath>
+		<price>15.9</price>
 		<ingredientsList>
 			<ingredient> ingredient1_1 </ingredient>
 			<ingredient> ingredient1_2</ingredient>
@@ -46,8 +46,8 @@ Template :
                 <type>entree</type>
  		<description> description_2</description>
 		<shortDescription>shortDescription_2</shortDescription>
-  		<imagePath> /img.png</imagePath>
-		<price> 99.9</price>
+  		<imagePath>plat2.jpg</imagePath>
+		<price> 32.9</price>
 		<ingredientsList>
 			<ingredient> ingredient2_1 </ingredient>
 			<ingredient> ingredient2_2</ingredient>

@@ -9,7 +9,7 @@
 class Database
 {
 public:
-    Database(QString databasePath);
+    Database(QString databasePath,QString pathIMG);
     Plat getDish(int dishId)const ; //renvoie le plat
     void loadDatabase(); //analyse fichier XML, rempli le HashMap
     QList<Plat*> filter(QStringList clientAllergiesList);
@@ -23,9 +23,11 @@ public:
 
 private:
     QString databasePath;
+    QString pathIMG;
     QHash<QString, QList<Plat*> > dishesMap; //dishesMap["boissons"] -> renvoie liste boissons (rempli par loadDatabase)
     QStringList clientAllergiesList; //on mémorise les allergies parametrées par le client
     QStringList getListsInXML(QDomElement elem);
+    QString filterSpace(QString string);
 };
 
 #endif // BASEDONNEES_H

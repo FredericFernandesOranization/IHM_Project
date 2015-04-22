@@ -3,9 +3,10 @@
 #include <QFile>
 #include <qdebug.h>
 #include <QStringList>
-Database::Database(QString databasePath)
+Database::Database(QString databasePath, QString pathIMG)
 {
     this->databasePath = databasePath; //on sauvegarde le path du database
+    this->pathIMG = pathIMG;
     this->loadDatabase(); //on charge le database du fichier XML
 }
 
@@ -46,16 +47,16 @@ void Database::loadDatabase()
     while(!n.isNull()) {
         QDomElement e = n.toElement(); // try to convert the node to an element.
         if(!e.isNull()) {
-            QString name =  e.firstChildElement("name").text();
-            QString type =  e.firstChildElement("type").text();
-            QString desc =  e.firstChildElement("description").text();
-            QString shortDesc =  e.firstChildElement("shortDescription").text();
-            QString imagePath =  e.firstChildElement("imagePath").text();
+            QString name = e.firstChildElement("name").text().simplified();
+            QString type = e.firstChildElement("type").text().simplified();
+            QString desc = e.firstChildElement("description").text().simplified();
+            QString shortDesc = e.firstChildElement("shortDescription").text().simplified();
+            QString imagePath = e.firstChildElement("imagePath").text().simplified();
+            imagePath = pathIMG+imagePath;
             float price = e.firstChildElement("price").text().toFloat();
             QStringList ingredientsList = getListsInXML(e.firstChildElement("ingredientsList"));
             QStringList possibleAllergiesList = getListsInXML(e.firstChildElement("possibleAllergiesList"));
             Plat *newPlat = new Plat(name,desc,imagePath,shortDesc,price,ingredientsList,possibleAllergiesList,type);
-            //qDebug()<<"type"<<type;
             dishesMap[type].append(newPlat);
         }
         n = n.nextSibling();
@@ -109,7 +110,7 @@ QStringList Database::getListsInXML(QDomElement elem)
     QStringList list;
     QDomNode node = elem.firstChild(); // recup first Ingredients
     while(!node.isNull()) {// for each Ingrédients
-        list <<  node.toElement().text();
+        list <<  node.toElement().text().simplified();
         node = node.nextSibling();
     }
     return list;
