@@ -6,8 +6,9 @@ Liste des taches :
 
 1) drag and drop pour remplir la zone "commande"
 
-2) classe item pour gérér le rendu visuel des plats dans la partie droite de l'interface graphique 
-	3-4 plat par ligne, 2-3 ligne verticals selon l'écran ... 
+2) ~~classe Item pour gérér le rendu visuel des plats dans la partie droite de l'interface graphique~~  c'est bon (Fred) !
+
+2 Bis)  Une liste d'Item 3-4 plat par ligne, 2-3 ligne verticals selon l'écran ... 
 
 3) message de validation de la commande (ça doit etre beau!)
 
