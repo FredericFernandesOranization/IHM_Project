@@ -2,8 +2,10 @@
 #define ITEM_H
 #include <QImage>
 #include <QGraphicsScene>
-#include<plat.h>
-class Item : public QGraphicsScene
+#include <plat.h>
+#include <QListWidgetItem>
+
+class Item : public QGraphicsScene, public QListWidgetItem
 {
 public:
     Item(QString name);

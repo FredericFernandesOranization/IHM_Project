@@ -3,7 +3,10 @@
 #include <QGraphicsView>
 #include <QDebug>
 #include <QGraphicsItem>
-Item::Item(QString name) : QGraphicsScene()
+#include<QListWidgetItem>
+
+
+Item::Item(QString name): QListWidgetItem(), QGraphicsScene()
 {
     //QPushButton *bouton = new QPushButton(name);
     //this->addWidget(bouton);

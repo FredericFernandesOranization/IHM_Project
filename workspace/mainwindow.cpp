@@ -1,5 +1,9 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "database.h"
+#include <QListWidget>
+#include <QListWidgetItem>
+#include "item.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
