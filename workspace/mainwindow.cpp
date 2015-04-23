@@ -1,11 +1,24 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+#include "mainwindow.h"
+#include <QApplication>
+#include "database.h"
+#include <qdebug.h>
+#include <item.h>
+#include <QGraphicsView>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+//    QString pathBase = "../workspace/resources/plats.xml";
+//    QString pathIMG= "../workspace/resources/imagesPlats/";
+//    Database *data = new Database(pathBase,pathIMG);
+
+
+
+
 
     QWidget *mainWidget = new QWidget();
     mainWidget->setMinimumSize(1000,550);
@@ -232,6 +245,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QPushButton *mb4 = new QPushButton("Main Bouton 4", this);
     mb4->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     mb4->setFixedSize(150,150);
+
+    //Item *i = new Item(data->getDish(0));
 
     leftMainVerticalLayout->addWidget(mb1);
     leftMainVerticalLayout->addWidget(mb2);
