@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     MainWindow w;
 
+
     QString pathBase = "../workspace/resources/plats.xml";
     QString pathIMG= "../workspace/resources/imagesPlats/";
     Database *data = new Database(pathBase,pathIMG);
@@ -33,6 +34,7 @@ int main(int argc, char *argv[])
     m_listeWidget->addItem(new QListWidgetItem(QIcon("../workspace/resources/imagesPlats/plat2.jpg"),"plat2"));
     m_listeWidget->addItem(new QListWidgetItem(QIcon("../workspace/resources/imagesPlats/plat1.jpg"),"plat3"));
     w.setCentralWidget(m_listeWidget);
+
 
 
      w.show();
