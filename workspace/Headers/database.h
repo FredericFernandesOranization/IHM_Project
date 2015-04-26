@@ -3,9 +3,12 @@
 
 #include "plat.h"
 #include <QHash>
-#include <QStringList>
 #include <QDomDocument>
 #include <QDomAttr>
+#include <QFile>
+#include <qdebug.h>
+#include <QStringList>
+
 class Database
 {
 public:

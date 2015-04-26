@@ -13,29 +13,26 @@ TARGET = IHM_Project
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        mainwindow.cpp \
-    plat.cpp \
-    database.cpp \
-    item.cpp \
-    leftzone.cpp \
-    rightzone.cpp \
-    gallery.cpp \
-    flowlayout.cpp
+SOURCES += Sources/main.cpp\
+        Sources/mainwindow.cpp \
+    Sources/plat.cpp \
+    Sources/database.cpp \
+    Sources/item.cpp \
+    Sources/leftzone.cpp \
+    Sources/rightzone.cpp \
+    Sources/gallery.cpp \
+    Sources/flowlayout.cpp
 
-HEADERS  += mainwindow.h \
-    plat.h \
-    database.h \
-    item.h \
-    leftzone.h \
-    rightzone.h \
-    gallery.h \
-    flowlayout.h
+HEADERS  += Headers/mainwindow.h \
+    Headers/plat.h \
+    Headers/database.h \
+    Headers/item.h \
+    Headers/leftzone.h \
+    Headers/rightzone.h \
+    Headers/gallery.h \
+    Headers/flowlayout.h
 
 FORMS    += mainwindow.ui
-
-RESOURCES += \
-    images.qrc
 
 OTHER_FILES += \
     resources/plats.xml

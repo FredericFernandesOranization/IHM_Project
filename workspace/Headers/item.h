@@ -1,8 +1,13 @@
 #ifndef ITEM_H
 #define ITEM_H
-#include <plat.h>
+
+#include <Headers/plat.h>
 #include <QLabel>
 #include <QImage>
+#include <QDebug>
+#include <QPixmap>
+#include <QPen>
+#include <QPainter>
 
 class Item :public QWidget
 {

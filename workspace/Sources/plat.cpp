@@ -1,5 +1,5 @@
-#include "plat.h"
-#include <QDebug>
+#include "Headers/plat.h"
+
 int Plat::nbPlat = 0;
 
 Plat::Plat()

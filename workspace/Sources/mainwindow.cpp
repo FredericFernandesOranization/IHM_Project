@@ -1,18 +1,5 @@
-#include "mainwindow.h"
+#include "Headers/mainwindow.h"
 #include "ui_mainwindow.h"
-#include "database.h"
-#include <QListWidget>
-#include <QListWidgetItem>
-#include "item.h"
-
-#include "mainwindow.h"
-#include <QApplication>
-#include "database.h"
-#include <qdebug.h>
-#include <item.h>
-#include <QGraphicsView>
-#include "leftzone.h"
-#include "rightzone.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),

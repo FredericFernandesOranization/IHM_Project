@@ -1,8 +1,4 @@
-#include "rightzone.h"
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QPushButton>
-#include "gallery.h"
+#include "Headers/rightzone.h"
 
 RightZone::RightZone() : QWidget()
 {

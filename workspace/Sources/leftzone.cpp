@@ -1,8 +1,4 @@
-#include "leftzone.h"
-#include <QPushButton>
-#include <QList>
-#include <QString>
-#include <QVBoxLayout>
+#include "Headers/leftzone.h"
 
 LeftZone::LeftZone() : QWidget()
 {

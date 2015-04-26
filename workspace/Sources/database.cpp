@@ -1,8 +1,4 @@
-#include "database.h"
-
-#include <QFile>
-#include <qdebug.h>
-#include <QStringList>
+#include "Headers/database.h"
 
 Database *Database::instance = NULL;
 

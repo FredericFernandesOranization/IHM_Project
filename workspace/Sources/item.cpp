@@ -1,9 +1,4 @@
-#include "item.h"
-#include <QDebug>
-#include <QPixmap>
-#include <QPen>
-#include <QPainter>
-
+#include "Headers/item.h"
 
 Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent):QWidget(parent)
 {

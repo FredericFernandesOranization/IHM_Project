@@ -1,10 +1,11 @@
-#include "mainwindow.h"
+#include "Headers/mainwindow.h"
 #include <QApplication>
-#include "database.h"
+#include "Headers/database.h"
 #include <qdebug.h>
-#include <item.h>
+#include <Headers/item.h>
 #include <QGraphicsView>
 #include <QListWidget>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);

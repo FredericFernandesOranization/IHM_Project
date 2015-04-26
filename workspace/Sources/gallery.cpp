@@ -1,9 +1,4 @@
-#include "gallery.h"
-#include <QVBoxLayout>
-#include <QPushButton>
-#include "database.h"
-#include "item.h"
-#include "flowlayout.h"
+#include "Headers/gallery.h"
 
 Gallery::Gallery() : QWidget()
 {
