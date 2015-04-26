@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     item.cpp \
     leftzone.cpp \
     rightzone.cpp \
-    gallery.cpp
+    gallery.cpp \
+    flowlayout.cpp
 
 HEADERS  += mainwindow.h \
     plat.h \
@@ -28,7 +29,8 @@ HEADERS  += mainwindow.h \
     item.h \
     leftzone.h \
     rightzone.h \
-    gallery.h
+    gallery.h \
+    flowlayout.h
 
 FORMS    += mainwindow.ui
 
