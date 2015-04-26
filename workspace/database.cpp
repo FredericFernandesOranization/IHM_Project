@@ -3,10 +3,13 @@
 #include <QFile>
 #include <qdebug.h>
 #include <QStringList>
-Database::Database(QString databasePath, QString pathIMG)
+
+Database *Database::instance = NULL;
+
+Database::Database()
 {
-    this->databasePath = databasePath; //on sauvegarde le path du database
-    this->pathIMG = pathIMG;
+    this->databasePath = QString("../workspace/resources/plats.xml"); //on sauvegarde le path du database
+    this->pathIMG = QString("../workspace/resources/imagesPlats/");
     this->loadDatabase(); //on charge le database du fichier XML
 }
 

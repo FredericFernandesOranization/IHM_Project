@@ -9,7 +9,7 @@
 class Database
 {
 public:
-    Database(QString databasePath,QString pathIMG);
+    Database();
     Plat getDish(int dishId)const ; //renvoie le plat
     void loadDatabase(); //analyse fichier XML, rempli le HashMap
     QList<Plat*> filter(QStringList clientAllergiesList);
@@ -20,8 +20,16 @@ public:
     QList<Plat*> getDishes();
     QList<Plat*> getDesserts();
 
+    static Database* getInstance() {
+        if(instance == NULL)
+            instance = new Database();
+
+        return instance;
+    }
 
 private:
+
+    static Database * instance; // for Singleton Pattern
     QString databasePath;
     QString pathIMG;
     QHash<QString, QList<Plat*> > dishesMap; //dishesMap["boissons"] -> renvoie liste boissons (rempli par loadDatabase)
