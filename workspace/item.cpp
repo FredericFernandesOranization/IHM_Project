@@ -1,78 +1,78 @@
 #include "item.h"
-#include <QPushButton>
-#include <QGraphicsView>
 #include <QDebug>
-#include <QGraphicsItem>
-#include<QListWidgetItem>
+#include <QPixmap>
+#include <QPen>
+#include <QPainter>
 
 
-Item::Item(QString name): QGraphicsScene()
+Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent):QWidget(parent)
 {
-    //QPushButton *bouton = new QPushButton(name);
-    //this->addWidget(bouton);
 
-
-    QBrush greenBrush(Qt::green);
-    QBrush blueBrush(Qt::blue);
-    QPen outlinePen(Qt::black);
-    outlinePen.setWidth(2);
-
-    this->addRect(100, 0, 80, 100, outlinePen, blueBrush);
-    this->addRect(100, 0, 100, 80, outlinePen, blueBrush);
-
-    // addEllipse(x,y,w,h,pen,brush)
-    this->addEllipse(0, -100, 300, 60, outlinePen, greenBrush);
-
-    this->addText("bogotobogo.com", QFont("Arial", 20) );
-    // movable text
-    //text->setFlag(QGraphicsItem::ItemIsMovable);
-
-}
-
-Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background): QGraphicsScene()
-{
-    qDebug()<<imgSizeW;
     this->imgSizeW= imgSizeW;
     this->imgSizeH= imgSizeH;
 
-    int elSize= 50;
-    setBackgroundBrush(QBrush(background, Qt::SolidPattern));
-    qDebug()<< plat.getName();
-    QImage *img = new QImage(plat.getImagePath());
-    QImage img2 = img->scaled(imgSizeW, imgSizeH);
-    addPixmap(QPixmap::fromImage(img2));
-    QColor orange(255,165,0,255);
-    QBrush greenBrush(orange);
-    QPen outlinePen(orange);
+    this->setAutoFillBackground(true);
+    this->setPalette(QPalette(background));
 
-    /*QGraphicsEllipseItem *ellipse =*/ addEllipse((imgSizeW-(elSize/2)), ((imgSizeH/2)-(elSize/2)), elSize, elSize, outlinePen, greenBrush);
+    img = new QImage(plat.getImagePath());
+    *img = img->scaled(imgSizeW, imgSizeH);
+
+
+
+    /*QGraphicsEllipseItem *ellipse =*/
+    //addEllipse((imgSizeW-(elSize/2)), ((imgSizeH/2)-(elSize/2)), elSize, elSize, outlinePen, greenBrush);
     //ellipse->setFlag(QGraphicsItem::ItemIsMovable);
-    //QGraphicsTextItem * price =  addText();
 
-    QGraphicsTextItem * price = new QGraphicsTextItem(QString::number(plat.getPrice()));
+
+    QLabel *labelPrice = new QLabel(QString::number(plat.getPrice()),this);
     QFont priceFont("Helvetica", 12, QFont::Bold);
-    price->setFont(priceFont);
-    price->setPos((imgSizeW)-16,(imgSizeH/2)-10);
-    this->addItem(price);
+    labelPrice->setFont(priceFont);
+    labelPrice->move((imgSizeW)-15,(imgSizeH/2)-10);
 
-    QGraphicsTextItem * shortDesc = new QGraphicsTextItem(plat.getShortDescription());
+    //QGraphicsTextItem * price =  addText();
+    //    QFont priceFont("Helvetica", 12, QFont::Bold);
+    //    price->setFont(priceFont);
+    //    price->setPos((imgSizeW)-16,(imgSizeH/2)-10);
+    //    this->addItem(price);
+
+    QLabel *labelShortDesc = new QLabel(plat.getShortDescription(),this);
     QFont shortDescFont("Helvetica", 12);
-    shortDesc->setFont(shortDescFont);
-    shortDesc->setDefaultTextColor(Qt::white);
-    shortDesc->setTextWidth(imgSizeW);
-    //shortDesc->setPen(QPen(QColor(255, 255, 255), 0.5, Qt::SolidLine, Qt::SquareCap, Qt::RoundJoin));
-    shortDesc->setPos(10,imgSizeH+5);
-    QRectF rec = shortDesc->boundingRect();
-    this->addItem(shortDesc);
+    labelShortDesc->setFont(shortDescFont);
+    labelShortDesc->move((imgSizeW)-16,(imgSizeH/2)-10);
+    labelShortDesc->setPalette(QPalette(Qt::white));
+    QPalette pal(labelShortDesc->palette());
+    pal.setColor(QPalette::WindowText, QColor(Qt::white));
+    labelShortDesc->setPalette(pal);
+    //labelShortDesc->setWordWrap(true);
+    // labelShortDesc->setLineWidth(imgSizeH);
+    labelShortDesc->setMaximumWidth(imgSizeW);
+    labelShortDesc->move(10,imgSizeH+5);
 
-    setSceneRect(-10,-10,imgSizeW+50,imgSizeH+rec.height()+20);
+    //labelShortDesc->setFixedWidth(imgSizeW);
+    //labelShortDesc->show();
+    //labelShortDesc->setFWidth(imgSizeW);
 
+    //QRectF rec = labelShortDesc->boundingRect();
+    //this->addItem(shortDesc);
+
+    setFixedSize(imgSizeW+50,imgSizeH+35);
 }
-void Item::show(QWidget *parent)
+
+void Item::paintEvent(QPaintEvent *)
 {
-    QGraphicsView *view = new QGraphicsView(this,parent);
-    view->setHorizontalScrollBarPolicy ( Qt::ScrollBarAlwaysOff );
-    view->setVerticalScrollBarPolicy ( Qt::ScrollBarAlwaysOff );
-    view->show();
-    //return view;
+    QColor orange(255,165,0,255);
+    QBrush orangeBrush(orange);
+    QPen outlinePen(orange);
+    QPainter paint(this);
+    paint.setBrush(orangeBrush);
+    paint.setPen(outlinePen);
+    int ellipseSize= 50;
+    int ellipseX= (imgSizeW-(ellipseSize/2));
+    int ellipseY= ((imgSizeH/2)-(ellipseSize/2));
+
+    paint.drawImage(5,5,*img);
+    paint.drawEllipse(ellipseX,ellipseY,ellipseSize,ellipseSize);
+
+
+
 }
