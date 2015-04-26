@@ -9,7 +9,9 @@ RightZone::RightZone() : QWidget()
     //RightZone Properties
     this->resize(1000,50);
     //this->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
-    this->setStyleSheet("background-color: Yellow");
+    //this->setStyleSheet("background-color: Yellow");
+    this->setAutoFillBackground(true);
+    this->setPalette(QPalette(Qt::yellow));
     //this->setStyleSheet("background-image: url(:/images/lightB.png)");
 
     //Separation UpperMenu - Gallery
