@@ -47,9 +47,12 @@ void Database::loadDatabase()
     QDomElement docElem = doc.documentElement();
 
     QDomNode n = docElem.firstChild();
+    int nbDishes = 0;
     while(!n.isNull()) {
         QDomElement e = n.toElement(); // try to convert the node to an element.
-        if(!e.isNull()) {
+        if(!e.isNull())
+        {
+            nbDishes++;
             QString name = e.firstChildElement("name").text().simplified();
             QString type = e.firstChildElement("type").text().simplified();
             QString desc = e.firstChildElement("description").text().simplified();
@@ -63,8 +66,8 @@ void Database::loadDatabase()
             dishesMap[type].append(newPlat);
         }
         n = n.nextSibling();
-
     }
+    this->nbDishes = nbDishes;
     // just for verification
     //    foreach (QString type , dishesMap.keys()){
     //        qDebug() << "~~~~~~~~~~~~Liste des plats de type : "<< type <<"~~~~~~~~~~~~~~";

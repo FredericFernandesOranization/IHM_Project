@@ -19,7 +19,7 @@ public:
     QList<Plat*> getStarters();
     QList<Plat*> getDishes();
     QList<Plat*> getDesserts();
-
+    int getNbDishes(){return nbDishes;}
     static Database* getInstance() {
         if(instance == NULL)
             instance = new Database();
@@ -36,6 +36,7 @@ private:
     QStringList clientAllergiesList; //on mémorise les allergies parametrées par le client
     QStringList getListsInXML(QDomElement elem);
     QString filterSpace(QString string);
+    int nbDishes;
 };
 
 #endif // BASEDONNEES_H
