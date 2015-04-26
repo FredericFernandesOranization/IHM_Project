@@ -29,7 +29,7 @@ Item::Item(QString name): QWidget(), QGraphicsScene()
 
 }
 
-Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background)
+Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background): QListWidgetItem(), QGraphicsScene()
 {
     qDebug()<<imgSizeW;
     this->imgSizeW= imgSizeW;
