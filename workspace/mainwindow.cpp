@@ -20,10 +20,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //loading Database
-    QString pathBase = "../workspace/resources/plats.xml";
-    QString pathIMG= "../workspace/resources/imagesPlats/";
-    Database *data = new Database(pathBase,pathIMG);
+
 
     //Creation Main Window
     QWidget *mainWindow = new QWidget();
