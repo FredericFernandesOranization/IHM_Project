@@ -17,12 +17,18 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     plat.cpp \
     database.cpp \
-    item.cpp
+    item.cpp \
+    leftzone.cpp \
+    rightzone.cpp \
+    gallery.cpp
 
 HEADERS  += mainwindow.h \
     plat.h \
     database.h \
-    item.h
+    item.h \
+    leftzone.h \
+    rightzone.h \
+    gallery.h
 
 FORMS    += mainwindow.ui
 

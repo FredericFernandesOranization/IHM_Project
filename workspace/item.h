@@ -5,7 +5,7 @@
 #include <plat.h>
 #include <QListWidgetItem>
 
-class Item : public QGraphicsScene, public QListWidgetItem
+class Item : public QGraphicsScene, public QWidget
 {
 public:
     Item(QString name);

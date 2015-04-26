@@ -6,7 +6,7 @@
 #include<QListWidgetItem>
 
 
-Item::Item(QString name): QListWidgetItem(), QGraphicsScene()
+Item::Item(QString name): QWidget(), QGraphicsScene()
 {
     //QPushButton *bouton = new QPushButton(name);
     //this->addWidget(bouton);
