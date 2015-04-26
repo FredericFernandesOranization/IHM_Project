@@ -8,6 +8,7 @@ Gallery::Gallery() : QWidget()
     QWidget *gallery = new QWidget();
     //this->setStyleSheet("background-image: url(:/images/lightB.png)");
     this->setStyleSheet("background-color: Green");
+    this->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
 
     //Gallery Layout
     QVBoxLayout *galleryLayout = new QVBoxLayout();

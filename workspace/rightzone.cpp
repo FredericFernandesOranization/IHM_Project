@@ -18,11 +18,11 @@ RightZone::RightZone() : QWidget()
 
     //Creation UpperMenu
     QHBoxLayout *upperMenuHorizontalLayout = new QHBoxLayout; //creation Layout Menu
-    upperMenuHorizontalLayout->setSpacing(0);
+    //upperMenuHorizontalLayout->setSpacing(0);
 
     QWidget *upperMenu = new QWidget;
     upperMenu->setStyleSheet("padding : 0 ; margin : 0");
-    upperMenu->setFixedHeight(100);
+    //upperMenu->setFixedHeight(100);
     upperMenu->setLayout(upperMenuHorizontalLayout);
     rightVerticalLayout->addWidget(upperMenu); //Adding UpperMenu in RightPart
 
@@ -30,8 +30,8 @@ RightZone::RightZone() : QWidget()
     QList<QString> stringMenu = QList<QString>() << QString("Menu1") << QString("Menu2") << QString("Menu3") << QString("Menu4");
     for(int i=0; i<4; i++){
         QPushButton *b = new QPushButton(stringMenu.at(i));
-        b->setFixedSize(300,90);
-        b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+        //b->setFixedSize(300,90);
+        //b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
         upperMenuHorizontalLayout->addWidget(b);
     }
 

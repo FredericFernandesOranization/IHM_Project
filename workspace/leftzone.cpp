@@ -15,8 +15,8 @@ LeftZone::LeftZone() : QWidget()
 
     //separation SwapButton - Command Zone
     QVBoxLayout *leftVerticalLayout = new QVBoxLayout;
-    leftVerticalLayout->sizeConstraint();
-    leftVerticalLayout->setSpacing(0);
+    //leftVerticalLayout->sizeConstraint();
+    //leftVerticalLayout->setSpacing(0);
     this->setLayout(leftVerticalLayout);
 
     //Creating Swap Button
@@ -26,6 +26,7 @@ LeftZone::LeftZone() : QWidget()
     switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
         //switchButton->setStyleSheet("background-color: Blue");
     switchButton->setStyleSheet("background-image: url(:/images/middleEarth.jpg)");
+    leftVerticalLayout->addWidget(switchButton);
 
     //Creating Left Menu Bar
     QList<QString> stringMenu = QList<QString>() << QString("Boissons") << QString("Entree") << QString("Plat") << QString("Dessert");

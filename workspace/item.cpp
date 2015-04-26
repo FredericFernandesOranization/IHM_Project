@@ -6,7 +6,7 @@
 #include<QListWidgetItem>
 
 
-Item::Item(QString name): QWidget(), QGraphicsScene()
+Item::Item(QString name): QGraphicsScene()
 {
     //QPushButton *bouton = new QPushButton(name);
     //this->addWidget(bouton);
@@ -29,7 +29,7 @@ Item::Item(QString name): QWidget(), QGraphicsScene()
 
 }
 
-Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background): QListWidgetItem(), QGraphicsScene()
+Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background): QGraphicsScene()
 {
     qDebug()<<imgSizeW;
     this->imgSizeW= imgSizeW;
