@@ -38,7 +38,7 @@ private:
     QHash<QString, QList<Plat*> > dishesMap; //dishesMap["boissons"] -> renvoie liste boissons (rempli par loadDatabase)
     QStringList clientAllergiesList; //on mémorise les allergies parametrées par le client
     QStringList getListsInXML(QDomElement elem);
-    QString filterSpace(QString string);
+    //QString filterType(QString string);
     int nbDishes;
 };
 

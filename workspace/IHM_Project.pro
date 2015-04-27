@@ -21,7 +21,8 @@ SOURCES += Sources/main.cpp\
     Sources/leftzone.cpp \
     Sources/rightzone.cpp \
     Sources/gallery.cpp \
-    Sources/flowlayout.cpp
+    Sources/flowlayout.cpp \
+    #Sources/menubutton.cpp
 
 HEADERS  += Headers/mainwindow.h \
     Headers/plat.h \
@@ -30,7 +31,8 @@ HEADERS  += Headers/mainwindow.h \
     Headers/leftzone.h \
     Headers/rightzone.h \
     Headers/gallery.h \
-    Headers/flowlayout.h
+    Headers/flowlayout.h \
+    #Headers/menubutton.h
 
 FORMS    += mainwindow.ui
 
