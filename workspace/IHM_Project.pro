@@ -23,6 +23,7 @@ SOURCES += Sources/main.cpp\
     Sources/gallery.cpp \
     Sources/flowlayout.cpp \
     #Sources/menubutton.cpp
+    Sources/imagelabel.cpp
 
 HEADERS  += Headers/mainwindow.h \
     Headers/plat.h \
@@ -33,6 +34,7 @@ HEADERS  += Headers/mainwindow.h \
     Headers/gallery.h \
     Headers/flowlayout.h \
     #Headers/menubutton.h
+    Headers/imagelabel.h
 
 FORMS    += mainwindow.ui
 

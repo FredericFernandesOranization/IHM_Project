@@ -1,58 +1,34 @@
-    #include "Headers/item.h"
+#include "Headers/item.h"
 
-Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent):QWidget(parent)
+Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent): QWidget(parent)
 {
+    //order button
+    QPushButton* commander = new QPushButton("Commander");
 
-    this->imgSizeW= imgSizeW;
-    this->imgSizeH= imgSizeH;
+    //creating image
+    ImageLabel* image = new ImageLabel(plat, this, imgSizeW, imgSizeH, background);
 
-    this->setAutoFillBackground(true);
-    this->setPalette(QPalette(background));
-
-    img = new QImage(plat.getImagePath());
-    *img = img->scaled(imgSizeW, imgSizeH);
-
-
-
-    /*QGraphicsEllipseItem *ellipse =*/
-    //addEllipse((imgSizeW-(elSize/2)), ((imgSizeH/2)-(elSize/2)), elSize, elSize, outlinePen, greenBrush);
-    //ellipse->setFlag(QGraphicsItem::ItemIsMovable);
-
-
-    QLabel *labelPrice = new QLabel(QString::number(plat.getPrice()),this);
-    QFont priceFont("Helvetica", 12, QFont::Bold);
-    labelPrice->setFont(priceFont);
-    labelPrice->move((imgSizeW)-15,(imgSizeH/2)-10);
-
-    //QGraphicsTextItem * price =  addText();
-    //    QFont priceFont("Helvetica", 12, QFont::Bold);
-    //    price->setFont(priceFont);
-    //    price->setPos((imgSizeW)-16,(imgSizeH/2)-10);
-    //    this->addItem(price);
-
+    //creating short description
     QLabel *labelShortDesc = new QLabel(plat.getShortDescription(),this);
     QFont shortDescFont("Helvetica", 12);
     labelShortDesc->setFont(shortDescFont);
-    labelShortDesc->move((imgSizeW)-16,(imgSizeH/2)-10);
     labelShortDesc->setPalette(QPalette(Qt::white));
     QPalette pal(labelShortDesc->palette());
     pal.setColor(QPalette::WindowText, QColor(Qt::white));
     labelShortDesc->setPalette(pal);
-    //labelShortDesc->setWordWrap(true);
-    // labelShortDesc->setLineWidth(imgSizeH);
     labelShortDesc->setMaximumWidth(imgSizeW);
-    labelShortDesc->move(10,imgSizeH+5);
+    //labelShortDesc->move(10,imgSizeH+5);
 
-    //labelShortDesc->setFixedWidth(imgSizeW);
-    //labelShortDesc->show();
-    //labelShortDesc->setFWidth(imgSizeW);
+    //setting item layout and adding components
+    QVBoxLayout *itemLayout = new QVBoxLayout;
+    this->setLayout(itemLayout);
+    itemLayout->addWidget(image);
+    itemLayout->addWidget(labelShortDesc);
+    itemLayout->addWidget(commander);
 
-    //QRectF rec = labelShortDesc->boundingRect();
-    //this->addItem(shortDesc);
 
-    setFixedSize(imgSizeW+50,imgSizeH+35);
 }
-
+/*
 void Item::paintEvent(QPaintEvent *)
 {
     QColor orange(255,165,0,255);
@@ -65,9 +41,43 @@ void Item::paintEvent(QPaintEvent *)
     int ellipseX= (imgSizeW-(ellipseSize/2));
     int ellipseY= ((imgSizeH/2)-(ellipseSize/2));
 
-    paint.drawImage(5,5,*img);
+    //paint.drawImage(5,5,*img);
     paint.drawEllipse(ellipseX,ellipseY,ellipseSize,ellipseSize);
 
+}*/
 
 
-}
+/*
+      //setFixedSize(imgSizeW+150,imgSizeH+100);
+
+
+    //creation image
+    /*this->imgSizeW= imgSizeW;
+    this->imgSizeH= imgSizeH;
+    this->setAutoFillBackground(true);
+    this->setPalette(QPalette(background));
+    img = new QImage(plat.getImagePath());
+    *img = img->scaled(imgSizeW, imgSizeH);
+*/
+
+
+    /*QGraphicsEllipseItem *ellipse =*/
+    //addEllipse((imgSizeW-(elSize/2)), ((imgSizeH/2)-(elSize/2)), elSize, elSize, outlinePen, greenBrush);
+    //ellipse->setFlag(QGraphicsItem::ItemIsMovable);
+
+    //QGraphicsTextItem * price =  addText();
+    //    QFont priceFont("Helvetica", 12, QFont::Bold);
+    //    price->setFont(priceFont);
+    //    price->setPos((imgSizeW)-16,(imgSizeH/2)-10);
+    //    this->addItem(price);
+
+    //labelShortDesc->setFixedWidth(imgSizeW);
+    //labelShortDesc->show();
+    //labelShortDesc->setFWidth(imgSizeW);
+
+    //QRectF rec = labelShortDesc->boundingRect();
+    //this->addItem(shortDesc);
+//labelShortDesc->move((imgSizeW)-16,(imgSizeH/2)-10);
+//labelShortDesc->setWordWrap(true);
+// labelShortDesc->setLineWidth(imgSizeH);
+
