@@ -14,10 +14,11 @@
 class ImageLabel : public QLabel{
     //Q_OBJECT
 public:
-    ImageLabel(Plat p, QWidget *parent, int imgSizeW, int imgSizeH, QColor background );
+    ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent);
 private slots:
-    //void paintEvent(QPaintEvent *e);
+    void paintEvent(QPaintEvent *e);
     QString imagePath;
+    QImage* img;
     int imgSizeW;
     int imgSizeH;
     QColor background;

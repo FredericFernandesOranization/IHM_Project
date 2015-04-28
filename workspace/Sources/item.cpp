@@ -6,7 +6,7 @@ Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *pare
     QPushButton* commander = new QPushButton("Commander");
 
     //creating image
-    ImageLabel* image = new ImageLabel(plat, this, imgSizeW, imgSizeH, background);
+    ImageLabel* image = new ImageLabel(plat, imgSizeW, imgSizeH, background, this);
 
     //creating short description
     QLabel *labelShortDesc = new QLabel(plat.getShortDescription(),this);
