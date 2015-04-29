@@ -1,4 +1,4 @@
-#include "Headers/database.h"
+#include "database.h"
 
 Database *Database::instance = NULL;
 

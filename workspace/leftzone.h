@@ -6,6 +6,7 @@
 #include <QString>
 #include <QVBoxLayout>
 #include <QWidget>
+#include "gallery.h"
 
 class LeftZone : public QWidget
 {

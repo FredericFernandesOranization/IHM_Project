@@ -1,5 +1,6 @@
-#include "Headers/gallery.h"
+#include "gallery.h"
 
+Gallery *Gallery::instance = NULL;
 Gallery::Gallery() : QWidget()
 {
     //Gallery Properties

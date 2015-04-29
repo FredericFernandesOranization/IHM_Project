@@ -1,4 +1,4 @@
-#include "Headers/imagelabel.h"
+#include "imagelabel.h"
 
 ImageLabel::ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent): QLabel(parent)
 {

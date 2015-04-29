@@ -5,9 +5,9 @@
 #include <QVBoxLayout>
 #include <QPushButton>
 #include <QString>
-#include "Headers/database.h"
-#include "Headers/item.h"
-#include "Headers/flowlayout.h"
+#include "database.h"
+#include "item.h"
+#include "flowlayout.h"
 
 class Gallery : public QWidget
 {
@@ -19,7 +19,7 @@ public:
         return instance;
     }
 public slots:
-        void showType(QString type);
+    void showType(QString type);
 
 private:
     static Gallery* instance; // for Singleton Pattern

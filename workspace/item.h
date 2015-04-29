@@ -1,8 +1,8 @@
 #ifndef ITEM_H
 #define ITEM_H
 
-#include <Headers/plat.h>
-#include <Headers/imagelabel.h>
+#include <plat.h>
+#include <imagelabel.h>
 #include <QLabel>
 #include <QImage>
 #include <QDebug>

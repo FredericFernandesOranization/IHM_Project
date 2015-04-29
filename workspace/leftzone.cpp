@@ -1,4 +1,4 @@
-#include "Headers/leftzone.h"
+#include "leftzone.h"
 
 LeftZone::LeftZone() : QWidget()
 {
@@ -24,12 +24,16 @@ LeftZone::LeftZone() : QWidget()
     switchButton->setStyleSheet("background-image: url(:/images/middleEarth.jpg)");
     leftVerticalLayout->addWidget(switchButton);
 
+    Gallery* g = Gallery::getInstance();
     //Creating Left Menu Bar
     QList<QString> stringMenu = QList<QString>() << QString("Boissons") << QString("Entree") << QString("Plat") << QString("Dessert");
     for(int i=0; i<4; i++){
         QPushButton *b = new QPushButton(stringMenu.at(i));
+
+        //connect(b, SIGNAL(clicked()), b, b->showType(stringMenu.at(i)));
         b->setFixedWidth(280);
         b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
         leftVerticalLayout->addWidget(b);
     }
 }
+// /usr/bin/qmake-qt4

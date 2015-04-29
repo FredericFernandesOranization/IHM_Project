@@ -1,4 +1,4 @@
-#include "Headers/rightzone.h"
+#include "rightzone.h"
 
 RightZone::RightZone() : QWidget()
 {

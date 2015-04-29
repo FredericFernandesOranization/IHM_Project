@@ -1,4 +1,4 @@
-#include "Headers/item.h"
+#include "item.h"
 
 Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent): QWidget(parent)
 {

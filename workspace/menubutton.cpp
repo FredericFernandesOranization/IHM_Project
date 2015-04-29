@@ -1,6 +1,6 @@
 #include "menubutton.h"
 
-MenuButton::MenuButton(QString label) : QPushButton
+MenuButton::MenuButton(QString label, QWidget* parent) : QPushButton(parent)
 {
     this->label = label;
 }

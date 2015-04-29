@@ -1,8 +1,8 @@
-#include "Headers/mainwindow.h"
+#include "mainwindow.h"
 #include <QApplication>
-#include "Headers/database.h"
+#include "database.h"
 #include <qdebug.h>
-#include <Headers/item.h>
+#include <item.h>
 #include <QGraphicsView>
 #include <QListWidget>
 

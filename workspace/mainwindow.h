@@ -11,14 +11,14 @@
 
 #include <qdebug.h>
 
-#include "Headers/mainwindow.h"
-#include "Headers/database.h"
+#include "mainwindow.h"
+#include "database.h"
 #include "item.h"
-//#include "Headers/ui_mainwindow.h"
-#include "Headers/mainwindow.h"
-#include "Headers/database.h"
-#include "Headers/leftzone.h"
-#include "Headers/rightzone.h"
+//#include "ui_mainwindow.h"
+#include "mainwindow.h"
+#include "database.h"
+#include "leftzone.h"
+#include "rightzone.h"
 
 namespace Ui {
 class MainWindow;

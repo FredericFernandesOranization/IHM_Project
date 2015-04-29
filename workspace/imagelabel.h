@@ -9,7 +9,7 @@
 #include <QVBoxLayout>
 #include <QWidget>
 #include <QColor>
-#include "Headers/plat.h"
+#include "plat.h"
 
 class ImageLabel : public QLabel{
     //Q_OBJECT
