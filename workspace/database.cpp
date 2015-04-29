@@ -4,47 +4,36 @@ Database *Database::instance = NULL;
 
 Database::Database()
 {
-    this->databasePath = QString("../workspace/resources/plats.xml"); //on sauvegarde le path du database
+    this->pathDish = QString("../workspace/resources/plats.xml"); //on sauvegarde le path des plats
+    this->pathAllergies = QString("../workspace/resources/allergies.xml");
+    this->pathIngredients = QString("../workspace/resources/ingredients.xml");
     this->pathIMG = QString("../workspace/resources/imagesPlats/");
+
     this->loadDatabase(); //on charge le database du fichier XML
 }
 
-Plat Database::getDish(int dishId) const
-{
-    foreach (QList<Plat*> listPlat, dishesMap)
-        foreach (Plat* plat, listPlat)
-            if (plat->getId()== dishId)
-                return *plat;
-    qCritical() << "WARNING : your dishId doesn't exist !!";
-    Q_ASSERT(false); // crash now
-    //return Plat();
-}
+
 
 void Database::loadDatabase()
+{
+    loadDishs();
+    loadAllergies();
+    loadIngredients();
+}
+void Database::loadDishs()
 {//utilise l'attribut databasePath de la classe Database
-    qDebug() << "loadDatabase ...";
-    QDomDocument doc("plats");
-    QFile file(this->databasePath);
-    if (!file.open(QIODevice::ReadOnly))
-    {
-        qDebug() << "error I can't open .xml file ! ";
-        return;
-    }
-    if (!doc.setContent(&file)) {
-        file.close();
-        qDebug() << "error your .xml file is incorrect !";
-        return;
-    }
-    file.close();
-    qDebug() << "File XML loaded ! ";
+    qDebug() << "loading Dishs ...";
 
-    // print out the element names of all elements that are direct children
-    // of the outermost element.
-    QDomElement docElem = doc.documentElement();
-
+    QDomDocument *doc = openXmlFile(this->pathDish);
+    QDomElement docElem = doc->documentElement();
     QDomNode n = docElem.firstChild();
+
+    dishesMap.clear();
+    // QDomNode n = openXmlFile(this->pathDish)
     int nbDishes = 0;
-    while(!n.isNull()) {
+
+    while(!n.isNull())
+    {
         QDomElement e = n.toElement(); // try to convert the node to an element.
         if(!e.isNull())
         {
@@ -64,6 +53,7 @@ void Database::loadDatabase()
         n = n.nextSibling();
     }
     this->nbDishes = nbDishes;
+
     // just for verification
     //    foreach (QString type , dishesMap.keys()){
     //        qDebug() << "~~~~~~~~~~~~Liste des plats de type : "<< type <<"~~~~~~~~~~~~~~";
@@ -78,6 +68,96 @@ void Database::loadDatabase()
     //            qDebug() << plat->toString() << endl;
 }
 
+void Database::loadAllergies()
+{
+    qDebug() << "loading Allergies ...";
+    QDomDocument *doc = openXmlFile(this->pathAllergies);
+    QDomElement docElem = doc->documentElement();
+    QDomNode n = docElem.firstChild();
+    clientAllergiesList.clear();
+
+    while(!n.isNull()) {
+        QDomElement e = n.toElement(); // try to convert the node to an element.
+        QString name = e.text().simplified();
+        clientAllergiesList<<name;
+        n = n.nextSibling();
+    }
+}
+
+void Database::loadIngredients()
+{
+    qDebug() << "loading Ingredients ...";
+    QDomDocument *doc = openXmlFile(this->pathIngredients);
+    QDomElement docElem = doc->documentElement();
+    QDomNode n = docElem.firstChild();
+    clientIngredientsList.clear();
+    while(!n.isNull()) {
+        QDomElement e = n.toElement(); // try to convert the node to an element.
+        QString name = e.text().simplified();
+        clientIngredientsList<<name;
+        n = n.nextSibling();
+    }
+}
+
+
+
+
+void Database::writeXmlFile(QDomDocument doc,QString path )
+{
+    QFile fichier(path);
+    if(!fichier.open(QIODevice::WriteOnly)){
+        fichier.close();
+        qDebug() << "error I can't open"<< path<<" ! ";
+        Q_ASSERT(false); // crash now
+    }
+    QTextStream stream(&fichier);
+    stream << doc.toString();
+    fichier.close();
+}
+
+
+
+QDomDocument* Database::openXmlFile(QString path)
+{
+    QDomDocument doc("doc");
+    QFile file(path);
+    if (!file.open(QIODevice::ReadOnly))
+    {
+        qDebug() << "error I can't open"<< path<<" ! ";
+        Q_ASSERT(false); // crash now
+    }
+    if (!doc.setContent(&file)) {
+        file.close();
+        qDebug() << "error your .xml file is incorrect !";
+        Q_ASSERT(false); // crash now
+    }
+    file.close();
+    // qDebug() << "File XML loaded ! ";
+
+    return new QDomDocument(doc);
+}
+QStringList Database::getClientIngredientsList() const
+{
+    return clientIngredientsList;
+}
+
+QStringList Database::getClientAllergiesList() const
+{
+    return clientAllergiesList;
+}
+
+
+Plat Database::getDish(int dishId) const
+{
+    foreach (QList<Plat*> listPlat, dishesMap)
+        foreach (Plat* plat, listPlat)
+            if (plat->getId()== dishId)
+                return *plat;
+    qCritical() << "WARNING : your dishId doesn't exist !!";
+    Q_ASSERT(false); // crash now
+    //return Plat();
+}
+
 QList<Plat *> Database::filterType(QString type)
 {
     //renvoie seulement la liste des plats qui match le Type
@@ -89,22 +169,22 @@ QList<Plat *> Database::filterType(QString type)
 
 QList<Plat *> Database::getDrinks()
 {
-    return filterType("boisson");
+    return filterType("Boissons");
 }
 
 QList<Plat *> Database::getStarters()
 {
-    return filterType("entree");
+    return filterType("Entrees");
 }
 
 QList<Plat *> Database::getDishes()
 {
-    return filterType("plat");
+    return filterType("Plats");
 }
 
 QList<Plat *> Database::getDesserts()
 {
-    return filterType("dessert");
+    return filterType("Desserts");
 }
 
 QStringList Database::getListsInXML(QDomElement elem)
@@ -116,5 +196,39 @@ QStringList Database::getListsInXML(QDomElement elem)
         node = node.nextSibling();
     }
     return list;
+}
+
+
+void Database::updateAllergies(QStringList listName)
+{
+    qDebug() << "update Allergy ...";
+    QFile file(pathAllergies);
+    file.open(QIODevice::WriteOnly);
+    QXmlStreamWriter xmlWriter(&file);
+    xmlWriter.setAutoFormatting(true);
+    xmlWriter.writeStartDocument();
+    xmlWriter.writeStartElement("lesAllergies");
+    foreach (QString s , listName){
+        xmlWriter.writeTextElement("name",s.simplified());
+    }
+    xmlWriter.writeEndElement();
+
+    file.close();
+}
+void Database::updateIngredients(QStringList listName)
+{
+    qDebug() << "update Ingredients ...";
+    QFile file(pathIngredients);
+    file.open(QIODevice::WriteOnly);
+    QXmlStreamWriter xmlWriter(&file);
+    xmlWriter.setAutoFormatting(true);
+    xmlWriter.writeStartDocument();
+    xmlWriter.writeStartElement("lesIngredients");
+    foreach (QString s , listName){
+        xmlWriter.writeTextElement("name",s.simplified());
+    }
+    xmlWriter.writeEndElement();
+
+    file.close();
 }
 
