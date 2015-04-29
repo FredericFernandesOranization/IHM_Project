@@ -5,6 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
+QT       += xml
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -13,8 +14,29 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    editallergiewindow.cpp \
+    editingredientwindow.cpp \
+    allergiedatabasewindow.cpp \
+    ingredientdatabasewindow.cpp \
+    plat.cpp \
+    listwidget.cpp \
+    database.cpp \
+    dishesdatabasewindow.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    editallergiewindow.h \
+    editingredientwindow.h \
+    allergiedatabasewindow.h \
+    ingredientdatabasewindow.h \
+    plat.h \
+    listwidget.h \
+    database.h \
+    dishesdatabasewindow.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    editallergiewindow.ui \
+    editingredientwindow.ui \
+    allergiedatabasewindow.ui \
+    ingredientdatabasewindow.ui \
+    dishesdatabasewindow.ui

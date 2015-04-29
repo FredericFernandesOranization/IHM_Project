@@ -2,6 +2,7 @@
 #define EDITALLERGIEWINDOW_H
 
 #include <QDialog>
+#include "database.h"
 
 namespace Ui {
 class EditAllergieWindow;
@@ -17,6 +18,10 @@ public:
 
 private:
     Ui::EditAllergieWindow *ui;
+    Database * dataBase;
+    void updateUi();
+    //void closeEvent(QCloseEvent *event);
+    //void showEvent(QShowEvent *event);
 };
 
 #endif // EDITALLERGIEWINDOW_H

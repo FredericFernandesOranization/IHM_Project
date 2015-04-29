@@ -31,3 +31,4 @@ Makefile*
 *.qmlproject.user
 *.qmlproject.user.*
 build-IHM_Project-*
+build-IHM_DataBaseTools-*

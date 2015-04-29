@@ -2,6 +2,7 @@
 #define EDITINGREDIENTWINDOW_H
 
 #include <QDialog>
+#include "database.h"
 
 namespace Ui {
 class EditIngredientWindow;
