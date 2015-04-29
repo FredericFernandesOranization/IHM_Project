@@ -8,13 +8,14 @@
 #include <QFile>
 #include <qdebug.h>
 #include <QStringList>
+#include <QXmlStreamWriter>
 
 class Database
 {
 public:
     Database();
     Plat getDish(int dishId)const ; //renvoie le plat
-    void loadDatabase(); //analyse fichier XML, rempli le HashMap
+
     QList<Plat*> filter(QStringList clientAllergiesList);
     QList<Plat*> filterType(QString type); //filtre les plats par type, boissons plats etc ...
 
@@ -30,13 +31,29 @@ public:
         return instance;
     }
 
-private:
+    QStringList getClientAllergiesList() const;
+    QStringList getClientIngredientsList() const;
+    void loadDishs(); //analyse fichier XML, rempli le HashMap
+    void loadAllergies(); //analyse fichier XML, rempli clientAllergiesList
+    void loadIngredients(); //analyse fichier XML, rempli clientIngredientsList
 
+    void updateAllergies(QStringList listName);
+    void updateIngredients(QStringList listName);
+private:
+    void loadDatabase();
+    void writeXmlFile(QDomDocument doc,QString path); // for Update Xml file
+
+
+
+    QDomDocument* openXmlFile(QString path);
     static Database * instance; // for Singleton Pattern
-    QString databasePath;
+    QString pathDish;
+    QString pathAllergies;
+    QString pathIngredients;
     QString pathIMG;
     QHash<QString, QList<Plat*> > dishesMap; //dishesMap["boissons"] -> renvoie liste boissons (rempli par loadDatabase)
     QStringList clientAllergiesList; //on mémorise les allergies parametrées par le client
+    QStringList clientIngredientsList; //on mémorise les Ingredients parametrées par le client
     QStringList getListsInXML(QDomElement elem);
     //QString filterType(QString string);
     int nbDishes;
