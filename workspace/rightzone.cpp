@@ -33,8 +33,17 @@ RightZone::RightZone() : QWidget()
         upperMenuHorizontalLayout->addWidget(b);
     }
 
-    //Creating Gallery
-    Gallery *gallery = new Gallery();
-    rightVerticalLayout->addWidget(gallery); //Adding Gallery to RightZone
+    //Creating Stack Layout for Gallery
+    this->galleriesLayout = GalleriesLayout::getInstance();
+    QWidget* galleriesList = new QWidget();
+    rightVerticalLayout->addWidget(galleriesList); //Adding Gallery to RightZone
+    galleriesList->setLayout(galleriesLayout);
+
+    //Adding Galleries To StackedLayout
+    QList<QString> galleriesLabels = QList<QString>() << QString("Entrees") << QString("Boissons") << QString("Plats") << QString("Desserts");
+    for(int i=0; i<4; i++){
+       galleriesLayout->addWidget(new Gallery(galleriesLabels.at(i)));
+    }
+
 
 }

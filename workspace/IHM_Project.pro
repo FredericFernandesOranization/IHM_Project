@@ -22,7 +22,9 @@ SOURCES += main.cpp\
     rightzone.cpp \
     gallery.cpp \
     flowlayout.cpp \
-    #menubutton.cpp
+    menubutton.cpp \
+    imagelabel.cpp \
+    gallerieslayout.cpp
     imagelabel.cpp
 
 HEADERS  += mainwindow.h \
@@ -33,7 +35,9 @@ HEADERS  += mainwindow.h \
     rightzone.h \
     gallery.h \
     flowlayout.h \
-    #menubutton.h
+    menubutton.h \
+    imagelabel.h \
+    gallerieslayout.h
     imagelabel.h
 
 FORMS    += mainwindow.ui

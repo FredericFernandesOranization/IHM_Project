@@ -7,6 +7,7 @@
 #include <QVBoxLayout>
 #include <QWidget>
 #include "gallery.h"
+#include "menubutton.h"
 
 class LeftZone : public QWidget
 {

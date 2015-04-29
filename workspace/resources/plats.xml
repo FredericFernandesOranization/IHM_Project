@@ -26,7 +26,7 @@ Template :
 <lesPlats>
 	<plat>
 		<name>Plat_1</name>
-                <type>boisson</type>
+                <type>Boissons</type>
  		<description> description_1</description>
 		<shortDescription>shortDescription_1</shortDescription>
   		<imagePath> plat1.jpg </imagePath>
@@ -43,10 +43,44 @@ Template :
 	</plat>
 	<plat>
 		<name> Plat_2</name>
-                <type>entree</type>
+                <type>Entrees</type>
  		<description> description_2</description>
 		<shortDescription>shortDescription_2</shortDescription>
   		<imagePath>plat2.jpg</imagePath>
+		<price> 32.9</price>
+		<ingredientsList>
+			<ingredient> ingredient2_1 </ingredient>
+			<ingredient> ingredient2_2</ingredient>
+			<ingredient> ingredient2_3</ingredient>
+		</ingredientsList>
+		<possibleAllergiesList>
+			<possibleAllergie>possibleAllergie2_1</possibleAllergie>
+			<possibleAllergie>possibleAllergie2_2</possibleAllergie>
+		</possibleAllergiesList>
+	</plat>
+	<plat>
+		<name> Plat_2</name>
+                <type>Plats</type>
+ 		<description> description_2</description>
+		<shortDescription>shortDescription_2</shortDescription>
+  		<imagePath>plat2.jpg</imagePath>
+		<price> 32.9</price>
+		<ingredientsList>
+			<ingredient> ingredient2_1 </ingredient>
+			<ingredient> ingredient2_2</ingredient>
+			<ingredient> ingredient2_3</ingredient>
+		</ingredientsList>
+		<possibleAllergiesList>
+			<possibleAllergie>possibleAllergie2_1</possibleAllergie>
+			<possibleAllergie>possibleAllergie2_2</possibleAllergie>
+		</possibleAllergiesList>
+	</plat>
+	<plat>
+		<name> Plat_2</name>
+                <type>Desserts</type>
+ 		<description> description_2</description>
+		<shortDescription>shortDescription_2</shortDescription>
+  		<imagePath>plat1.jpg</imagePath>
 		<price> 32.9</price>
 		<ingredientsList>
 			<ingredient> ingredient2_1 </ingredient>

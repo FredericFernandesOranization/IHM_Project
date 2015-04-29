@@ -2,6 +2,7 @@
 
 Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent): QWidget(parent)
 {
+
     //order button
     QPushButton* commander = new QPushButton("Commander");
 

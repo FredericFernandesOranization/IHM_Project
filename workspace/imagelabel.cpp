@@ -8,6 +8,7 @@ ImageLabel::ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, Q
 
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(background));
+    //this->setPalette(QPalette(Qt::blue));
 
     this->img = new QImage(plat.getImagePath());
     *img = img->scaled(imgSizeW, imgSizeH);
@@ -17,7 +18,7 @@ ImageLabel::ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, Q
     labelPrice->setFont(priceFont);
     labelPrice->move((imgSizeW)-15,(imgSizeH/2)-10);
 
-    setFixedSize(imgSizeW+50,imgSizeH+35);
+    setFixedSize(imgSizeW+27,imgSizeH+10);
 }
 
 void ImageLabel::paintEvent(QPaintEvent *)

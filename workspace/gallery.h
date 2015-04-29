@@ -13,6 +13,7 @@ class Gallery : public QWidget
 {
 public:
     Gallery();
+    Gallery(QString type);
     static Gallery* getInstance() {
         if(instance == NULL)
             instance = new Gallery();
