@@ -3,7 +3,7 @@
 MenuButton::MenuButton(QString label, QWidget* parent) : QPushButton(label, parent)
 {
     this->label = label;
-    this->setStyleSheet("border: none");
+    this->setStyleSheet("border: none; border-radius: 55px;  padding: 6px;");
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(QColor(70,130,180)));
 }
@@ -17,7 +17,9 @@ QString MenuButton::getLabel(){ return this->label; }
 
 
 void MenuButton::onClick(){
-    this->setStyleSheet("background-color: #A3C1DA; border: none;");
+    //this->setPalette(QPalette(QPalette::dark));
+    this->setPalette(QPalette(Qt::darkBlue));
+    //this->setStyleSheet("background-color: #A3C1DA; border: none;");
     emit setUnclicked(this->label);
     //qDebug() << "dans onClick";
     QStringList myOptions;

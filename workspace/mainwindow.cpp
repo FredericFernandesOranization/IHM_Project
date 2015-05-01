@@ -16,11 +16,12 @@ MainWindow::MainWindow(QWidget *parent) :
     //Separation Left (Command Zone and Swap Button) - Right (UpperMenu and Gallery) with Horizontal Layout
     QHBoxLayout *mainWindowLayout = new QHBoxLayout (mainWindow);
     QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
-    mainWindowLayout->setSpacing(5);
+    mainWindowLayout->setSpacing(3);
 
     //Creating Left Zone (Command Zone and Swap Button)
     LeftZone *leftZone = new LeftZone();
     mainWindowLayout->addWidget(leftZone);
+    //connect(mainWindow, SIGNAL(clicked()), leftZone, SLOT(getUnclicked(QString)));
 
     //Creating Right Zone (UpperMenu and Gallery)
     RightZone *rightZone = new RightZone();

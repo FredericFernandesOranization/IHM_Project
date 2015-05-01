@@ -7,7 +7,7 @@ LeftZone::LeftZone() : QWidget()
     //this->resize(500, 100);
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(QColor(70,130,180)));
-    //this->setStyleSheet("background-color: Orange");
+    //this->setStyleSheet("background-color: rgb(70,130,180)");
     this->setSizePolicy(sizePolicy);
 
     //separation SwapButton - Command Zone
@@ -18,15 +18,17 @@ LeftZone::LeftZone() : QWidget()
 
     //Creating Swap Button
     QPushButton *switchButton = new QPushButton("Switch Button", this);
-    switchButton->setFixedHeight(100);
-    switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Maximum);
-    switchButton->setStyleSheet("background-image: url(:/images/middleEarth.jpg)");
+    //switchButton->setFixedHeight(100);
+    switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     leftVerticalLayout->addWidget(switchButton);
+    switchButton->setStyleSheet("border: none; background-color: orange; border-radius: 100px;  padding: 6px;");
 
     //Creating Left Menu Bar
+    this->buttonLists = QList<MenuButton*>();
     QList<QString> stringMenu = QList<QString>() << QString("Boissons") << QString("Entrees") << QString("Plats") << QString("Desserts");
     for(int i=0; i<4; i++){
         MenuButton *b = new MenuButton(stringMenu.at(i), this);
+        buttonLists.append(b);
         connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
         connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
         b->setFixedWidth(280);
@@ -37,7 +39,16 @@ LeftZone::LeftZone() : QWidget()
 
 void LeftZone::getUnclicked(QString label){
     qDebug() << "receiving SIGNAL from BUTTON!";
-    /*if(this->label != label){
+    for(int i=0; i<4; i++){
+        MenuButton* button = this->buttonLists.at(i);
+        if(button->getLabel().compare(label) == false){
+            qDebug() << "dentro l'if!";
+            //button->setStyleSheet("background-color: rgb(70,130,180)");
+            //this->setAutoFillBackground(true);
+            this->setPalette(QPalette(QColor(70,130,180)));
+        }
+    }
+        /*if(this->label != label){
         this->setAutoFillBackground(true);
         this->setPalette(QPalette(QColor(70,130,180)));
     }*/
