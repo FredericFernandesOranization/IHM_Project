@@ -3,7 +3,8 @@
 
 #include <QDialog>
 #include "database.h"
-#include "listwidget.h"
+#include "listwidgetdeletable.h"
+
 namespace Ui {
 class AllergieDataBaseWindow;
 }

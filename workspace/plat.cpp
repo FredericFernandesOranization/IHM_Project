@@ -2,8 +2,30 @@
 
 int Plat::nbPlat = 0;
 
+
+
 Plat::Plat()
 {
+
+}
+
+Plat::Plat(const Plat &pOther)
+{
+    this->id = pOther.id;
+    this->name = pOther.name;
+    this->type = pOther.type;
+    this->description = pOther.description;
+    this->imagePath = pOther.imagePath;
+    this->shortDescription = pOther.shortDescription;
+    this->price = pOther.price;
+    this->ingredientsList = pOther.ingredientsList;
+    this->possibleAllergiesList = pOther.possibleAllergiesList;
+}
+
+Plat::~Plat()
+{
+    ingredientsList.clear();
+    possibleAllergiesList.clear();
 }
 
 Plat::Plat(QString name, QString description, QString imagePath, QString shortDescription,

@@ -1,20 +1,25 @@
-#ifndef LISTWIDGET_H
-#define LISTWIDGET_H
+#ifndef LISTWIDGETDELETABLE_H
+#define LISTWIDGETDELETABLE_H
 
 #include <QtGui>
 #include <QtCore>
 #include <QMessageBox>
 #include <QListWidget>
 #include <QListWidgetItem>
-class ListWidget  :public QListWidget
+#include "listwidgetdrag.h"
+class ListwidgetDeletable  :public QListWidget
 {
     Q_OBJECT
 public:
-    ListWidget(QWidget *parent = 0);
+    ListwidgetDeletable(QWidget *parent = 0);
+
+    void myAddIten(QString name);
+    void myAddIten(QListWidgetItem *item);
+    QStringList getStrings();
+
 
     QListWidgetItem *getItemSelected() const;
-    void myAddIten(QString name);
-    QStringList getStrings();
+    void setItemSelected(QListWidgetItem *value);
 
 
 protected:

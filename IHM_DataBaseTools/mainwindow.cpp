@@ -9,8 +9,13 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     ingrWindows = new IngredientDataBaseWindow(this);
     ingrWindows->setModal(true);
+
     allergieWindows = new AllergieDataBaseWindow(this);
     allergieWindows->setModal(true);
+
+    dishesWindows = new DishesDataBaseWindow(this);
+    dishesWindows->setModal(true);
+
 }
 
 MainWindow::~MainWindow()
@@ -21,18 +26,15 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_btnLesPlats_clicked()
 {
-    qDebug()<<"test";
+   dishesWindows->show();
 }
 
 void MainWindow::on_btnIngr_clicked()
 {
-    ingrWindows->setModal(true);
     ingrWindows->show();
 }
 
 void MainWindow::on_btnAlle_clicked()
 {
-
-    allergieWindows->setModal(true);
     allergieWindows->show();
 }

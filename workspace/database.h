@@ -39,10 +39,14 @@ public:
 
     void updateAllergies(QStringList listName);
     void updateIngredients(QStringList listName);
+    void updateDishes(QList<Plat> listPlats);
+
+    QString getPathIMG() const;
+
 private:
     void loadDatabase();
     void writeXmlFile(QDomDocument doc,QString path); // for Update Xml file
-
+    QString filterImgPath(const QString path);
 
 
     QDomDocument* openXmlFile(QString path);

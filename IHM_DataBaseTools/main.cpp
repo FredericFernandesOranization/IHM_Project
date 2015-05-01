@@ -1,10 +1,9 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include "allergiedatabasewindow.h"
-#include "editallergiewindow.h"
-#include "editingredientwindow.h"
 #include "ingredientdatabasewindow.h"
 #include "database.h"
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);

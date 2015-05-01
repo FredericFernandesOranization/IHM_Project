@@ -20,9 +20,10 @@ SOURCES += main.cpp\
     allergiedatabasewindow.cpp \
     ingredientdatabasewindow.cpp \
     plat.cpp \
-    listwidget.cpp \
     database.cpp \
-    dishesdatabasewindow.cpp
+    dishesdatabasewindow.cpp \
+    listwidgetdeletable.cpp \
+    listwidgetdrag.cpp
 
 HEADERS  += mainwindow.h \
     editallergiewindow.h \
@@ -30,9 +31,10 @@ HEADERS  += mainwindow.h \
     allergiedatabasewindow.h \
     ingredientdatabasewindow.h \
     plat.h \
-    listwidget.h \
     database.h \
-    dishesdatabasewindow.h
+    dishesdatabasewindow.h \
+    listwidgetdeletable.h \
+    listwidgetdrag.h
 
 FORMS    += mainwindow.ui \
     editallergiewindow.ui \

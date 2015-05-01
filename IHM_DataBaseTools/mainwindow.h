@@ -4,10 +4,8 @@
 #include <QMainWindow>
 
 #include "allergiedatabasewindow.h"
-#include "editallergiewindow.h"
-#include "editingredientwindow.h"
 #include "ingredientdatabasewindow.h"
-
+#include "dishesdatabasewindow.h"
 namespace Ui {
 class MainWindow;
 }
@@ -32,6 +30,7 @@ private:
     Ui::MainWindow *ui;
     AllergieDataBaseWindow *allergieWindows;
     IngredientDataBaseWindow *ingrWindows;
+    DishesDataBaseWindow * dishesWindows;
 };
 
 #endif // MAINWINDOW_H

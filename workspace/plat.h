@@ -4,12 +4,18 @@
 #include <QString>
 #include <QStringList>
 #include <QDebug>
+#include <qdebug.h>
 
+#include <QMetaType>
 class Plat
 {
 
 public:
     Plat();
+    Plat(const Plat &pOther);
+    ~Plat();
+
+
     Plat(QString name, QString description, QString imagePath, QString shortDescription,
          float price, QStringList ingredientsList, QStringList possibleAllergiesList,QString type);
     QString getName() const;
@@ -40,9 +46,9 @@ public:
     void setType(const QString &value);
     virtual QString toString();
 
+    static int nbPlat;
 private:
 
-    static int nbPlat;
     int id;
     QString name;
     QString type; //entrees, plats, boissons, desserts -> ce qui il y aura écrit dans le fichier XML!
@@ -53,5 +59,5 @@ private:
     QStringList ingredientsList;
     QStringList possibleAllergiesList;
 };
-
+Q_DECLARE_METATYPE(Plat)
 #endif // PLAT_H

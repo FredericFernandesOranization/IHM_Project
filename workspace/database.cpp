@@ -27,7 +27,7 @@ void Database::loadDishs()
     QDomDocument *doc = openXmlFile(this->pathDish);
     QDomElement docElem = doc->documentElement();
     QDomNode n = docElem.firstChild();
-
+    Plat::nbPlat=0;
     dishesMap.clear();
     // QDomNode n = openXmlFile(this->pathDish)
     int nbDishes = 0;
@@ -43,7 +43,7 @@ void Database::loadDishs()
             QString desc = e.firstChildElement("description").text().simplified();
             QString shortDesc = e.firstChildElement("shortDescription").text().simplified();
             QString imagePath = e.firstChildElement("imagePath").text().simplified();
-            imagePath = pathIMG+imagePath;
+            imagePath = filterImgPath(imagePath);
             float price = e.firstChildElement("price").text().toFloat();
             QStringList ingredientsList = getListsInXML(e.firstChildElement("ingredientsList"));
             QStringList possibleAllergiesList = getListsInXML(e.firstChildElement("possibleAllergiesList"));
@@ -55,17 +55,17 @@ void Database::loadDishs()
     this->nbDishes = nbDishes;
 
     // just for verification
-    //    foreach (QString type , dishesMap.keys()){
-    //        qDebug() << "~~~~~~~~~~~~Liste des plats de type : "<< type <<"~~~~~~~~~~~~~~";
-    //        QList<Plat*> listPlat = dishesMap[type];
-    //        foreach (Plat* plat, listPlat){
-    //            qDebug() << plat->toString() << endl;
+    //        foreach (QString type , dishesMap.keys()){
+    //            qDebug() << "~~~~~~~~~~~~Liste des plats de type : "<< type <<"~~~~~~~~~~~~~~";
+    //            QList<Plat*> listPlat = dishesMap[type];
+    //            foreach (Plat* plat, listPlat){
+    //                qDebug() << plat->toString() << endl;
+    //            }
     //        }
-    //    }
 
-    //    foreach (QList<Plat*> listPlat, dishesMap)
-    //        foreach (Plat* plat, listPlat)
-    //            qDebug() << plat->toString() << endl;
+    //        foreach (QList<Plat*> listPlat, dishesMap)
+    //            foreach (Plat* plat, listPlat)
+    //                qDebug() << plat->toString() << endl;
 }
 
 void Database::loadAllergies()
@@ -115,6 +115,15 @@ void Database::writeXmlFile(QDomDocument doc,QString path )
     fichier.close();
 }
 
+QString Database::filterImgPath(const QString path)
+{
+    QString newpath(path);
+    if(!path.contains("/")){
+         newpath = pathIMG+path;
+    }
+    return newpath;
+}
+
 
 
 QDomDocument* Database::openXmlFile(QString path)
@@ -136,6 +145,11 @@ QDomDocument* Database::openXmlFile(QString path)
 
     return new QDomDocument(doc);
 }
+QString Database::getPathIMG() const
+{
+    return pathIMG;
+}
+
 QStringList Database::getClientIngredientsList() const
 {
     return clientIngredientsList;
@@ -226,6 +240,43 @@ void Database::updateIngredients(QStringList listName)
     xmlWriter.writeStartElement("lesIngredients");
     foreach (QString s , listName){
         xmlWriter.writeTextElement("name",s.simplified());
+    }
+    xmlWriter.writeEndElement();
+
+    file.close();
+}
+
+void Database::updateDishes(QList<Plat> listPlats)
+{
+    qDebug() << "update Ingredients ...";
+    QFile file(pathDish);
+    file.open(QIODevice::WriteOnly);
+    QXmlStreamWriter xmlWriter(&file);
+    xmlWriter.setAutoFormatting(true);
+    xmlWriter.writeStartDocument();
+    xmlWriter.writeStartElement("lesPlats");
+    foreach (Plat p, listPlats)
+    {
+        xmlWriter.writeStartElement("plat");
+        xmlWriter.writeTextElement("name",p.getName().simplified());
+        xmlWriter.writeTextElement("type",p.getType());
+        xmlWriter.writeTextElement("description",p.getDescription());
+        xmlWriter.writeTextElement("shortDescription",p.getShortDescription());
+        xmlWriter.writeTextElement("imagePath",p.getImagePath());
+        xmlWriter.writeTextElement("price",QString::number(p.getPrice()));
+
+        xmlWriter.writeStartElement("ingredientsList");
+        foreach (QString ing, p.getIngredientsList()) {
+            xmlWriter.writeTextElement("ingredient",ing);
+        }
+        xmlWriter.writeEndElement();
+
+        xmlWriter.writeStartElement("possibleAllergiesList");
+        foreach (QString all, p.getPossibleAllergiesList()) {
+            xmlWriter.writeTextElement("possibleAllergie",all);
+        }
+        xmlWriter.writeEndElement();
+        xmlWriter.writeEndElement();
     }
     xmlWriter.writeEndElement();
 

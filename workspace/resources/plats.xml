@@ -1,95 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- for <type/> use only : 
-	"boisson"
-	"entree"
-	"plat"
-	"dessert" 
-Template :
-	<plat>
-		<name> </name>
-                <type> </type>
- 		<description> </description>
-		<shortDescription> </shortDescription>
-  		<imagePath></imagePath> // name of image in "imagesPlats" dir
-		<price> </price>
-		<ingredientsList>
-			<ingredient> </ingredient>
-			<ingredient> </ingredient>
-			<ingredient> </ingredient>
-		</ingredientsList>
-		<possibleAllergiesList>
-			<possibleAllergie> </possibleAllergie>
-			<possibleAllergie> </possibleAllergie>
-		</possibleAllergiesList>
-	</plat>
--->
 <lesPlats>
-	<plat>
-		<name>Plat_1</name>
-                <type>Boissons</type>
- 		<description> description_1</description>
-		<shortDescription>shortDescription_1</shortDescription>
-  		<imagePath> plat1.jpg </imagePath>
-		<price>15.9</price>
-		<ingredientsList>
-			<ingredient> ingredient1_1 </ingredient>
-			<ingredient> ingredient1_2</ingredient>
-			<ingredient> ingredient1_3</ingredient>
-		</ingredientsList>
-		<possibleAllergiesList>
-			<possibleAllergie>possibleAllergie1_1</possibleAllergie>
-			<possibleAllergie>possibleAllergie1_2</possibleAllergie>
-		</possibleAllergiesList>
-	</plat>
-	<plat>
-		<name> Plat_2</name>
-                <type>Entrees</type>
- 		<description> description_2</description>
-		<shortDescription>shortDescription_2</shortDescription>
-  		<imagePath>plat2.jpg</imagePath>
-		<price> 32.9</price>
-		<ingredientsList>
-			<ingredient> ingredient2_1 </ingredient>
-			<ingredient> ingredient2_2</ingredient>
-			<ingredient> ingredient2_3</ingredient>
-		</ingredientsList>
-		<possibleAllergiesList>
-			<possibleAllergie>possibleAllergie2_1</possibleAllergie>
-			<possibleAllergie>possibleAllergie2_2</possibleAllergie>
-		</possibleAllergiesList>
-	</plat>
-	<plat>
-		<name> Plat_2</name>
-                <type>Plats</type>
- 		<description> description_2</description>
-		<shortDescription>shortDescription_2</shortDescription>
-  		<imagePath>plat2.jpg</imagePath>
-		<price> 32.9</price>
-		<ingredientsList>
-			<ingredient> ingredient2_1 </ingredient>
-			<ingredient> ingredient2_2</ingredient>
-			<ingredient> ingredient2_3</ingredient>
-		</ingredientsList>
-		<possibleAllergiesList>
-			<possibleAllergie>possibleAllergie2_1</possibleAllergie>
-			<possibleAllergie>possibleAllergie2_2</possibleAllergie>
-		</possibleAllergiesList>
-	</plat>
-	<plat>
-		<name> Plat_2</name>
-                <type>Desserts</type>
- 		<description> description_2</description>
-		<shortDescription>shortDescription_2</shortDescription>
-  		<imagePath>plat1.jpg</imagePath>
-		<price> 32.9</price>
-		<ingredientsList>
-			<ingredient> ingredient2_1 </ingredient>
-			<ingredient> ingredient2_2</ingredient>
-			<ingredient> ingredient2_3</ingredient>
-		</ingredientsList>
-		<possibleAllergiesList>
-			<possibleAllergie>possibleAllergie2_1</possibleAllergie>
-			<possibleAllergie>possibleAllergie2_2</possibleAllergie>
-		</possibleAllergiesList>
-	</plat>
+    <plat>
+        <name>Plat_1</name>
+        <type>Boissons</type>
+        <description>description_1</description>
+        <shortDescription>shortDescription_1</shortDescription>
+        <imagePath>../workspace/resources/imagesPlats/plat1.jpg</imagePath>
+        <price>15.9</price>
+        <ingredientsList>
+            <ingredient>ingredient1_1</ingredient>
+            <ingredient>ingredient1_2</ingredient>
+            <ingredient>ingredient1_3</ingredient>
+        </ingredientsList>
+        <possibleAllergiesList>
+            <possibleAllergie>possibleAllergie1_1</possibleAllergie>
+            <possibleAllergie>possibleAllergie1_2</possibleAllergie>
+        </possibleAllergiesList>
+    </plat>
+    <plat>
+        <name>Plat_2</name>
+        <type>Entrees</type>
+        <description>description_2</description>
+        <shortDescription>shortDescription_2</shortDescription>
+        <imagePath>../workspace/resources/imagesPlats/plat2.jpg</imagePath>
+        <price>32.9</price>
+        <ingredientsList>
+            <ingredient>ingredient2_1</ingredient>
+            <ingredient>ingredient2_2</ingredient>
+            <ingredient>ingredient2_3</ingredient>
+        </ingredientsList>
+        <possibleAllergiesList>
+            <possibleAllergie>possibleAllergie2_1</possibleAllergie>
+            <possibleAllergie>possibleAllergie2_2</possibleAllergie>
+        </possibleAllergiesList>
+    </plat>
+    <plat>
+        <name>Plat_3</name>
+        <type>Plats</type>
+        <description>description_2</description>
+        <shortDescription>shortDescription_2</shortDescription>
+        <imagePath>../workspace/resources/imagesPlats/plat2.jpg</imagePath>
+        <price>32.9</price>
+        <ingredientsList>
+            <ingredient>ingredient2_1</ingredient>
+            <ingredient>ingredient2_2</ingredient>
+            <ingredient>ingredient2_3</ingredient>
+        </ingredientsList>
+        <possibleAllergiesList>
+            <possibleAllergie>possibleAllergie2_1</possibleAllergie>
+            <possibleAllergie>possibleAllergie2_2</possibleAllergie>
+        </possibleAllergiesList>
+    </plat>
+    <plat>
+        <name>Plat_4</name>
+        <type>Desserts</type>
+        <description>description_2</description>
+        <shortDescription>shortDescription_2</shortDescription>
+        <imagePath>../workspace/resources/imagesPlats/Desserts/tiramisu.jpg</imagePath>
+        <price>32.9</price>
+        <ingredientsList>
+            <ingredient>ingredient2_1</ingredient>
+            <ingredient>ingredient2_2</ingredient>
+            <ingredient>ingredient2_3</ingredient>
+        </ingredientsList>
+        <possibleAllergiesList>
+            <possibleAllergie>possibleAllergie2_1</possibleAllergie>
+            <possibleAllergie>possibleAllergie2_2</possibleAllergie>
+        </possibleAllergiesList>
+    </plat>
+    <plat>
+        <name>Salade crevettes</name>
+        <type>Entrees</type>
+        <description>desciption ici</description>
+        <shortDescription></shortDescription>
+        <imagePath>../workspace/resources/imagesPlats/Entrees/salade_crevettes.jpg</imagePath>
+        <price>14.74</price>
+        <ingredientsList>
+            <ingredient>ingredients_1</ingredient>
+            <ingredient>ingredients_3</ingredient>
+        </ingredientsList>
+        <possibleAllergiesList>
+            <possibleAllergie>Allergy_1</possibleAllergie>
+            <possibleAllergie>Allergy_2</possibleAllergie>
+        </possibleAllergiesList>
+    </plat>
+    <plat>
+        <name>Nouveau plat 5</name>
+        <type>Boissons</type>
+        <description>Mettez votre desciption ici</description>
+        <shortDescription></shortDescription>
+        <imagePath></imagePath>
+        <price>0</price>
+        <ingredientsList/>
+        <possibleAllergiesList/>
+    </plat>
 </lesPlats>

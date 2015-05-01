@@ -10,8 +10,20 @@
     <height>260</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>440</width>
+    <height>260</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>440</width>
+    <height>260</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Géstion des allérgies</string>
   </property>
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
@@ -103,7 +115,7 @@
        </widget>
       </item>
       <item>
-       <widget class="ListWidget" name="listAllergiesDataBase"/>
+       <widget class="ListwidgetDeletable" name="listAllergiesDataBase"/>
       </item>
      </layout>
     </item>
@@ -112,9 +124,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>ListWidget</class>
+   <class>ListwidgetDeletable</class>
    <extends>QListWidget</extends>
-   <header location="global">listwidget.h</header>
+   <header location="global">listwidgetdeletable.h</header>
   </customwidget>
  </customwidgets>
  <resources/>
