@@ -178,7 +178,6 @@ QList<Plat *> Database::filterType(QString type)
     Q_ASSERT(dishesMap.contains(type)); // crash if dishesMap doesn't containstype
     return this->dishesMap[type];
     //qCritical() << "WARNING : dishesMap doesn't contains : "<< type << " !!";
-
 }
 
 QList<Plat *> Database::getDrinks()
