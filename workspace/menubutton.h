@@ -6,6 +6,7 @@
 #include <QWidget>
 #include "gallerieslayout.h"
 #include <qdebug.h>
+#include <QObject>
 
 
 class MenuButton : public QPushButton
@@ -17,6 +18,9 @@ public:
 
 public slots:
     void onClick();
+    void getUnclicked(QString label);
+signals:
+    void setUnclickedFred(QString label);
 private:
     QString label;
 

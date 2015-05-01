@@ -44,6 +44,4 @@ RightZone::RightZone() : QWidget()
     for(int i=0; i<4; i++){
        galleriesLayout->addWidget(new Gallery(galleriesLabels.at(i)));
     }
-
-
 }

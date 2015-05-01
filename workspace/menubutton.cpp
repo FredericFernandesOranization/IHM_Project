@@ -3,9 +3,9 @@
 MenuButton::MenuButton(QString label, QWidget* parent) : QPushButton(label, parent)
 {
     this->label = label;
-    this->setStyleSheet("background-color: #A3C1DA; border: none;");
-    //this->setAutoFillBackground(true);
-    //this->setPalette(QPalette(QColor(70,130,180)));
+    this->setStyleSheet("border: none");
+    this->setAutoFillBackground(true);
+    this->setPalette(QPalette(QColor(70,130,180)));
 }
 
 MenuButton::~MenuButton()
@@ -13,7 +13,17 @@ MenuButton::~MenuButton()
 
 }
 
+void MenuButton::getUnclicked(QString label){
+    qDebug() << "getUnclicked SIGNAL";
+    if(this->label != label){
+        this->setAutoFillBackground(true);
+        this->setPalette(QPalette(QColor(70,130,180)));
+    }
+}
+
 void MenuButton::onClick(){
+    this->setStyleSheet("background-color: #A3C1DA; border: none;");
+    emit setUnclickedFred(this->label);
     //qDebug() << "dans onClick";
     QStringList myOptions;
     myOptions << "Entrees" << "Boissons" << "Plats" << "Desserts";

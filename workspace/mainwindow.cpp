@@ -12,8 +12,6 @@ MainWindow::MainWindow(QWidget *parent) :
     mainWindow->setMinimumSize(1000,550);
     mainWindow->setAutoFillBackground(true);
     mainWindow->setPalette(QPalette(Qt::gray));
-    //mainWindow->setStyleSheet("background-color: Grey");
-    //mainWindow->setStyleSheet("background-image: url(:/images/lightB.png)");
 
     //Separation Left (Command Zone and Swap Button) - Right (UpperMenu and Gallery) with Horizontal Layout
     QHBoxLayout *mainWindowLayout = new QHBoxLayout (mainWindow);

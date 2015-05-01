@@ -66,92 +66,12 @@
 	</plat>
 	 
 	<plat>
-		<name>vin_blanc</name>
-		<type>Boissons</type>
-		<description>description</description>
-		<shortDescription>Verre 35 cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_blanc.jpg</imagePath>
-		<price>5.5</price>
-		<ingredientsList>
-			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>cafe</name>
-		<type>Boissons</type>
-		<description>description</description>
-		<shortDescription>Expresso</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/cafe.jpg</imagePath>
-		<price>2.2</price>
-		<ingredientsList>
-			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
 		<name>coca_cola</name>
 		<type>Boissons</type>
 		<description>description</description>
-		<shortDescription>Canette 35cl</shortDescription>
+		<shortDescription>shortDescription</shortDescription>
 		<imagePath>../workspace/resources/imagesPlats/Boissons/coca_cola.jpg</imagePath>
-		<price>2</price>
-		<ingredientsList>
-			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>evian</name>
-		<type>Boissons</type>
-		<description>description</description>
-		<shortDescription>Bouteille 35 cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/evian.jpg</imagePath>
-		<price>2.5</price>
-		<ingredientsList>
-			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>sprite</name>
-		<type>Boissons</type>
-		<description>description</description>
-		<shortDescription>Canette 35cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/sprite.jpg</imagePath>
-		<price>2</price>
-		<ingredientsList>
-			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>fanta</name>
-		<type>Boissons</type>
-		<description>description</description>
-		<shortDescription>Canette 35cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/fanta.jpg</imagePath>
-		<price>2</price>
+		<price>price</price>
 		<ingredientsList>
 			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
 		</ingredientsList>
@@ -168,22 +88,6 @@
 		<shortDescription>shortDescription</shortDescription>
 		<imagePath>../workspace/resources/imagesPlats/Boissons/ice_the_mangue.jpg</imagePath>
 		<price>price</price>
-		<ingredientsList>
-			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>vin_rouge</name>
-		<type>Boissons</type>
-		<description>description</description>
-		<shortDescription>Verre 35 cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_rouge.jpg</imagePath>
-		<price>5.5</price>
 		<ingredientsList>
 			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
 		</ingredientsList>
