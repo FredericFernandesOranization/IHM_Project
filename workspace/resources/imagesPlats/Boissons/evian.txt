@@ -1,10 +1,10 @@
-coca_cola
+evian
 
 description
 
-Canette 35cl
+Bouteille 35 cl
 
-2
+2.5
 
 ing1;ing2;ing3
 

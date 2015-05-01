@@ -1,0 +1,11 @@
+pasta_carbonara
+
+description
+
+shortDescription
+
+12
+
+De lardon;Des oignos;Des œufs;La crème légère;De parmesan
+
+all1;all2;all3

@@ -64,14 +64,15 @@
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
+
 	 
 	<plat>
 		<name>coca_cola</name>
 		<type>Boissons</type>
 		<description>description</description>
-		<shortDescription>shortDescription</shortDescription>
+		<shortDescription>Coca cola 35 cl</shortDescription>
 		<imagePath>../workspace/resources/imagesPlats/Boissons/coca_cola.jpg</imagePath>
-		<price>price</price>
+		<price>2</price>
 		<ingredientsList>
 			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
 		</ingredientsList>

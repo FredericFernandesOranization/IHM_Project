@@ -1,10 +1,10 @@
-coca_cola
+cafe
 
 description
 
-Canette 35cl
+Expresso
 
-2
+2.2
 
 ing1;ing2;ing3
 
