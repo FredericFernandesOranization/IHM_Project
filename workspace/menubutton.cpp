@@ -13,17 +13,12 @@ MenuButton::~MenuButton()
 
 }
 
-void MenuButton::getUnclicked(QString label){
-    qDebug() << "getUnclicked SIGNAL";
-    if(this->label != label){
-        this->setAutoFillBackground(true);
-        this->setPalette(QPalette(QColor(70,130,180)));
-    }
-}
+QString MenuButton::getLabel(){ return this->label; }
+
 
 void MenuButton::onClick(){
     this->setStyleSheet("background-color: #A3C1DA; border: none;");
-    emit setUnclickedFred(this->label);
+    emit setUnclicked(this->label);
     //qDebug() << "dans onClick";
     QStringList myOptions;
     myOptions << "Entrees" << "Boissons" << "Plats" << "Desserts";

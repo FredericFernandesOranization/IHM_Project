@@ -15,12 +15,12 @@ class MenuButton : public QPushButton
 public:
     MenuButton(QString label, QWidget* parent=0);
     ~MenuButton();
+    QString getLabel();
 
 public slots:
     void onClick();
-    void getUnclicked(QString label);
 signals:
-    void setUnclickedFred(QString label);
+    void setUnclicked(QString label);
 private:
     QString label;
 
