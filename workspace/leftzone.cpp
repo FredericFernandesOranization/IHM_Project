@@ -27,18 +27,25 @@ LeftZone::LeftZone() : QWidget()
     QList<QString> stringMenu = QList<QString>() << QString("Boissons") << QString("Entrees") << QString("Plats") << QString("Desserts");
     for(int i=0; i<4; i++){
         MenuButton *b = new MenuButton(stringMenu.at(i), this);
-        connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
-        connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
+        //connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
+        //connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
+        connect(b,SIGNAL(clicked()),this,SLOT(test()));
         b->setFixedWidth(280);
         b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
         leftVerticalLayout->addWidget(b);
     }
 }
 
-void LeftZone::getUnclicked(QString label){
+void LeftZone::getUnclicked(QString label)
+{
     qDebug() << "receiving SIGNAL from BUTTON!";
     /*if(this->label != label){
         this->setAutoFillBackground(true);
         this->setPalette(QPalette(QColor(70,130,180)));
     }*/
+}
+
+void LeftZone::test()
+{
+
 }

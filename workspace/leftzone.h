@@ -12,10 +12,13 @@
 
 class LeftZone : public QWidget
 {
+    Q_OBJECT
 public:
     LeftZone();
-public slots:
+
+private slots:
     void getUnclicked(QString label);
+    void test();
 };
 
 #endif // LEFTZONE_H
