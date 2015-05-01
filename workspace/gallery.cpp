@@ -31,7 +31,7 @@ Gallery::Gallery(QString type) : QWidget()
 {
     //Gallery Properties
     this->setAutoFillBackground(true);
-    this->setPalette(QPalette(Qt::blue));
+    this->setPalette(QPalette(QColor(70,130,180)));
     this->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
     //Gallery Layout

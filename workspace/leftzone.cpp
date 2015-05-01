@@ -5,8 +5,9 @@ LeftZone::LeftZone() : QWidget()
     //Left Zone Properties
     QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
     this->resize(500, 100);
-    this->setStyleSheet("background-color: Orange");
-        //leftZone->setStyleSheet("background-image: url(:/images/lightB.png)");
+    this->setAutoFillBackground(true);
+    this->setPalette(QPalette(QColor(70,130,180)));
+    //this->setStyleSheet("background-color: Orange");
     this->setSizePolicy(sizePolicy);
 
     //separation SwapButton - Command Zone

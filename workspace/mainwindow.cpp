@@ -10,12 +10,15 @@ MainWindow::MainWindow(QWidget *parent) :
     //Creation Main Window
     QWidget *mainWindow = new QWidget();
     mainWindow->setMinimumSize(1000,550);
-    mainWindow->setStyleSheet("background-color: Red");
-    mainWindow->setStyleSheet("background-image: url(:/images/lightB.png)");
+    mainWindow->setAutoFillBackground(true);
+    mainWindow->setPalette(QPalette(Qt::gray));
+    //mainWindow->setStyleSheet("background-color: Grey");
+    //mainWindow->setStyleSheet("background-image: url(:/images/lightB.png)");
 
     //Separation Left (Command Zone and Swap Button) - Right (UpperMenu and Gallery) with Horizontal Layout
     QHBoxLayout *mainWindowLayout = new QHBoxLayout (mainWindow);
     QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
+    mainWindowLayout->setSpacing(5);
 
     //Creating Left Zone (Command Zone and Swap Button)
     LeftZone *leftZone = new LeftZone();

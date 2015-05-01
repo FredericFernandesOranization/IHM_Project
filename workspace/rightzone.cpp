@@ -3,22 +3,22 @@
 RightZone::RightZone() : QWidget()
 {
     //RightZone Properties
-    this->resize(1000,50);
+    //this->resize(1000,50);
     //this->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
-    //this->setStyleSheet("background-color: Yellow");
     this->setAutoFillBackground(true);
-    this->setPalette(QPalette(Qt::yellow));
-    //this->setStyleSheet("background-image: url(:/images/lightB.png)");
+    this->setPalette(QPalette(Qt::gray));
 
     //Separation UpperMenu - Gallery
     QVBoxLayout *rightVerticalLayout = new QVBoxLayout;
+    rightVerticalLayout->setSpacing(5);
     this->setLayout(rightVerticalLayout);
 
     //Creation UpperMenu
     QHBoxLayout *upperMenuHorizontalLayout = new QHBoxLayout; //creation Layout Menu
-    //upperMenuHorizontalLayout->setSpacing(0);
 
     QWidget *upperMenu = new QWidget;
+    upperMenu->setAutoFillBackground(true);
+    upperMenu->setPalette(QPalette(QColor(70,130,180)));
     upperMenu->setStyleSheet("padding : 0 ; margin : 0");
     //upperMenu->setFixedHeight(100);
     upperMenu->setLayout(upperMenuHorizontalLayout);
