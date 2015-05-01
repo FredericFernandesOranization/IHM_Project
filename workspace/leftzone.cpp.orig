@@ -28,13 +28,24 @@ LeftZone::LeftZone() : QWidget()
     QList<QString> stringMenu = QList<QString>() << QString("Boissons") << QString("Entrees") << QString("Plats") << QString("Desserts");
     for(int i=0; i<4; i++){
         MenuButton *b = new MenuButton(stringMenu.at(i), this);
+<<<<<<< HEAD
+<<<<<<< HEAD
         buttonLists.append(b);
         connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
         connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
-
+=======
         //connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
         //connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
-
+        connect(b,SIGNAL(clicked()),this,SLOT(test()));
+>>>>>>> 3e7768cfc11cda64c20e2f1083b52d5fc27da223
+||||||| merged common ancestors
+        //connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
+        //connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
+        connect(b,SIGNAL(clicked()),this,SLOT(test()));
+=======
+        connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
+        connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
+>>>>>>> 8757284eaeac6c2bdd6be628d8b85bb7a1dbc2e2
         b->setFixedWidth(280);
         b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
         leftVerticalLayout->addWidget(b);
