@@ -21,7 +21,7 @@ LeftZone::LeftZone() : QWidget()
     //switchButton->setFixedHeight(100);
     switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     leftVerticalLayout->addWidget(switchButton);
-    switchButton->setStyleSheet("border: none; background-color: orange; border-radius: 100px;  padding: 6px;");
+    switchButton->setStyleSheet("border: none; background-color: orange; padding: 6px;");
 
     //Creating Left Menu Bar
     this->buttonLists = QList<MenuButton*>();
