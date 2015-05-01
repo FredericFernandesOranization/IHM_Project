@@ -9,7 +9,8 @@ Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *pare
     ImageLabel* image = new ImageLabel(plat, imgSizeW, imgSizeH, background, this);
 
     //creating short description
-    QLabel *labelShortDesc = new QLabel(plat.getShortDescription(),this);
+    QLabel *labelShortDesc = new QLabel(plat.getName(),this);
+    //QLabel *labelShortDesc = new QLabel(plat.getShortDescription(),this);
     QFont shortDescFont("Helvetica", 12);
     labelShortDesc->setFont(shortDescFont);
     labelShortDesc->setPalette(QPalette(Qt::white));

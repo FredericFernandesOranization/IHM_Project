@@ -12,11 +12,18 @@
 #include "plat.h"
 
 class ImageLabel : public QLabel{
-    //Q_OBJECT
+    Q_OBJECT
 public:
     ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent);
 private slots:
     void paintEvent(QPaintEvent *e);
+
+signals:
+    void clicked();
+
+protected:
+    void mousePressEvent(QMouseEvent * event);
+private:
     QString imagePath;
     QImage* img;
     int imgSizeW;

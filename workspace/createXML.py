@@ -1,7 +1,13 @@
-#!/usr/bin/python2.7
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
 from jinja2 import Template
 import glob
 import os
+
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class ListePlats:
 	def __init__(self, repertoirePlats):

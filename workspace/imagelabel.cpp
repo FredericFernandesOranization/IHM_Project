@@ -21,6 +21,13 @@ ImageLabel::ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, Q
     setFixedSize(imgSizeW+27,imgSizeH+10);
 }
 
+void ImageLabel::mousePressEvent(QMouseEvent * event){
+    qDebug() << "clicked on image";
+    emit clicked();
+}
+
+
+
 void ImageLabel::paintEvent(QPaintEvent *)
 {
     QColor orange(255,165,0,255);
