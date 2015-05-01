@@ -15,10 +15,15 @@ class LeftZone : public QWidget
     Q_OBJECT
 public:
     LeftZone();
-public slots:
+
+private slots:
     void getUnclicked(QString label);
+<<<<<<< HEAD
 private:
     QList<MenuButton*> buttonLists;
+=======
+    void test();
+>>>>>>> 3e7768cfc11cda64c20e2f1083b52d5fc27da223
 };
 
 #endif // LEFTZONE_H
