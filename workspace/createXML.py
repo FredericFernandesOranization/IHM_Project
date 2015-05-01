@@ -1,3 +1,4 @@
+#!/usr/bin/python2.7
 from jinja2 import Template
 import glob
 import os
@@ -33,11 +34,11 @@ class ListePlats:
 		for dirname, dirnames, filenames in os.walk(self.repertoirePlats):
 			for dir in dirnames:
 				imageDirs.append(dir)
-		print "lista dirs: ", imageDirs 
+		#print "liste dirs: ", imageDirs 
 
 		for imageDir in imageDirs:
 			imagesList = glob.glob(self.repertoirePlats + imageDir + "/" + "*.jpg")
-			print "lista images: \n", imagesList
+			#print "liste images: \n", imagesList
 			for image in imagesList:
 				imageInfoPath = image.replace(".jpg", ".txt")
 				imageInfo = open(imageInfoPath).read().split("\n\n")
