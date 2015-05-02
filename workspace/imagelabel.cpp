@@ -2,9 +2,9 @@
 
 ImageLabel::ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent): QLabel(parent)
 {
-
     this->imgSizeW= imgSizeW;
     this->imgSizeH= imgSizeH;
+    this->plat = plat;
 
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(background));
@@ -23,7 +23,7 @@ ImageLabel::ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, Q
 
 void ImageLabel::mousePressEvent(QMouseEvent * event){
     qDebug() << "clicked on image";
-    emit clicked();
+    emit clickedImage(this->plat);
 }
 
 

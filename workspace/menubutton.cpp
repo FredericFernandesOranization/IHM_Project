@@ -23,7 +23,7 @@ void MenuButton::onClick(){
     emit setUnclicked(this->label);
     //qDebug() << "dans onClick";
     QStringList myOptions;
-    myOptions << "Entrees" << "Boissons" << "Plats" << "Desserts";
+    myOptions << "Entrees" << "Boissons" << "Plats" << "Desserts" << "Back";
     //qDebug() << this->label;
     qDebug() << myOptions.indexOf(this->label);
     switch(myOptions.indexOf(this->label)){

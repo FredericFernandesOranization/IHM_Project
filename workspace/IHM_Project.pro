@@ -24,7 +24,9 @@ SOURCES += main.cpp\
     flowlayout.cpp \
     menubutton.cpp \
     imagelabel.cpp \
-    gallerieslayout.cpp
+    gallerieslayout.cpp \
+    detaileditem.cpp \
+    backbutton.cpp
     imagelabel.cpp
 
 HEADERS  += mainwindow.h \
@@ -37,7 +39,9 @@ HEADERS  += mainwindow.h \
     flowlayout.h \
     menubutton.h \
     imagelabel.h \
-    gallerieslayout.h
+    gallerieslayout.h \
+    detaileditem.h \
+    backbutton.h
     imagelabel.h
 
 FORMS    += mainwindow.ui
