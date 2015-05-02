@@ -1,511 +1,419 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lesPlats>
-    <plat>
-        <name>tiramisu</name>
-        <type>Desserts</type>
-        <description>description</description>
-        <shortDescription>Tiramisu</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Desserts/tiramisu.jpg</imagePath>
-        <price>7</price>
-        <ingredientsList>
-            <ingredient>De mascarpone</ingredient>
-            <ingredient>Des oeufs</ingredient>
-            <ingredient>De lait</ingredient>
-            <ingredient>De chocolat</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>lait</possibleAllergie>
-            <possibleAllergie>fromage</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>mousse_chocolat</name>
-        <type>Desserts</type>
-        <description>description</description>
-        <shortDescription>Mousse de Chocolat</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Desserts/mousse_chocolat.jpg</imagePath>
-        <price>7</price>
-        <ingredientsList>
-            <ingredient>De chocolat noir</ingredient>
-            <ingredient>De beurre</ingredient>
-            <ingredient>Des oeufs</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>lait</possibleAllergie>
-            <possibleAllergie>oeuf</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>creme_brulee</name>
-        <type>Desserts</type>
-        <description>description</description>
-        <shortDescription>Crème Brûlée</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Desserts/creme_brulee.jpg</imagePath>
-        <price>7</price>
-        <ingredientsList>
-            <ingredient>Des oeufs</ingredient>
-            <ingredient>De lait</ingredient>
-            <ingredient>De crème entière</ingredient>
-            <ingredient>De vainille</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>lait</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>tarte_pomme</name>
-        <type>Desserts</type>
-        <description>description</description>
-        <shortDescription>Tarte aux pommes</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Desserts/tarte_pomme.jpg</imagePath>
-        <price>5</price>
-        <ingredientsList>
-            <ingredient>De pomme</ingredient>
-            <ingredient>Des oeufs</ingredient>
-            <ingredient>De crème liquide</ingredient>
-            <ingredient>De cannelle</ingredient>
-            <ingredient>De vanille</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>oeuf</possibleAllergie>
-            <possibleAllergie>lait</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>salade_fruits</name>
-        <type>Desserts</type>
-        <description>description</description>
-        <shortDescription>Salade des fruits</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Desserts/salade_fruits.jpg</imagePath>
-        <price>5</price>
-        <ingredientsList>
-            <ingredient>De pomme</ingredient>
-            <ingredient>De melon</ingredient>
-            <ingredient>De poire</ingredient>
-            <ingredient>De framboise</ingredient>
-            <ingredient>De banane</ingredient>
-            <ingredient>De juis d'orange</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>evian</name>
-        <type>Boissons</type>
-        <description>description</description>
-        <shortDescription>Bouteille 35 cl</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Boissons/evian.jpg</imagePath>
-        <price>2.5</price>
-        <ingredientsList>
-            <ingredient>ing1</ingredient>
-            <ingredient>ing2</ingredient>
-            <ingredient>ing3</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>coca_cola</name>
-        <type>Boissons</type>
-        <description>description</description>
-        <shortDescription>Canette 35cl</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Boissons/coca_cola.jpg</imagePath>
-        <price>2</price>
-        <ingredientsList>
-            <ingredient>ing1</ingredient>
-            <ingredient>ing2</ingredient>
-            <ingredient>ing3</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>ice_the_mangue</name>
-        <type>Boissons</type>
-        <description>description</description>
-        <shortDescription>shortDescription</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Boissons/ice_the_mangue.jpg</imagePath>
-        <price>0</price>
-        <ingredientsList>
-            <ingredient>ing1</ingredient>
-            <ingredient>ing2</ingredient>
-            <ingredient>ing3</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>cafe</name>
-        <type>Boissons</type>
-        <description>description</description>
-        <shortDescription>Expresso</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Boissons/cafe.jpg</imagePath>
-        <price>2.2</price>
-        <ingredientsList>
-            <ingredient>ing1</ingredient>
-            <ingredient>ing2</ingredient>
-            <ingredient>ing3</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>fanta</name>
-        <type>Boissons</type>
-        <description>description</description>
-        <shortDescription>Canette 35cl</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Boissons/fanta.jpg</imagePath>
-        <price>2</price>
-        <ingredientsList>
-            <ingredient>ing1</ingredient>
-            <ingredient>ing2</ingredient>
-            <ingredient>ing3</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>vin_blanc</name>
-        <type>Boissons</type>
-        <description>description</description>
-        <shortDescription>Verre 35 cl</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Boissons/vin_blanc.jpg</imagePath>
-        <price>5.5</price>
-        <ingredientsList>
-            <ingredient>ing1</ingredient>
-            <ingredient>ing2</ingredient>
-            <ingredient>ing3</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>sprite</name>
-        <type>Boissons</type>
-        <description>description</description>
-        <shortDescription>Canette 35cl</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Boissons/sprite.jpg</imagePath>
-        <price>2</price>
-        <ingredientsList>
-            <ingredient>ing1</ingredient>
-            <ingredient>ing2</ingredient>
-            <ingredient>ing3</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>vin_rouge</name>
-        <type>Boissons</type>
-        <description>description</description>
-        <shortDescription>Verre 35 cl</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Boissons/vin_rouge.jpg</imagePath>
-        <price>5.5</price>
-        <ingredientsList>
-            <ingredient>ing1</ingredient>
-            <ingredient>ing2</ingredient>
-            <ingredient>ing3</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>charc_mixtes</name>
-        <type>Entrees</type>
-        <description>description</description>
-        <shortDescription>Charcuteries Mixtes</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Entrees/charcuteries_mixtes.jpg</imagePath>
-        <price>6</price>
-        <ingredientsList>
-            <ingredient>De jambon blanc</ingredient>
-            <ingredient>De salami</ingredient>
-            <ingredient>De viande séchée</ingredient>
-            <ingredient>De roti de boeuf et de porc</ingredient>
-            <ingredient>De salade</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>oeufs_farcis</name>
-        <type>Entrees</type>
-        <description>description</description>
-        <shortDescription>Oeufs farcis à la crème d'ail</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Entrees/oeufs_farcis.jpg</imagePath>
-        <price>6</price>
-        <ingredientsList>
-            <ingredient>Des oeufs</ingredient>
-            <ingredient>D'ail</ingredient>
-            <ingredient>De crème fraîche</ingredient>
-            <ingredient>De poivre vert</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>oeufs</possibleAllergie>
-            <possibleAllergie>lait</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>salades_crevettes</name>
-        <type>Entrees</type>
-        <description>description</description>
-        <shortDescription>Salade de Crevettes</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Entrees/salade_crevettes.jpg</imagePath>
-        <price>6</price>
-        <ingredientsList>
-            <ingredient>Des crevettes cuites</ingredient>
-            <ingredient>De laitue</ingredient>
-            <ingredient>De citron</ingredient>
-            <ingredient>De ciboultte</ingredient>
-            <ingredient>De poivre vert</ingredient>
-            <ingredient>De gingembre</ingredient>
-            <ingredient>De mayonnaise</ingredient>
-            <ingredient>De ketchup</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>fruit de mèr</possibleAllergie>
-            <possibleAllergie>gingembre</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>boeuf_bourguignon</name>
-        <type>Plats</type>
-        <description>description</description>
-        <shortDescription>Boeuf Bourguignon</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Plats/boeuf_bourguignon.jpg</imagePath>
-        <price>15</price>
-        <ingredientsList>
-            <ingredient>De boeuf</ingredient>
-            <ingredient>De champignon</ingredient>
-            <ingredient>De carotte</ingredient>
-            <ingredient>De vin rouge</ingredient>
-            <ingredient>Des oignons</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>pasta_carbonara</name>
-        <type>Plats</type>
-        <description>description</description>
-        <shortDescription>shortDescription</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Plats/pasta_carbonara.jpg</imagePath>
-        <price>12</price>
-        <ingredientsList>
-            <ingredient>De lardon</ingredient>
-            <ingredient>Des oignos</ingredient>
-            <ingredient>Des œufs</ingredient>
-            <ingredient>La crème légère</ingredient>
-            <ingredient>De parmesan</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>tikka_masala</name>
-        <type>Plats</type>
-        <description>description</description>
-        <shortDescription>Tikka Masala</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Plats/tikka_masala.jpg</imagePath>
-        <price>15</price>
-        <ingredientsList>
-            <ingredient>De poulet</ingredient>
-            <ingredient>De noix de cajou</ingredient>
-            <ingredient>De piment jalapeno</ingredient>
-            <ingredient>De gingembre</ingredient>
-            <ingredient>De crème</ingredient>
-            <ingredient>De yagourt</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>lait</possibleAllergie>
-            <possibleAllergie>noix de cajou</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>pot_feu</name>
-        <type>Plats</type>
-        <description>description</description>
-        <shortDescription>Pot à feu</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Plats/pot_feu.jpg</imagePath>
-        <price>17</price>
-        <ingredientsList>
-            <ingredient>De boeuf</ingredient>
-            <ingredient>De poireaux</ingredient>
-            <ingredient>De céleri</ingredient>
-            <ingredient>De carottes</ingredient>
-            <ingredient>Des oignons</ingredient>
-            <ingredient>De poivre noir</ingredient>
-            <ingredient>De chou</ingredient>
-            <ingredient>Des pommes de terre</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>carpaccio_boeuf</name>
-        <type>Plats</type>
-        <description>description</description>
-        <shortDescription>Carpaccio de boeuf</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Plats/carpaccio_boeuf.jpg</imagePath>
-        <price>13</price>
-        <ingredientsList>
-            <ingredient>De boeuf</ingredient>
-            <ingredient>De parmesan</ingredient>
-            <ingredient>De vinagre balsamique</ingredient>
-            <ingredient>De citron</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>fromage</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>hachis_parmentier</name>
-        <type>Plats</type>
-        <description>description</description>
-        <shortDescription>Hachis Parmentier</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Plats/hachis_parmentier.jpg</imagePath>
-        <price>15</price>
-        <ingredientsList>
-            <ingredient>Des pommes de terre</ingredient>
-            <ingredient>De lait</ingredient>
-            <ingredient>De beurre</ingredient>
-            <ingredient>De noix muscade</ingredient>
-            <ingredient>Des échalotes</ingredient>
-            <ingredient>De poireau</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>lait</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>ratatouille</name>
-        <type>Plats</type>
-        <description>description</description>
-        <shortDescription>Ratatouille</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Plats/ratatouille.jpg</imagePath>
-        <price>15</price>
-        <ingredientsList>
-            <ingredient>De l'aubergine</ingredient>
-            <ingredient>De courgette</ingredient>
-            <ingredient>De poivron</ingredient>
-            <ingredient>De tomate</ingredient>
-            <ingredient>Des oignons</ingredient>
-            <ingredient>De persil</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>poulet_curry</name>
-        <type>Plats</type>
-        <description>description</description>
-        <shortDescription>Poulet au curry</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Plats/poulet_curry.jpg</imagePath>
-        <price>13</price>
-        <ingredientsList>
-            <ingredient>De poulet</ingredient>
-            <ingredient>De farine</ingredient>
-            <ingredient>De curry</ingredient>
-            <ingredient>De persil</ingredient>
-            <ingredient>D'huile</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>curry</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>steak_frites</name>
-        <type>Plats</type>
-        <description>description</description>
-        <shortDescription>Steak avec des frites</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Plats/steak_frites.jpg</imagePath>
-        <price>16</price>
-        <ingredientsList>
-            <ingredient>De boeuf</ingredient>
-            <ingredient>Des pommes de terre</ingredient>
-            <ingredient>De beurre</ingredient>
-            <ingredient>De cognac</ingredient>
-            <ingredient>De crème fraîche</ingredient>
-            <ingredient>De poivre noir</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>poulet_basquaise</name>
-        <type>Plats</type>
-        <description>description</description>
-        <shortDescription>Poulet Basquaise</shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/Plats/poulet_basquaise.jpg</imagePath>
-        <price>15</price>
-        <ingredientsList>
-            <ingredient>De poulet</ingredient>
-            <ingredient>De poivron</ingredient>
-            <ingredient>De tomate</ingredient>
-            <ingredient>De échalote</ingredient>
-        </ingredientsList>
-        <possibleAllergiesList>
-            <possibleAllergie>all1</possibleAllergie>
-            <possibleAllergie>all2</possibleAllergie>
-            <possibleAllergie>all3</possibleAllergie>
-        </possibleAllergiesList>
-    </plat>
-    <plat>
-        <name>Nouveau plat 26</name>
-        <type>Boissons</type>
-        <description>Mettez votre desciption ici</description>
-        <shortDescription></shortDescription>
-        <imagePath>../workspace/resources/imagesPlats/</imagePath>
-        <price>78</price>
-        <ingredientsList/>
-        <possibleAllergiesList/>
-    </plat>
+	 
+	<plat>
+		<name>charc_mixtes</name>
+		<type>Entrees</type>
+		<description>description</description>
+		<shortDescription>Charcuteries Mixtes</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Entrees/charcuteries_mixtes.jpg</imagePath>
+		<price>6</price>
+		<ingredientsList>
+			 <ingredient>De jambon blanc</ingredient>  <ingredient>De salami</ingredient>  <ingredient>De viande séchée</ingredient>  <ingredient>De roti de boeuf et de porc</ingredient>  <ingredient>De salade</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>oeufs_farcis</name>
+		<type>Entrees</type>
+		<description>description</description>
+		<shortDescription>Oeufs farcis à la crème d'ail</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Entrees/oeufs_farcis.jpg</imagePath>
+		<price>6</price>
+		<ingredientsList>
+			 <ingredient>Des oeufs</ingredient>  <ingredient>D'ail</ingredient>  <ingredient>De crème fraîche</ingredient>  <ingredient>De poivre vert</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>oeufs</possibleAllergie>  <possibleAllergie>lait
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>salades_crevettes</name>
+		<type>Entrees</type>
+		<description>description</description>
+		<shortDescription>Salade de Crevettes</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Entrees/salade_crevettes.jpg</imagePath>
+		<price>6</price>
+		<ingredientsList>
+			 <ingredient>Des crevettes cuites</ingredient>  <ingredient>De laitue</ingredient>  <ingredient>De citron</ingredient>  <ingredient>De ciboultte</ingredient>  <ingredient>De poivre vert</ingredient>  <ingredient>De gingembre</ingredient>  <ingredient>De mayonnaise</ingredient>  <ingredient>De ketchup</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>fruit de mèr</possibleAllergie>  <possibleAllergie>gingembre</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>tikka_masala</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Tikka Masala</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/tikka_masala.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>De poulet</ingredient>  <ingredient>De noix de cajou</ingredient>  <ingredient>De piment jalapeno</ingredient>  <ingredient>De gingembre</ingredient>  <ingredient>De crème</ingredient>  <ingredient>De yagourt</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>noix de cajou
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>pot_feu</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Pot à feu</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/pot_feu.jpg</imagePath>
+		<price>17</price>
+		<ingredientsList>
+			 <ingredient>De boeuf</ingredient>  <ingredient>De poireaux</ingredient>  <ingredient>De céleri</ingredient>  <ingredient>De carottes</ingredient>  <ingredient>Des oignons</ingredient>  <ingredient>De poivre noir</ingredient>  <ingredient>De chou</ingredient>  <ingredient>Des pommes de terre</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>poulet_basquaise</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Poulet Basquaise</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/poulet_basquaise.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>De poulet</ingredient>  <ingredient>De poivron</ingredient>  <ingredient>De tomate</ingredient>  <ingredient>De échalote</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>carpaccio_boeuf</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Carpaccio de boeuf</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/carpaccio_boeuf.jpg</imagePath>
+		<price>13</price>
+		<ingredientsList>
+			 <ingredient>De boeuf</ingredient>  <ingredient>De parmesan</ingredient>  <ingredient>De vinagre balsamique</ingredient>  <ingredient>De citron</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>fromage</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>steak_frites</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Steak avec des frites</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/steak_frites.jpg</imagePath>
+		<price>16</price>
+		<ingredientsList>
+			 <ingredient>De boeuf</ingredient>  <ingredient>Des pommes de terre</ingredient>  <ingredient>De  beurre</ingredient>  <ingredient>De cognac</ingredient>  <ingredient>De crème fraîche</ingredient>  <ingredient>De poivre noir</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>hachis_parmentier</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Hachis Parmentier</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/hachis_parmentier.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>Des pommes de terre</ingredient>  <ingredient>De lait</ingredient>  <ingredient>De beurre</ingredient>  <ingredient>De noix muscade</ingredient>  <ingredient>Des échalotes</ingredient>  <ingredient>De poireau</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>boeuf_bourguignon</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Boeuf Bourguignon</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/boeuf_bourguignon.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>De boeuf</ingredient>  <ingredient>De champignon</ingredient>  <ingredient>De carotte</ingredient>  <ingredient>De vin rouge</ingredient>  <ingredient>Des oignons</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>ratatouille</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Ratatouille</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/ratatouille.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>De l'aubergine</ingredient>  <ingredient>De courgette</ingredient>  <ingredient>De poivron</ingredient>  <ingredient>De tomate</ingredient>  <ingredient>Des oignons</ingredient>  <ingredient>De persil</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>pasta_carbonara</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>shortDescription</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/pasta_carbonara.jpg</imagePath>
+		<price>12</price>
+		<ingredientsList>
+			 <ingredient>De lardon</ingredient>  <ingredient>Des oignos</ingredient>  <ingredient>Des œufs</ingredient>  <ingredient>La crème légère</ingredient>  <ingredient>De parmesan</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>poulet_curry</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Poulet au curry</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/poulet_curry.jpg</imagePath>
+		<price>13</price>
+		<ingredientsList>
+			 <ingredient>De poulet</ingredient>  <ingredient>De farine</ingredient>  <ingredient>De curry</ingredient>  <ingredient>De persil</ingredient>  <ingredient>D'huile</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>curry</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>vin_blanc</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Verre 35 cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_blanc.jpg</imagePath>
+		<price>5.5</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>cafe</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Expresso</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/cafe.jpg</imagePath>
+		<price>2.2</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>coca_cola</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Canette 35cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/coca_cola.jpg</imagePath>
+		<price>2</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>evian</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Bouteille 35 cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/evian.jpg</imagePath>
+		<price>2.5</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>sprite</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Canette 35cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/sprite.jpg</imagePath>
+		<price>2</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>fanta</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Canette 35cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/fanta.jpg</imagePath>
+		<price>2</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>ice_the_mangue</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>shortDescription</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/ice_the_mangue.jpg</imagePath>
+		<price>price</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>vin_rouge</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Verre 35 cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_rouge.jpg</imagePath>
+		<price>5.5</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>tarte_pomme</name>
+		<type>Desserts</type>
+		<description>description</description>
+		<shortDescription>Tarte aux pommes</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/tarte_pomme.jpg</imagePath>
+		<price>5</price>
+		<ingredientsList>
+			 <ingredient>De pomme</ingredient>  <ingredient>Des oeufs</ingredient>  <ingredient> De crème liquide</ingredient>  <ingredient>De cannelle</ingredient>  <ingredient>De vanille</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>oeuf</possibleAllergie>  <possibleAllergie>lait
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>tiramisu</name>
+		<type>Desserts</type>
+		<description>description</description>
+		<shortDescription>Tiramisu</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/tiramisu.jpg</imagePath>
+		<price>7</price>
+		<ingredientsList>
+			 <ingredient>De mascarpone</ingredient>  <ingredient>Des oeufs</ingredient>  <ingredient>De lait</ingredient>  <ingredient>De chocolat</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>fromage
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>mousse_chocolat</name>
+		<type>Desserts</type>
+		<description>description</description>
+		<shortDescription>Mousse de Chocolat</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/mousse_chocolat.jpg</imagePath>
+		<price>7</price>
+		<ingredientsList>
+			 <ingredient>De chocolat noir</ingredient>  <ingredient>De beurre</ingredient>  <ingredient>Des oeufs</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>oeuf
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>salade_fruits</name>
+		<type>Desserts</type>
+		<description>description</description>
+		<shortDescription>Salade des fruits</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/salade_fruits.jpg</imagePath>
+		<price>5</price>
+		<ingredientsList>
+			 <ingredient>De pomme</ingredient>  <ingredient>De melon</ingredient>  <ingredient>De poire</ingredient>  <ingredient>De framboise</ingredient>  <ingredient>De banane</ingredient>  <ingredient>De juis d'orange</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>creme_brulee</name>
+		<type>Desserts</type>
+		<description>description</description>
+		<shortDescription>Crème Brûlée</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/creme_brulee.jpg</imagePath>
+		<price>7</price>
+		<ingredientsList>
+			 <ingredient>Des oeufs</ingredient>  <ingredient>De lait</ingredient>  <ingredient>De crème entière</ingredient>  <ingredient>De vainille</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	
 </lesPlats>
