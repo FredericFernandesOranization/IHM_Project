@@ -17,13 +17,22 @@ LeftZone::LeftZone() : QWidget()
     this->setLayout(leftVerticalLayout);
 
     //Creating Swap Button
-    QPushButton *switchButton = new QPushButton("Switch Button", this);
-    //switchButton->setFixedHeight(100);
+    switchButton = new MenuButton("Switch Button", this);
+    switchButton->setFixedHeight(100);
     switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     leftVerticalLayout->addWidget(switchButton);
     switchButton->setStyleSheet("border: none; background-color: orange; padding: 6px;");
 
+    //Creating the area to swap (commandBar and MenuBar)
+    QWidget *leftBar = new QWidget;
+    leftZoneStackedLayout = LeftBarLayout::getInstance();
+    leftBar->setLayout(leftZoneStackedLayout);
+
+
     //Creating Left Menu Bar
+    QWidget *menuBar = new QWidget;
+    QVBoxLayout *menuBarLayout = new QVBoxLayout;
+    menuBar->setLayout(menuBarLayout);
     this->buttonLists = QList<MenuButton*>();
     QList<QString> stringMenu = QList<QString>() << QString("Boissons") << QString("Entrees") << QString("Plats") << QString("Desserts");
     for(int i=0; i<4; i++){
@@ -37,9 +46,42 @@ LeftZone::LeftZone() : QWidget()
 
         b->setFixedWidth(280);
         b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
-        leftVerticalLayout->addWidget(b);
+        menuBarLayout->addWidget(b);
     }
+    leftZoneStackedLayout->addWidget(menuBar);
+
+    //Creating Command Bar
+
+    QWidget *commandBar = new QWidget;
+    QVBoxLayout *commandBarLayout = new QVBoxLayout;
+    commandBar->setLayout(commandBarLayout);
+    this->buttonLists = QList<MenuButton*>();
+    QList<QString> stringCommand = QList<QString>() << QString("PEUT IMPORTE") << QString("JE SAIS PAS QUOI") << QString("VOIR TOTAL") << QString("COMMANDER");
+    for(int i=0; i<4; i++){
+        MenuButton *b = new MenuButton(stringCommand.at(i), this);
+        buttonLists.append(b);
+        connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
+        connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
+
+        //connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
+        //connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
+
+        b->setFixedWidth(280);
+        b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+        commandBarLayout->addWidget(b);
+    }
+    leftZoneStackedLayout->addWidget(commandBar);
+    leftZoneStackedLayout->setCurrentIndex(1);
+    connect(switchButton, SIGNAL(clicked()), switchButton, SLOT(changeLayout()));
+    //leftZoneStackedLayout->setCurrentIndex(1);
+    leftVerticalLayout->addWidget(leftBar);
 }
+
+
+
+
+
+
 void LeftZone::getUnclicked(QString label)
 {
     qDebug() << "receiving SIGNAL from BUTTON!";

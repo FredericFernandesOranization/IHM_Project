@@ -4,7 +4,7 @@ ImageLabel::ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, Q
 {
     this->imgSizeW= imgSizeW;
     this->imgSizeH= imgSizeH;
-    //this->plat = plat;
+    this->plat = plat;
 
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(background));
@@ -21,10 +21,10 @@ ImageLabel::ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, Q
     setFixedSize(imgSizeW+27,imgSizeH+10);
 }
 
-//void ImageLabel::mousePressEvent(QMouseEvent * event){
-//    qDebug() << "clicked on image";
-//    emit clickedImage(this->plat);
-//}
+void ImageLabel::mousePressEvent(QMouseEvent * event){
+    qDebug() << "clicked on image";
+    emit clickedImage(this->plat);
+}
 
 
 

@@ -1,5 +1,10 @@
-#include <QApplication>
 #include "mainwindow.h"
+#include <QApplication>
+#include "database.h"
+#include <qdebug.h>
+#include <item.h>
+#include <QGraphicsView>
+#include <QListWidget>
 
 int main(int argc, char *argv[])
 {

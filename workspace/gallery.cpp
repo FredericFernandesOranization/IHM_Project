@@ -1,7 +1,6 @@
 #include "gallery.h"
 
 //Gallery *Gallery::instance = NULL;
-
 Gallery::Gallery() : QWidget()
 {
     //Gallery Properties
@@ -11,6 +10,7 @@ Gallery::Gallery() : QWidget()
     //scroller->setWidgetResizable(true);
 
     //Gallery Layout
+
     this->layout = new FlowLayout;
     this->setLayout(this->layout);
     //this->layout->setSpacing(20);
@@ -53,8 +53,8 @@ void Gallery::showType(QString type)
     QList<Plat*> listePlats = this->database->filterType(type);
     for(int i=0; i<listePlats.size(); i++){
         Item *item = new Item(*listePlats.at(i));
-        //ImageLabel* img = item->getImage();
-        connect(item, SIGNAL(clickedImage(Plat)), this, SLOT(onItemClick(Plat)));
+        ImageLabel* img = item->getImage();
+        connect(img, SIGNAL(clickedImage(Plat)), this, SLOT(onItemClick(Plat)));
         this->layout->addWidget(item);
     }
 }

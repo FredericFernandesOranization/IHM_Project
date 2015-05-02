@@ -2,8 +2,13 @@
 #define MENUBUTTON_H
 
 #include <QPushButton>
-#include <QDebug>
+#include <QString>
+#include <QWidget>
 #include "gallerieslayout.h"
+#include "leftbarlayout.h"
+#include <qdebug.h>
+#include <QObject>
+
 
 class MenuButton : public QPushButton
 {
@@ -15,6 +20,7 @@ public:
 
 public slots:
     void onClick();
+    void changeLayout();
 signals:
     void setUnclicked(QString label);
 private:

@@ -1,11 +1,18 @@
 #ifndef DETAILEDITEM_H
 #define DETAILEDITEM_H
 
-#include<backbutton.h>
-#include<QHBoxLayout>
+
 #include "plat.h"
 #include "imagelabel.h"
-
+#include <QLabel>
+#include <QImage>
+#include <QDebug>
+#include <QPixmap>
+#include <QPen>
+#include <QPainter>
+#include <QPushButton>
+#include <QHBoxLayout>
+#include "backbutton.h"
 
 class DetailedItem :public QWidget
 {

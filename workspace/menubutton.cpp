@@ -15,6 +15,16 @@ MenuButton::~MenuButton()
 
 QString MenuButton::getLabel(){ return this->label; }
 
+void MenuButton::changeLayout(){
+
+      qDebug() << "dans ChangeLayout";
+      int i = LeftBarLayout::getInstance()->currentIndex();
+      LeftBarLayout::getInstance()->setCurrentIndex(1-i);
+
+//    int i = this->leftZoneStackedLayout->currentIndex();
+//    leftZoneStackedLayout->setCurrentIndex(i-1);
+}
+
 
 void MenuButton::onClick(){
     //this->setPalette(QPalette(QPalette::dark));

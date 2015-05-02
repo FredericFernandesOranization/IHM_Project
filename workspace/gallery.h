@@ -2,10 +2,15 @@
 #define GALLERY_H
 
 #include <QWidget>
-#include "flowlayout.h"
+#include <QVBoxLayout>
+#include <QPushButton>
+#include <QString>
 #include "database.h"
 #include "item.h"
+#include "flowlayout.h"
+#include <QScrollArea>
 #include "gallerieslayout.h"
+#include <QStringList>
 
 class Gallery : public QWidget
 {
@@ -18,7 +23,6 @@ public:
             instance = new Gallery();
         return instance;
     }*/
-
     void showItem(Plat p);
 public slots:
     void showType(QString type);
@@ -26,7 +30,7 @@ public slots:
     void onBackClick(QString type);
 
 private:
-    //Gallery instance; // for Singleton Pattern
+    //static Gallery* instance; // for Singleton Pattern
     QString type;
     FlowLayout *layout;
     Database* database;
