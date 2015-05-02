@@ -1,6 +1,6 @@
 ratatouille
 
-description
+Composée de légumes cuits aubergines, courgettes, poivrons et tomates, ainsi que des oignons, de l'ail et de l'huile d'olive
 
 Ratatouille
 
@@ -8,4 +8,4 @@ Ratatouille
 
 De l'aubergine;De courgette;De poivron;De tomate;Des oignons;De persil
 
-all1;all2;all3
+all1

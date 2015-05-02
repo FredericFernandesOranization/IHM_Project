@@ -1,6 +1,6 @@
 tarte_pomme
 
-description
+Une tarte croustillante aux pommes caramélisées
 
 Tarte aux pommes
 

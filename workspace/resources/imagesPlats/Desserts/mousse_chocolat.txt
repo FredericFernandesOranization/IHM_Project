@@ -1,6 +1,6 @@
 mousse_chocolat
 
-description
+Un mousse de Chocolat noir très consistant  
 
 Mousse de Chocolat
 

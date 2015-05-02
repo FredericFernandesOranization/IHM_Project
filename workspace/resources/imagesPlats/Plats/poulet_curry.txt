@@ -1,6 +1,6 @@
 poulet_curry
 
-description
+Un plat composé de morceaux de poulets cuits cuisinés dans une sauce de curry
 
 Poulet au curry
 
@@ -8,4 +8,4 @@ Poulet au curry
 
 De poulet;De farine;De curry;De persil;D'huile
 
-curry;all2;all3
+curry

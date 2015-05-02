@@ -1,11 +1,11 @@
 cafe
 
-description
+Un tasse de café expresso
 
 Expresso
 
 2.2
 
-ing1;ing2;ing3
+Cafe moulu
 
-all1;all2;all3
+all1

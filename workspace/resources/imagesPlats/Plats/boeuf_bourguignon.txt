@@ -1,6 +1,6 @@
 boeuf_bourguignon
 
-description
+Une estouffade de bœuf traditionnelle de la cuisine bourguignonne, cuisinée au vin rouge de Bourgogne et accompagnée en garniture de champignons, petits oignons et lardon
 
 Boeuf Bourguignon
 
@@ -8,4 +8,4 @@ Boeuf Bourguignon
 
 De boeuf;De champignon;De carotte;De vin rouge;Des oignons
 
-all1;all2;all3
+champignon

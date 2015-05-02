@@ -1,6 +1,6 @@
 tiramisu
 
-description
+Un dessert italienne qui a la superposition de couches de biscuits plus ou moins crémeux
 
 Tiramisu
 

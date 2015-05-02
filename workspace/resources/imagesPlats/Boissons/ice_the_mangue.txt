@@ -1,11 +1,11 @@
 ice_the_mangue
 
-description
+Une canette de Thé glacé à la Mangue 355 ml
 
-shortDescription
+Canette 35cl
 
-price
+2
 
-ing1;ing2;ing3
+Thé noir;Extract de Mangue
 
-all1;all2;all3
+all1

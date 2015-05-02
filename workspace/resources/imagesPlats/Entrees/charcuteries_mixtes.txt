@@ -1,6 +1,7 @@
 charc_mixtes
 
-description
+Un plat avec des tranches de jambon blanc, de salami, de viande séchée, de roti de boeuf et de porc avec un petite salade
+
 
 Charcuteries Mixtes
 
@@ -8,4 +9,4 @@ Charcuteries Mixtes
 
 De jambon blanc;De salami;De viande séchée;De roti de boeuf et de porc;De salade
 
-all1;all2;all3
+all1

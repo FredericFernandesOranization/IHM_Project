@@ -1,6 +1,6 @@
 creme_brulee
 
-description
+Une crème caramélisée avec une croûte sur le dessus chaude et croustillante
 
 Crème Brûlée
 

@@ -1,11 +1,11 @@
 pot_feu
 
-description
+Un plat de viande de bœuf cuisant longuement à feu très doux dans un bouillon aromatisé par des légumes et un bouquet garni
 
-Pot à feu
+Pot au feu
 
 17
 
 De boeuf;De poireaux;De céleri;De carottes;Des oignons;De poivre noir;De chou;Des pommes de terre
 
-all1;all2;all3
+all1

@@ -1,6 +1,6 @@
 tikka_masala
 
-description
+Un plat composé de morceaux de poulets cuits (tikka) cuisinés dans une sauce de curry
 
 Tikka Masala
 

@@ -1,6 +1,6 @@
 hachis_parmentier
 
-description
+Un plat à base de purée de pommes de terre et de viande de bœuf hachée
 
 Hachis Parmentier
 

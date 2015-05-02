@@ -1,11 +1,11 @@
 vin_blanc
 
-description
+Une verre de Vin Blanc (boisson avec alcool)
 
 Verre 35 cl
 
 5.5
 
-ing1;ing2;ing3
+Vin
 
-all1;all2;all3
+all1
