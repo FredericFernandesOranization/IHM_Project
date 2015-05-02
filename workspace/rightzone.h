@@ -1,13 +1,10 @@
 #ifndef RIGHTZONE_H
 #define RIGHTZONE_H
-
+#include "gallerieslayout.h"
 #include <QWidget>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
 #include <QPushButton>
-#include "gallery.h"
-#include <gallerieslayout.h>
 #include "detaileditem.h"
+#include "gallery.h"
 
 class RightZone : public QWidget
 {

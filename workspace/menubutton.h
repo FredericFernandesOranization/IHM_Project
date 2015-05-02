@@ -2,12 +2,8 @@
 #define MENUBUTTON_H
 
 #include <QPushButton>
-#include <QString>
-#include <QWidget>
+#include <QDebug>
 #include "gallerieslayout.h"
-#include <qdebug.h>
-#include <QObject>
-
 
 class MenuButton : public QPushButton
 {

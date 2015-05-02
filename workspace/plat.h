@@ -1,12 +1,9 @@
 #ifndef PLAT_H
 #define PLAT_H
 
+#include "plat.h"
 #include <QString>
 #include <QStringList>
-#include <QDebug>
-#include <qdebug.h>
-
-#include <QMetaType>
 class Plat
 {
 

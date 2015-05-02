@@ -2,9 +2,10 @@
 
 Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent): QWidget(parent)
 {
+    this->plat = plat;
+
     //order button
     QPushButton* commander = new QPushButton("Commander");
-
     //creating image
     this->image = new ImageLabel(plat, imgSizeW, imgSizeH, background, this);
 
@@ -26,10 +27,16 @@ Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *pare
     itemLayout->addWidget(image);
     itemLayout->addWidget(labelShortDesc);
     itemLayout->addWidget(commander);
-
 }
 
-ImageLabel* Item::getImage(){ return this->image; }
+void Item::mousePressEvent(QMouseEvent *event){
+    if(image->rect().contains(event->pos())){
+        qDebug() << "clicked on image";
+        emit clickedImage(this->plat);
+    }
+}
+
+//ImageLabel* Item::getImage(){ return this->image; }
 
 /*
 void Item::paintEvent(QPaintEvent *)
@@ -55,31 +62,31 @@ void Item::paintEvent(QPaintEvent *)
 
 
     //creation image
-    /*this->imgSizeW= imgSizeW;
+    this->imgSizeW= imgSizeW;
     this->imgSizeH= imgSizeH;
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(background));
     img = new QImage(plat.getImagePath());
-    *img = img->scaled(imgSizeW, imgSizeH);
+    img = img->scaled(imgSizeW, imgSizeH);
 */
 
 
-    /*QGraphicsEllipseItem *ellipse =*/
-    //addEllipse((imgSizeW-(elSize/2)), ((imgSizeH/2)-(elSize/2)), elSize, elSize, outlinePen, greenBrush);
-    //ellipse->setFlag(QGraphicsItem::ItemIsMovable);
+/*QGraphicsEllipseItem *ellipse =*/
+//addEllipse((imgSizeW-(elSize/2)), ((imgSizeH/2)-(elSize/2)), elSize, elSize, outlinePen, greenBrush);
+//ellipse->setFlag(QGraphicsItem::ItemIsMovable);
 
-    //QGraphicsTextItem * price =  addText();
-    //    QFont priceFont("Helvetica", 12, QFont::Bold);
-    //    price->setFont(priceFont);
-    //    price->setPos((imgSizeW)-16,(imgSizeH/2)-10);
-    //    this->addItem(price);
+//QGraphicsTextItem * price =  addText();
+//    QFont priceFont("Helvetica", 12, QFont::Bold);
+//    price->setFont(priceFont);
+//    price->setPos((imgSizeW)-16,(imgSizeH/2)-10);
+//    this->addItem(price);
 
-    //labelShortDesc->setFixedWidth(imgSizeW);
-    //labelShortDesc->show();
-    //labelShortDesc->setFWidth(imgSizeW);
+//labelShortDesc->setFixedWidth(imgSizeW);
+//labelShortDesc->show();
+//labelShortDesc->setFWidth(imgSizeW);
 
-    //QRectF rec = labelShortDesc->boundingRect();
-    //this->addItem(shortDesc);
+//QRectF rec = labelShortDesc->boundingRect();
+//this->addItem(shortDesc);
 //labelShortDesc->move((imgSizeW)-16,(imgSizeH/2)-10);
 //labelShortDesc->setWordWrap(true);
 // labelShortDesc->setLineWidth(imgSizeH);

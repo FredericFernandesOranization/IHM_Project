@@ -1,14 +1,13 @@
 #ifndef DATABASE_H
 #define DATABASE_H
-
-#include "plat.h"
-#include <QHash>
-#include <QDomDocument>
-#include <QDomAttr>
-#include <QFile>
-#include <qdebug.h>
+#include <QList>
 #include <QStringList>
+#include <QDomDocument>
+#include <QDomElement>
+#include <QDebug>
+#include <QFile>
 #include <QXmlStreamWriter>
+#include "plat.h"
 
 class Database
 {
