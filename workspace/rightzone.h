@@ -11,6 +11,7 @@
 
 class RightZone : public QWidget
 {
+    Q_OBJECT
 public:
     RightZone();
 private:

@@ -52,8 +52,8 @@ void Gallery::showType(QString type)
     QList<Plat*> listePlats = this->database->filterType(type);
     for(int i=0; i<listePlats.size(); i++){
         Item *item = new Item(*listePlats.at(i));
-        ImageLabel* i = item->getImage();
-        connect(i, SIGNAL(clickedImage(Plat)), this, SLOT(onItemClick(Plat)));
+        ImageLabel* img = item->getImage();
+        connect(img, SIGNAL(clickedImage(Plat)), this, SLOT(onItemClick(Plat)));
         this->layout->addWidget(item);
     }
 }
