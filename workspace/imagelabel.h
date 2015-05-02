@@ -1,3 +1,6 @@
+#ifndef IMAGELABEL_H
+#define IMAGELABEL_H
+
 #include <QLabel>
 #include <QLabel>
 #include <QImage>
@@ -17,16 +20,18 @@ public:
     ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent);
 private slots:
     void paintEvent(QPaintEvent *e);
-
 signals:
-    void clicked();
+    void clickedImage(Plat p);
 
 protected:
     void mousePressEvent(QMouseEvent * event);
 private:
+    Plat plat;
     QString imagePath;
     QImage* img;
     int imgSizeW;
     int imgSizeH;
     QColor background;
 };
+
+#endif // IMAGELABEL_H

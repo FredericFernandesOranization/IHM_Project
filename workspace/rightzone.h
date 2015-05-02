@@ -7,9 +7,11 @@
 #include <QPushButton>
 #include "gallery.h"
 #include <gallerieslayout.h>
+#include "detaileditem.h"
 
 class RightZone : public QWidget
 {
+    Q_OBJECT
 public:
     RightZone();
 private:
