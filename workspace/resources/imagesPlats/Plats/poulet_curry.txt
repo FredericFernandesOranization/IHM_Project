@@ -2,10 +2,10 @@ poulet_curry
 
 description
 
-shortDescription
+Poulet au curry
 
-price
+13
 
-ing1;ing2;ing3
+De poulet;De farine;De curry;De persil;D'huile
 
-all1;all2;all3
+curry;all2;all3

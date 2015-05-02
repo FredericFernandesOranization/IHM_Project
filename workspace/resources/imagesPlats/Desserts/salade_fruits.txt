@@ -1,0 +1,11 @@
+salade_fruits
+
+description
+
+Salade des fruits
+
+5
+
+De pomme;De melon;De poire;De framboise;De banane;De juis d'orange
+
+all1

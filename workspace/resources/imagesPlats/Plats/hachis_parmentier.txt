@@ -1,0 +1,11 @@
+hachis_parmentier
+
+description
+
+Hachis Parmentier
+
+15
+
+Des pommes de terre;De lait;De beurre;De noix muscade;Des échalotes;De poireau
+
+lait;all2;all3

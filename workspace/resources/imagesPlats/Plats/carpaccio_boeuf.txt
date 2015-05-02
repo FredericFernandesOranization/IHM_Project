@@ -1,0 +1,11 @@
+carpaccio_boeuf
+
+description
+
+Carpaccio de boeuf
+
+13
+
+De boeuf;De parmesan;De vinagre balsamique;De citron
+
+fromage;all2;all3

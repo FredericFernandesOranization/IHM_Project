@@ -2,10 +2,10 @@ charc_mixtes
 
 description
 
-shortDescription
+Charcuteries Mixtes
 
-price
+6
 
-ing1;ing2;ing3
+De jambon blanc;De salami;De viande séchée;De roti de boeuf et de porc;De salade
 
 all1;all2;all3
