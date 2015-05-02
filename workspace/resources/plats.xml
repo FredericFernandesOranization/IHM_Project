@@ -498,4 +498,14 @@
             <possibleAllergie>all3</possibleAllergie>
         </possibleAllergiesList>
     </plat>
+    <plat>
+        <name>Nouveau plat 26</name>
+        <type>Boissons</type>
+        <description>Mettez votre desciption ici</description>
+        <shortDescription></shortDescription>
+        <imagePath>../workspace/resources/imagesPlats/</imagePath>
+        <price>78</price>
+        <ingredientsList/>
+        <possibleAllergiesList/>
+    </plat>
 </lesPlats>

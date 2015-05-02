@@ -36,12 +36,14 @@ RightZone::RightZone() : QWidget()
     }
 
     //Creating Stack Layout for Gallery
-    //QScrollArea *galleryScroll = new QScrollArea;
+    QScrollArea *galleryScroll = new QScrollArea;
+    galleryScroll->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+    galleryScroll->setWidgetResizable(true);
     //galleryScroll->setStyleSheet("background-color : blue");
     this->galleriesLayout = GalleriesLayout::getInstance();
     QWidget* galleriesList = new QWidget();
-    //galleryScroll->setWidget(galleriesList);
-    rightVerticalLayout->addWidget(galleriesList); //Adding Gallery to RightZone
+    galleryScroll->setWidget(galleriesList);
+    rightVerticalLayout->addWidget(galleryScroll); //Adding Gallery to RightZone
     galleriesList->setLayout(galleriesLayout);
 
     //Creating Detailled Widget

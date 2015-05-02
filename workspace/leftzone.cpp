@@ -81,6 +81,9 @@ LeftZone::LeftZone() : QWidget()
     connect(switchButton, SIGNAL(clicked()), switchButton, SLOT(changeLayout()));
     //leftZoneStackedLayout->setCurrentIndex(1);
     leftVerticalLayout->addWidget(leftBar);
+    QPushButton *commandButton = new QPushButton("Commander", this);
+    commandButton->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000;background: orange;border-radius: 8px;");
+    leftVerticalLayout->addWidget(commandButton);
 }
 
 
