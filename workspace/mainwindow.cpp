@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent) :
     //Creating Left Zone (Command Zone and Swap Button)
     LeftZone *leftZone = new LeftZone();
     mainWindowLayout->addWidget(leftZone);
+
     //connect(mainWindow, SIGNAL(clicked()), leftZone, SLOT(getUnclicked(QString)));
 
     //Creating Right Zone (UpperMenu and Gallery)

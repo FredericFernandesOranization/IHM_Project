@@ -5,6 +5,7 @@
 #include <QString>
 #include <QWidget>
 #include "gallerieslayout.h"
+#include "leftbarlayout.h"
 #include <qdebug.h>
 #include <QObject>
 
@@ -19,6 +20,7 @@ public:
 
 public slots:
     void onClick();
+    void changeLayout();
 signals:
     void setUnclicked(QString label);
 private:

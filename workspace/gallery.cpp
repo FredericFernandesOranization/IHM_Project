@@ -10,6 +10,7 @@ Gallery::Gallery() : QWidget()
     //scroller->setWidgetResizable(true);
 
     //Gallery Layout
+
     this->layout = new FlowLayout;
     this->setLayout(this->layout);
     //this->layout->setSpacing(20);

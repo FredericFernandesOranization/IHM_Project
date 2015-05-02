@@ -2,11 +2,13 @@
 
 RightZone::RightZone() : QWidget()
 {
+
     //RightZone Properties
     //this->resize(1000,50);
     //this->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(Qt::gray));
+//    this->setFixedHeight(400);
 
     //Separation UpperMenu - Gallery
     QVBoxLayout *rightVerticalLayout = new QVBoxLayout;
@@ -20,22 +22,25 @@ RightZone::RightZone() : QWidget()
     upperMenu->setAutoFillBackground(true);
     upperMenu->setPalette(QPalette(QColor(70,130,180)));
     upperMenu->setStyleSheet("padding : 0 ; margin : 0");
-    //upperMenu->setFixedHeight(100);
+    upperMenu->setFixedHeight(100);
     upperMenu->setLayout(upperMenuHorizontalLayout);
     rightVerticalLayout->addWidget(upperMenu); //Adding UpperMenu in RightPart
 
     //Creating UpperMenuBar
-    QList<QString> stringMenu = QList<QString>() << QString("Menu1") << QString("Menu2") << QString("Menu3") << QString("Menu4");
+    QList<QString> stringMenu = QList<QString>() << QString("Menu 1") << QString("Menu 2") << QString("Menu 3") << QString("Menu 4");
     for(int i=0; i<4; i++){
         QPushButton *b = new QPushButton(stringMenu.at(i));
-        //b->setFixedSize(300,90);
-        //b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
+        b->setFixedHeight(85);
+        b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
         upperMenuHorizontalLayout->addWidget(b);
     }
 
     //Creating Stack Layout for Gallery
+    //QScrollArea *galleryScroll = new QScrollArea;
+    //galleryScroll->setStyleSheet("background-color : blue");
     this->galleriesLayout = GalleriesLayout::getInstance();
     QWidget* galleriesList = new QWidget();
+    //galleryScroll->setWidget(galleriesList);
     rightVerticalLayout->addWidget(galleriesList); //Adding Gallery to RightZone
     galleriesList->setLayout(galleriesLayout);
 

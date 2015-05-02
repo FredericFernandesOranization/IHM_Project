@@ -16,6 +16,7 @@ public:
     RightZone();
 private:
     GalleriesLayout *galleriesLayout;
+
 };
 
 #endif // RIGHTZONE_H
