@@ -1,11 +1,11 @@
-coca_cola
+tiramisu
 
 description
 
-shortDescription
+Tiramisu
 
-price
+7
 
-ing1;ing2;ing3
+De mascarpone;Des oeufs;De lait;De chocolat
 
-all1;all2;all3
+lait;fromage

@@ -2,10 +2,10 @@ tikka_masala
 
 description
 
-shortDescription
+Tikka Masala
 
-price
+15
 
-ing1;ing2;ing3
+De poulet;De noix de cajou;De piment jalapeno;De gingembre;De crème;De yagourt
 
-all1;all2;all3
+lait;noix de cajou

@@ -1,0 +1,11 @@
+pot_feu
+
+description
+
+Pot à feu
+
+17
+
+De boeuf;De poireaux;De céleri;De carottes;Des oignons;De poivre noir;De chou;Des pommes de terre
+
+all1;all2;all3

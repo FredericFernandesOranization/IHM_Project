@@ -1,0 +1,11 @@
+tarte_pomme
+
+description
+
+Tarte aux pommes
+
+5
+
+De pomme;Des oeufs; De crème liquide;De cannelle;De vanille
+
+oeuf;lait

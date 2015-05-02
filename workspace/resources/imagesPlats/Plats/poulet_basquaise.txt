@@ -1,0 +1,11 @@
+poulet_basquaise
+
+description
+
+Poulet Basquaise
+
+15
+
+De poulet;De poivron;De tomate;De échalote
+
+all1;all2;all3
