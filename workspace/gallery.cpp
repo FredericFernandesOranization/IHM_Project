@@ -12,7 +12,7 @@ Gallery::Gallery() : QWidget()
     //Gallery Layout
     this->layout = new FlowLayout;
     this->setLayout(this->layout);
-    this->layout->setSpacing(20);
+    //this->layout->setSpacing(20);
 
     //loading Database
     this->database = Database::getInstance();
