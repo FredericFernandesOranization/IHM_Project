@@ -1,9 +1,5 @@
 <RCC>
     <qresource prefix="/images">
-        <file>Elegant_Background-3_grey.jpg</file>
-        <file>aa.jpg</file>
-        <file>handpainted.jpg</file>
-        <file>wlp.jpg</file>
-        <file>middleEarth.jpg</file>
+        <file>resources/imagesPlats/flag.jpg</file>
     </qresource>
 </RCC>

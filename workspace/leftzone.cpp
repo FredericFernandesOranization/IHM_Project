@@ -21,7 +21,9 @@ LeftZone::LeftZone() : QWidget()
     switchButton->setFixedHeight(100);
     switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     leftVerticalLayout->addWidget(switchButton);
-    switchButton->setStyleSheet("border: none; background-color: orange; padding: 6px;");
+    //switchButton->setStyleSheet("border: none; background-color: orange; padding: 6px;");
+    switchButton->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);border-radius: 8px;");
+
 
     //Creating the area to swap (commandBar and MenuBar)
     QWidget *leftBar = new QWidget;
@@ -37,13 +39,9 @@ LeftZone::LeftZone() : QWidget()
     QList<QString> stringMenu = QList<QString>() << QString("Boissons") << QString("Entrees") << QString("Plats") << QString("Desserts");
     for(int i=0; i<4; i++){
         MenuButton *b = new MenuButton(stringMenu.at(i), this);
-        buttonLists.append(b);
+        buttonLists.append(b);       
         connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
         connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
-
-        //connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
-        //connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
-
         b->setFixedWidth(280);
         b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
         menuBarLayout->addWidget(b);
@@ -84,7 +82,8 @@ LeftZone::LeftZone() : QWidget()
     leftVerticalLayout->addWidget(leftBar);
     QPushButton *commandButton = new QPushButton("Commander", this);
     connect(commandButton,SIGNAL(clicked()),this,SLOT(openConfirmWindow()));
-    commandButton->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000;background: orange;border-radius: 8px;");
+    commandButton->setFixedHeight(100);
+    commandButton->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);border-radius: 8px;");
     leftVerticalLayout->addWidget(commandButton);
 }
 

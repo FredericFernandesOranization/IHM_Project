@@ -8,6 +8,7 @@
 #include "gallery.h"
 #include <gallerieslayout.h>
 #include "detaileditem.h"
+#include "uppermenu.h"
 
 class RightZone : public QWidget
 {

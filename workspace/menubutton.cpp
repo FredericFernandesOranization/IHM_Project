@@ -3,7 +3,7 @@
 MenuButton::MenuButton(QString label, QWidget* parent) : QPushButton(label, parent)
 {
     this->label = label;
-    this->setStyleSheet("border: none; border-radius: 55px;  padding: 6px;");
+    this->setStyleSheet("color: rgb(255, 255, 255); border: none; border-radius: 55px;  padding: 6px;");
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(QColor(70,130,180)));
 }

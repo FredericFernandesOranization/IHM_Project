@@ -12,28 +12,13 @@ RightZone::RightZone() : QWidget()
 
     //Separation UpperMenu - Gallery
     QVBoxLayout *rightVerticalLayout = new QVBoxLayout;
+    rightVerticalLayout->setContentsMargins(5, 0, 0, 0);
     rightVerticalLayout->setSpacing(3);
     this->setLayout(rightVerticalLayout);
 
     //Creation UpperMenu
-    QHBoxLayout *upperMenuHorizontalLayout = new QHBoxLayout; //creation Layout Menu
-
-    QWidget *upperMenu = new QWidget;
-    upperMenu->setAutoFillBackground(true);
-    upperMenu->setPalette(QPalette(QColor(70,130,180)));
-    upperMenu->setStyleSheet("padding : 0 ; margin : 0");
-    upperMenu->setFixedHeight(100);
-    upperMenu->setLayout(upperMenuHorizontalLayout);
+    UpperMenu* upperMenu = new UpperMenu;
     rightVerticalLayout->addWidget(upperMenu); //Adding UpperMenu in RightPart
-
-    //Creating UpperMenuBar
-    QList<QString> stringMenu = QList<QString>() << QString("Menu 1") << QString("Menu 2") << QString("Menu 3") << QString("Menu 4");
-    for(int i=0; i<4; i++){
-        QPushButton *b = new QPushButton(stringMenu.at(i));
-        b->setFixedHeight(85);
-        b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
-        upperMenuHorizontalLayout->addWidget(b);
-    }
 
     //Creating Stack Layout for Gallery
     QScrollArea *galleryScroll = new QScrollArea;
