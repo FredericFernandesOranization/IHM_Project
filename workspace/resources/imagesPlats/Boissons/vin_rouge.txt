@@ -6,6 +6,6 @@ Verre 35 cl
 
 5.5
 
-Vin
+None;None
 
-all1
+None;None

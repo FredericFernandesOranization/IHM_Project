@@ -8,4 +8,4 @@ Poulet Basquaise
 
 poulet;poivron;tomate;échalote
 
-all1
+None;None

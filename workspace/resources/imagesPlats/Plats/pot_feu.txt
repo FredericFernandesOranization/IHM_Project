@@ -8,4 +8,4 @@ Pot au feu
 
 boeuf;poireau;céleri;carotte;oignon;poivre noir;chou;pomme de terre
 
-all1
+None;None

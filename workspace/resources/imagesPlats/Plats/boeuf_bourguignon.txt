@@ -8,4 +8,4 @@ Boeuf Bourguignon
 
 boeuf;champignon;carotte;vin rouge;oignon
 
-champignon
+champignon;None

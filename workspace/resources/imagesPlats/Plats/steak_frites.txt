@@ -8,4 +8,4 @@ Steak avec des frites
 
 boeuf;pomme de terre;beurre;poivre noir
 
-lait
+lait;None

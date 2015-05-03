@@ -8,4 +8,4 @@ Hachis Parmentier
 
 pomme de terre;lait;beurre;noix muscade;échalote;poireau
 
-lait
+lait;None

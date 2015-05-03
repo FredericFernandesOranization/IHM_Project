@@ -8,4 +8,4 @@ Carpaccio de boeuf
 
 boeuf;parmesan;vinagre balsamique;citron
 
-fromage
+fromage;None
