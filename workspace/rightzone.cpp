@@ -44,7 +44,7 @@ RightZone::RightZone() : QWidget()
        scroller->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
        scroller->setWidget(g);*/
        BackButton* button = detailedItem->getBackButton();
-       connect(button, SIGNAL(onBackClick(QString)), g, SLOT(onBackClick(QString)));
+       connect(button, SIGNAL(clicked()), button, SLOT(backToGallery()));
        galleriesLayout->addWidget(g);
     }
 

@@ -6,6 +6,8 @@
 #include <QWidget>
 #include <qdebug.h>
 #include <QObject>
+#include "gallerieslayout.h"
+
 
 class BackButton : public QPushButton
 {
@@ -16,6 +18,13 @@ public:
     ~BackButton();
 private:
     QString label;
+
+public slots :
+    void backToGallery(){
+        qDebug() << " in back to gallery button";
+        GalleriesLayout::getInstance()->setCurrentIndex(0);
+
+    }
 
 };
 
