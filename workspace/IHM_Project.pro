@@ -27,8 +27,7 @@ SOURCES += main.cpp\
     gallerieslayout.cpp \
     detaileditem.cpp \
     backbutton.cpp \
-    leftbarlayout.cpp \
-    confirmdialog.cpp
+    leftbarlayout.cpp
     imagelabel.cpp
 
 HEADERS  += mainwindow.h \
@@ -44,12 +43,10 @@ HEADERS  += mainwindow.h \
     gallerieslayout.h \
     detaileditem.h \
     backbutton.h \
-    leftbarlayout.h \
-    confirmdialog.h
+    leftbarlayout.h
     imagelabel.h
 
-FORMS    += mainwindow.ui \
-    confirmdialog.ui
+FORMS    += mainwindow.ui
 
 OTHER_FILES += \
     replats.xml

@@ -12,7 +12,7 @@ RightZone::RightZone() : QWidget()
 
     //Separation UpperMenu - Gallery
     QVBoxLayout *rightVerticalLayout = new QVBoxLayout;
-    rightVerticalLayout->setSpacing(5);
+    rightVerticalLayout->setSpacing(3);
     this->setLayout(rightVerticalLayout);
 
     //Creation UpperMenu

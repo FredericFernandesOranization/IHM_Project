@@ -79,9 +79,7 @@ void Database::loadAllergies()
     while(!n.isNull()) {
         QDomElement e = n.toElement(); // try to convert the node to an element.
         QString name = e.text().simplified();
-        if(!name.compare("None"))
-            clientAllergiesList<<name;
-
+        clientAllergiesList<<name;
         n = n.nextSibling();
     }
 }
@@ -96,8 +94,7 @@ void Database::loadIngredients()
     while(!n.isNull()) {
         QDomElement e = n.toElement(); // try to convert the node to an element.
         QString name = e.text().simplified();
-        if(!name.compare("None"))
-            clientIngredientsList<<name;
+        clientIngredientsList<<name;
         n = n.nextSibling();
     }
 }
@@ -122,7 +119,7 @@ QString Database::filterImgPath(const QString path)
 {
     QString newpath(path);
     if(!path.contains("/")){
-        newpath = pathIMG+path;
+         newpath = pathIMG+path;
     }
     return newpath;
 }

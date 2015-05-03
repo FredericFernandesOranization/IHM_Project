@@ -50,46 +50,12 @@ class ListePlats:
 				imageInfo = open(imageInfoPath).read().split("\n\n")
 				self.listePlats.append(Plat(imageInfo[0], imageDir, imageInfo[1], imageInfo[2], "../workspace/" + image, imageInfo[3], imageInfo[4].split(';'), imageInfo[5].split(';')))
 
-	def writeXMLtoFile(self, filePath, output):
+	def toXML(self, filePath):
+		output = self.template.render(listePlats = self.listePlats)
 		with open(filePath, "wb") as f:
 			f.write('<?xml version="1.0" encoding="UTF-8"?>')
 			f.write(output)
-		print "XML", filePath, "created...\n"
-
-
-	"""create Plats Database XML file"""
-	def platsToXML(self, filePath):
-		output = self.template.render(listePlats = self.listePlats)
-		self.writeXMLtoFile(filePath, output)
-
-	def ingredientsToXML(self, filePath):
-		listeIngredients = set([ingredient for plat in self.listePlats for ingredient in plat.ingredients])
-		ingredientsTemplate = Template("""
-<lesIngredients>
-	{% for ingredient in listeIngredients %} 
-    <name>{{ingredient}}</name>
-   	{% endfor %}
-</lesIngredients>			
-""")	
-		output = ingredientsTemplate.render(listeIngredients = listeIngredients)
-		self.writeXMLtoFile(filePath, output)
-
-	def allergiesToXML(self, filePath):
-		listeAllergies = set([allergy for plat in self.listePlats for allergy in plat.possibleAllergies])
-		allergiesTemplate = Template("""
-<lesAllergies>
-	{% for allergy in listeAllergies %} 
-    <name>{{allergy}}</name>
-   	{% endfor %}
-</lesAllergies>			
-""")	
-		output = allergiesTemplate.render(listeAllergies = listeAllergies)
-		self.writeXMLtoFile(filePath, output)
-
-	def createXMLDatabase(self):
-		self.platsToXML("resources/plats.xml")
-		self.ingredientsToXML("resources/ingredients.xml")
-		self.allergiesToXML("resources/allergies.xml")
+		print "XML created...\n"
 
 class Plat:
 	def __init__(self, name, typePlat, description, shortDescription, imagePath, price, ingredients, possibleAllergies):
@@ -103,7 +69,8 @@ class Plat:
 		self.possibleAllergies = possibleAllergies
 
 liste = ListePlats("resources/imagesPlats/")
-liste.createXMLDatabase()
+output = liste.toXML("resources/plats.xml")
+
 
 
 
