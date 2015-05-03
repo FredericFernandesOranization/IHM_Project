@@ -3,6 +3,7 @@
 LeftZone::LeftZone() : QWidget()
 {
     //Left Zone Properties
+
     QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
     //this->resize(500, 100);
     this->setAutoFillBackground(true);
