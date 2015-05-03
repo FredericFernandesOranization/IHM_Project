@@ -73,7 +73,7 @@ LeftZone::LeftZone() : QWidget()
         //connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
 
         b->setFixedWidth(280);
-        b->setFixedHeight(200);
+        //b->setFixedHeight(200);
         b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
         commandBarLayout->addWidget(b);
     }

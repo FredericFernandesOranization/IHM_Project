@@ -24,19 +24,33 @@ DetailedItem::DetailedItem(Plat plat,int imgSizeW ,int imgSizeH, QColor backgrou
     nameLabel->setPalette(pal);
 
     //creating description Label
-    QLabel *labelShortDesc = new QLabel(plat.getDescription(),this);
-    labelShortDesc->setFont(shortDescFont);
-    labelShortDesc->setPalette(QPalette(Qt::white));
-    labelShortDesc->setPalette(pal);
-    labelShortDesc->setMaximumWidth(imgSizeW);
+    QLabel *descriptionLabel = new QLabel(plat.getDescription(),this);
+    descriptionLabel->setFont(shortDescFont);
+    descriptionLabel->setPalette(QPalette(Qt::white));
+    descriptionLabel->setPalette(pal);
+    descriptionLabel->setMaximumWidth(imgSizeW);
+
+
+    //division left - right part
+    QWidget* leftPart = new QWidget; //creating left part
+    QVBoxLayout *leftPartLayout = new QVBoxLayout;
+    leftPart->setLayout(leftPartLayout);
+    leftPartLayout->addWidget(image);
+    leftPartLayout->addWidget(nameLabel);
+
+    QWidget* rightPart = new QWidget; //creating right part
+    QVBoxLayout *rightPartLayout = new QVBoxLayout;
+    rightPart->setLayout(rightPartLayout);
+    rightPartLayout->addWidget(descriptionLabel);
+    rightPartLayout->addWidget(backButton);
 
     //setting item layout and adding components
     QHBoxLayout *itemLayout = new QHBoxLayout;
     this->setLayout(itemLayout);
-    itemLayout->addWidget(image);
-    itemLayout->addWidget(labelShortDesc);
-    itemLayout->addWidget(commander);
-    itemLayout->addWidget(backButton);
+    itemLayout->addWidget(leftPart);
+    itemLayout->addWidget(rightPart);
+
+
 }
 
 BackButton* DetailedItem::getBackButton(){ return this->backButton; }
