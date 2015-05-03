@@ -1,4 +1,4 @@
-steak_frites
+Steak avec des frites
 
 Compose d'un steak et de frites avec de sauce (mayonnaise, moutarde, béarnaise, ketchup, sauce Café de Paris)
 
@@ -6,6 +6,6 @@ Steak avec des frites
 
 16
 
-De boeuf;Des pommes de terre;De  beurre;De poivre noir
+boeuf;pomme de terre;beurre;poivre noir
 
-all1
+lait

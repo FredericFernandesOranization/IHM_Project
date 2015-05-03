@@ -1,4 +1,4 @@
-sprite
+Sprite
 
 Une canette de Sprite 355 ml
 

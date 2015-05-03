@@ -1,11 +1,11 @@
-oeufs_farcis
+Oeufs farcis à la crème d'ail
 
-description
+Oeufs farcis à la crème d'ail
 
 Oeufs farcis à la crème d'ail
 
 6
 
-Des oeufs;D'ail;De crème fraîche;De poivre vert
+oeuf;ail;crème fraîche;poivre vert
 
 oeufs;lait

@@ -1,8 +1,8 @@
-cafe
+Café Expresso
 
 Un tasse de café expresso
 
-Expresso
+Café Expresso
 
 2.2
 

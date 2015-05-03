@@ -1,4 +1,4 @@
-creme_brulee
+Crème Brûlée
 
 Une crème caramélisée avec une croûte sur le dessus chaude et croustillante
 
@@ -6,6 +6,6 @@ Crème Brûlée
 
 7
 
-Des oeufs;De lait;De crème entière;De vainille
+oeuf;lait;crème fraîche;vainille
 
-lait
+lait;oeuf

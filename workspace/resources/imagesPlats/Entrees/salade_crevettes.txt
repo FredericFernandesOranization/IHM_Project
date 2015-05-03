@@ -1,13 +1,13 @@
-salades_crevettes
+Salade de Crevettes
 
-description
+Salade de Crevettes avec de sauce avec la mayonnaise, de Ketchup
 
 Salade de Crevettes
 
 6
 
-Des crevettes cuites;De laitue;De citron;De ciboultte;De poivre vert;De gingembre;De mayonnaise;De ketchup
+crevette;laitue;citron;ciboulette;poivre vert;gingembre;mayonnaise;ketchup
 
-fruit de mèr;gingembre
+crevette;gingembre
 
 

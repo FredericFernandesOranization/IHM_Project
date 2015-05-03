@@ -1,4 +1,4 @@
-salade_fruits
+Salade des fruits
 
 Salade des fruits exotique avec de la banane, des fruits rouges, des pommes, des melons accompagne d'un sirop d'orange, parfumé à la vanille.
 
@@ -6,6 +6,6 @@ Salade des fruits
 
 5
 
-De pomme;De melon;De poire;De framboise;De banane;De juis d'orange
+pomme;melon;poire;framboise;banane;juis d'orange
 
-all1
+fruits rouges

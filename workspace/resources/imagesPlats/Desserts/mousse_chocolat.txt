@@ -1,4 +1,4 @@
-mousse_chocolat
+Mousse de Chocolat
 
 Un mousse de Chocolat noir très consistant  
 
@@ -6,6 +6,6 @@ Mousse de Chocolat
 
 7
 
-De chocolat noir;De beurre;Des oeufs
+chocolat noir;beurre;oeuf
 
 lait;oeuf

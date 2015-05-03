@@ -1,4 +1,4 @@
-evian
+Eau Evian
 
 Une bouteille d'eau Evian 330 ml
 
@@ -6,6 +6,6 @@ Bouteille 33 cl
 
 2.5
 
-Eau
+Eau Evian
 
 all1

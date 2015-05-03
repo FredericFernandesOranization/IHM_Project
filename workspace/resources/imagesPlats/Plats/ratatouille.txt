@@ -1,4 +1,4 @@
-ratatouille
+Ratatouille
 
 Composée de légumes cuits aubergines, courgettes, poivrons et tomates, ainsi que des oignons, de l'ail et de l'huile d'olive
 
@@ -6,6 +6,6 @@ Ratatouille
 
 15
 
-De l'aubergine;De courgette;De poivron;De tomate;Des oignons;De persil
+aubergine;courgette;poivron;tomate;oignon;persil
 
 all1

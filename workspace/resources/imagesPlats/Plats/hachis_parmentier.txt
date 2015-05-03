@@ -1,4 +1,4 @@
-hachis_parmentier
+Hachis Parmentier
 
 Un plat à base de purée de pommes de terre et de viande de bœuf hachée
 
@@ -6,6 +6,6 @@ Hachis Parmentier
 
 15
 
-Des pommes de terre;De lait;De beurre;De noix muscade;Des échalotes;De poireau
+pomme de terre;lait;beurre;noix muscade;échalote;poireau
 
-lait;all2;all3
+lait
