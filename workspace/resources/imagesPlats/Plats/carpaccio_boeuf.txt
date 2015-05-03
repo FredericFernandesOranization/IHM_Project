@@ -1,11 +1,11 @@
-carpaccio_boeuf
+Carpaccio de boeuf
 
-description
+La viande de bœuf crue en tranches très fines, assaisonnée traditionnellement d'un filet d'huile d'olive, jus de citron, sel et poivre et parsemé
 
 Carpaccio de boeuf
 
 13
 
-De boeuf;De parmesan;De vinagre balsamique;De citron
+boeuf;parmesan;vinagre balsamique;citron
 
-fromage;all2;all3
+fromage

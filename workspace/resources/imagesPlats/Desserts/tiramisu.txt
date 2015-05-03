@@ -1,11 +1,11 @@
-tiramisu
+Tiramisu
 
-description
+Un dessert italienne qui a la superposition de couches de biscuits plus ou moins crémeux
 
 Tiramisu
 
 7
 
-De mascarpone;Des oeufs;De lait;De chocolat
+mascarpone;oeuf;lait;chocolat
 
 lait;fromage

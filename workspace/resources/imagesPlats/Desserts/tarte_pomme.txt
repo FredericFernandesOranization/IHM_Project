@@ -1,11 +1,11 @@
-tarte_pomme
+Tarte aux pommes
 
-description
+Une tarte croustillante aux pommes caramélisées
 
 Tarte aux pommes
 
 5
 
-De pomme;Des oeufs; De crème liquide;De cannelle;De vanille
+pomme;oeuf;crème liquide;cannelle;vanille
 
 oeuf;lait
