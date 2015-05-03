@@ -8,4 +8,4 @@ Poulet au curry
 
 poulet;farine;curry;persil;huile
 
-curry
+curry;None

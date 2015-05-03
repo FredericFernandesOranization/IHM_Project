@@ -76,7 +76,7 @@
 			 <ingredient>pomme</ingredient>  <ingredient>melon</ingredient>  <ingredient>poire</ingredient>  <ingredient>framboise</ingredient>  <ingredient>banane</ingredient>  <ingredient>juis d'orange</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>fruits rouges
+			 <possibleAllergie>fruits rouges</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -89,10 +89,10 @@
 		<imagePath>../workspace/resources/imagesPlats/Boissons/evian.jpg</imagePath>
 		<price>2.5</price>
 		<ingredientsList>
-			 <ingredient>Eau Evian</ingredient> 
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -105,10 +105,10 @@
 		<imagePath>../workspace/resources/imagesPlats/Boissons/coca_cola.jpg</imagePath>
 		<price>2</price>
 		<ingredientsList>
-			 <ingredient>Coca Cola</ingredient> 
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -121,10 +121,10 @@
 		<imagePath>../workspace/resources/imagesPlats/Boissons/ice_the_mangue.jpg</imagePath>
 		<price>2</price>
 		<ingredientsList>
-			 <ingredient>Thé noir</ingredient>  <ingredient>Extract de Mangue</ingredient> 
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -140,7 +140,7 @@
 			 <ingredient>Cafe moulu</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -153,10 +153,10 @@
 		<imagePath>../workspace/resources/imagesPlats/Boissons/fanta.jpg</imagePath>
 		<price>2</price>
 		<ingredientsList>
-			 <ingredient>Fanta</ingredient> 
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -169,10 +169,10 @@
 		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_blanc.jpg</imagePath>
 		<price>5.5</price>
 		<ingredientsList>
-			 <ingredient>Vin</ingredient> 
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -185,10 +185,10 @@
 		<imagePath>../workspace/resources/imagesPlats/Boissons/sprite.jpg</imagePath>
 		<price>2</price>
 		<ingredientsList>
-			 <ingredient>Sprite</ingredient> 
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -201,10 +201,10 @@
 		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_rouge.jpg</imagePath>
 		<price>5.5</price>
 		<ingredientsList>
-			 <ingredient>Vin</ingredient> 
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -221,7 +221,7 @@ Charcuteries Mixtes</shortDescription>
 			 <ingredient>jambon</ingredient>  <ingredient>salami</ingredient>  <ingredient>viande</ingredient>  <ingredient>boeuf</ingredient>  <ingredient>porc</ingredient>  <ingredient>salade</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -268,7 +268,7 @@ Charcuteries Mixtes</shortDescription>
 			 <ingredient>boeuf</ingredient>  <ingredient>champignon</ingredient>  <ingredient>carotte</ingredient>  <ingredient>vin rouge</ingredient>  <ingredient>oignon</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>champignon
+			 <possibleAllergie>champignon</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -316,7 +316,7 @@ Charcuteries Mixtes</shortDescription>
 			 <ingredient>boeuf</ingredient>  <ingredient>poireau</ingredient>  <ingredient>céleri</ingredient>  <ingredient>carotte</ingredient>  <ingredient>oignon</ingredient>  <ingredient>poivre noir</ingredient>  <ingredient>chou</ingredient>  <ingredient>pomme de terre</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -332,7 +332,7 @@ Charcuteries Mixtes</shortDescription>
 			 <ingredient>boeuf</ingredient>  <ingredient>parmesan</ingredient>  <ingredient>vinagre balsamique</ingredient>  <ingredient>citron</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>fromage
+			 <possibleAllergie>fromage</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -348,7 +348,7 @@ Charcuteries Mixtes</shortDescription>
 			 <ingredient>pomme de terre</ingredient>  <ingredient>lait</ingredient>  <ingredient>beurre</ingredient>  <ingredient>noix muscade</ingredient>  <ingredient>échalote</ingredient>  <ingredient>poireau</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>lait
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -364,7 +364,7 @@ Charcuteries Mixtes</shortDescription>
 			 <ingredient>aubergine</ingredient>  <ingredient>courgette</ingredient>  <ingredient>poivron</ingredient>  <ingredient>tomate</ingredient>  <ingredient>oignon</ingredient>  <ingredient>persil</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -380,7 +380,7 @@ Charcuteries Mixtes</shortDescription>
 			 <ingredient>poulet</ingredient>  <ingredient>farine</ingredient>  <ingredient>curry</ingredient>  <ingredient>persil</ingredient>  <ingredient>huile</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>curry
+			 <possibleAllergie>curry</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -396,7 +396,7 @@ Charcuteries Mixtes</shortDescription>
 			 <ingredient>boeuf</ingredient>  <ingredient>pomme de terre</ingredient>  <ingredient>beurre</ingredient>  <ingredient>poivre noir</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>lait
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -412,7 +412,7 @@ Charcuteries Mixtes</shortDescription>
 			 <ingredient>poulet</ingredient>  <ingredient>poivron</ingredient>  <ingredient>tomate</ingredient>  <ingredient>échalote</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
-			 <possibleAllergie>all1
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>

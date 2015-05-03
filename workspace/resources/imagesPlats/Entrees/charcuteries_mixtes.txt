@@ -9,4 +9,4 @@ Charcuteries Mixtes
 
 jambon;salami;viande;boeuf;porc;salade
 
-all1
+None;None
