@@ -1,11 +1,11 @@
-poulet_curry
+Poulet au curry
 
-description
+Un plat composé de morceaux de poulets cuits cuisinés dans une sauce de curry
 
 Poulet au curry
 
 13
 
-De poulet;De farine;De curry;De persil;D'huile
+poulet;farine;curry;persil;huile
 
-curry;all2;all3
+curry

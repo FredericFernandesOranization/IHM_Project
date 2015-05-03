@@ -1,11 +1,11 @@
-poulet_basquaise
+Poulet Basquaise
 
-description
+Un plat consiste en des morceaux de poulet sautés avec un mélange de tomates mûres et de poivrons rouges et vert
 
 Poulet Basquaise
 
 15
 
-De poulet;De poivron;De tomate;De échalote
+poulet;poivron;tomate;échalote
 
-all1;all2;all3
+all1

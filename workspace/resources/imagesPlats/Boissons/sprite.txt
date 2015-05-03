@@ -1,11 +1,11 @@
-sprite
+Sprite
 
-description
+Une canette de Sprite 355 ml
 
 Canette 35cl
 
 2
 
-ing1;ing2;ing3
+Sprite
 
-all1;all2;all3
+all1

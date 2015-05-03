@@ -1,11 +1,11 @@
-pasta_carbonara
+Pâtes à la Carbonara
 
-description
+Un plat traditionnelle de l'Italie qui contient de pât, des lardons, de fromage parmesan et le poivre noir fraîchement moulu
 
-shortDescription
+Pâtes à la Carbonara
 
 12
 
-De lardon;Des oignos;Des œufs;La crème légère;De parmesan
+ardon;oigno;oeuf;crème légère;parmesan
 
-all1;all2;all3
+lait;fromage

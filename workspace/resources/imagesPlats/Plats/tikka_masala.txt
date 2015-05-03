@@ -1,11 +1,11 @@
-tikka_masala
+Tikka Masala
 
-description
+Un plat composé de morceaux de poulets cuits (tikka) cuisinés dans une sauce de curry
 
 Tikka Masala
 
 15
 
-De poulet;De noix de cajou;De piment jalapeno;De gingembre;De crème;De yagourt
+poulet;noix de cajou;piment jalapeno;gingembre;crème légère;yagourt
 
 lait;noix de cajou
