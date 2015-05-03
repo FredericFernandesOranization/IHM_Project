@@ -11,6 +11,10 @@ ConfirmDialog::ConfirmDialog(QWidget *parent) :
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(QColor(70,130,180)));
     this->setWindowFlags(Qt::Popup);
+    QPixmap pix("../workspace/resources/imagesPlats/images.jpg");
+    pix = pix.scaled(ui->lblImg->rect().size());
+    ui->lblImg->setPixmap(pix);
+    //ui->lblImg->
     const QRect screen = QApplication::desktop()->screenGeometry();
      this->move( screen.center() - this->rect().center() );
 }
