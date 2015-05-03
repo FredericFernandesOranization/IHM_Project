@@ -35,3 +35,4 @@ void ConfirmDialog::on_btnAnnuler_clicked()
     qDebug()<<"Annulation";
     this->close();
 }
+

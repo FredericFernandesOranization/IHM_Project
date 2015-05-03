@@ -19,7 +19,6 @@ public:
 
 private slots:
     void on_btnValid_clicked();
-
     void on_btnAnnuler_clicked();
 
 private:
