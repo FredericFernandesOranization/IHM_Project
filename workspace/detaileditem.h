@@ -18,7 +18,7 @@ class DetailedItem :public QWidget
 {
     Q_OBJECT
 public:
-    DetailedItem(Plat plat,int imgSizeW=150 ,int imgSizeH=100, QColor background=QColor(70,130,180), QWidget *parent = 0);
+    DetailedItem(Plat plat,int imgSizeW=500 ,int imgSizeH=350, QColor background=QColor(70,130,180), QWidget *parent = 0);
     BackButton* getBackButton();
 private:
     BackButton* backButton;

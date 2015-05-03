@@ -73,7 +73,7 @@ LeftZone::LeftZone() : QWidget()
         //connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
 
         b->setFixedWidth(280);
-        b->setFixedHeight(200);
+        //b->setFixedHeight(200);
         b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
         commandBarLayout->addWidget(b);
     }
@@ -82,6 +82,7 @@ LeftZone::LeftZone() : QWidget()
     //leftZoneStackedLayout->setCurrentIndex(1);
     leftVerticalLayout->addWidget(leftBar);
     QPushButton *commandButton = new QPushButton("Commander", this);
+    connect(commandButton,SIGNAL(clicked()),this,SLOT(openConfirmWindow()));
     commandButton->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000;background: orange;border-radius: 8px;");
     leftVerticalLayout->addWidget(commandButton);
 }
@@ -103,8 +104,13 @@ void LeftZone::getUnclicked(QString label)
             this->setPalette(QPalette(QColor(70,130,180)));
         }
     }
-        /*if(this->label != label){
+    /*if(this->label != label){
         this->setAutoFillBackground(true);
         this->setPalette(QPalette(QColor(70,130,180)));
     }*/
+}
+
+void LeftZone::openConfirmWindow(){
+    ConfirmDialog *conf = new ConfirmDialog(this);
+    conf->show();
 }
