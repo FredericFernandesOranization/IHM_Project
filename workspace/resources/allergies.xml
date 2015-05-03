@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lesAllergies>
-    <name>Allergy_1</name>
-    <name>test2</name>
-    <name>Allergy_2</name>
-    <name>monAll</name>
-</lesAllergies>
+	 
+    <name>lait</name>
+   	 
+    <name>oeuf</name>
+   	 
+    <name>oeuf
+</name>
+   	 
+    <name>fromage</name>
+   	 
+    <name>all1
+</name>
+   	 
+    <name>noix de cajou
+</name>
+   	 
+    <name>oeufs</name>
+   	 
+    <name>all1</name>
+   	 
+    <name>fromage
+</name>
+   	 
+    <name>gingembre</name>
+   	 
+    <name>all3
+</name>
+   	 
+    <name>curry</name>
+   	 
+    <name>lait
+</name>
+   	 
+    <name>fruit de mèr</name>
+   	 
+    <name>all2</name>
+   	
+</lesAllergies>			

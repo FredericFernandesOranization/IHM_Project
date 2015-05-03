@@ -2,6 +2,7 @@
 <lesPlats>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Tiramisu</name>
 		<type>Desserts</type>
 		<description>Un dessert italienne qui a la superposition de couches de biscuits plus ou moins crémeux</description>
@@ -13,11 +14,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>fromage
+=======
+		<name>charc_mixtes</name>
+		<type>Entrees</type>
+		<description>description</description>
+		<shortDescription>Charcuteries Mixtes</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Entrees/charcuteries_mixtes.jpg</imagePath>
+		<price>6</price>
+		<ingredientsList>
+			 <ingredient>De jambon blanc</ingredient>  <ingredient>De salami</ingredient>  <ingredient>De viande séchée</ingredient>  <ingredient>De roti de boeuf et de porc</ingredient>  <ingredient>De salade</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Mousse de Chocolat</name>
 		<type>Desserts</type>
 		<description>Un mousse de Chocolat noir très consistant  </description>
@@ -29,11 +44,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>oeuf
+=======
+		<name>oeufs_farcis</name>
+		<type>Entrees</type>
+		<description>description</description>
+		<shortDescription>Oeufs farcis à la crème d'ail</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Entrees/oeufs_farcis.jpg</imagePath>
+		<price>6</price>
+		<ingredientsList>
+			 <ingredient>Des oeufs</ingredient>  <ingredient>D'ail</ingredient>  <ingredient>De crème fraîche</ingredient>  <ingredient>De poivre vert</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>oeufs</possibleAllergie>  <possibleAllergie>lait
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Crème Brûlée</name>
 		<type>Desserts</type>
 		<description>Une crème caramélisée avec une croûte sur le dessus chaude et croustillante</description>
@@ -46,10 +75,24 @@
 		<possibleAllergiesList>
 			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>oeuf
 </possibleAllergie> 
+=======
+		<name>salades_crevettes</name>
+		<type>Entrees</type>
+		<description>description</description>
+		<shortDescription>Salade de Crevettes</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Entrees/salade_crevettes.jpg</imagePath>
+		<price>6</price>
+		<ingredientsList>
+			 <ingredient>Des crevettes cuites</ingredient>  <ingredient>De laitue</ingredient>  <ingredient>De citron</ingredient>  <ingredient>De ciboultte</ingredient>  <ingredient>De poivre vert</ingredient>  <ingredient>De gingembre</ingredient>  <ingredient>De mayonnaise</ingredient>  <ingredient>De ketchup</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>fruit de mèr</possibleAllergie>  <possibleAllergie>gingembre</possibleAllergie> 
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Tarte aux pommes</name>
 		<type>Desserts</type>
 		<description>Une tarte croustillante aux pommes caramélisées</description>
@@ -61,11 +104,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>oeuf</possibleAllergie>  <possibleAllergie>lait
+=======
+		<name>tikka_masala</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Tikka Masala</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/tikka_masala.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>De poulet</ingredient>  <ingredient>De noix de cajou</ingredient>  <ingredient>De piment jalapeno</ingredient>  <ingredient>De gingembre</ingredient>  <ingredient>De crème</ingredient>  <ingredient>De yagourt</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>noix de cajou
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Salade des fruits</name>
 		<type>Desserts</type>
 		<description>Salade des fruits exotique avec de la banane, des fruits rouges, des pommes, des melons accompagne d'un sirop d'orange, parfumé à la vanille.</description>
@@ -77,11 +134,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>fruits rouges
+=======
+		<name>pot_feu</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Pot à feu</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/pot_feu.jpg</imagePath>
+		<price>17</price>
+		<ingredientsList>
+			 <ingredient>De boeuf</ingredient>  <ingredient>De poireaux</ingredient>  <ingredient>De céleri</ingredient>  <ingredient>De carottes</ingredient>  <ingredient>Des oignons</ingredient>  <ingredient>De poivre noir</ingredient>  <ingredient>De chou</ingredient>  <ingredient>Des pommes de terre</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Eau Evian</name>
 		<type>Boissons</type>
 		<description>Une bouteille d'eau Evian 330 ml</description>
@@ -93,11 +164,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>poulet_basquaise</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Poulet Basquaise</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/poulet_basquaise.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>De poulet</ingredient>  <ingredient>De poivron</ingredient>  <ingredient>De tomate</ingredient>  <ingredient>De échalote</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Coca Cola</name>
 		<type>Boissons</type>
 		<description>Une canette de Coca Cola 355 ml</description>
@@ -109,11 +194,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>carpaccio_boeuf</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Carpaccio de boeuf</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/carpaccio_boeuf.jpg</imagePath>
+		<price>13</price>
+		<ingredientsList>
+			 <ingredient>De boeuf</ingredient>  <ingredient>De parmesan</ingredient>  <ingredient>De vinagre balsamique</ingredient>  <ingredient>De citron</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>fromage</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Thé Glacé à la Mangue</name>
 		<type>Boissons</type>
 		<description>Une canette de Thé glacé à la Mangue 355 ml</description>
@@ -125,11 +224,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>steak_frites</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Steak avec des frites</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/steak_frites.jpg</imagePath>
+		<price>16</price>
+		<ingredientsList>
+			 <ingredient>De boeuf</ingredient>  <ingredient>Des pommes de terre</ingredient>  <ingredient>De  beurre</ingredient>  <ingredient>De cognac</ingredient>  <ingredient>De crème fraîche</ingredient>  <ingredient>De poivre noir</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Café Expresso</name>
 		<type>Boissons</type>
 		<description>Un tasse de café expresso</description>
@@ -141,11 +254,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>hachis_parmentier</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Hachis Parmentier</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/hachis_parmentier.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>Des pommes de terre</ingredient>  <ingredient>De lait</ingredient>  <ingredient>De beurre</ingredient>  <ingredient>De noix muscade</ingredient>  <ingredient>Des échalotes</ingredient>  <ingredient>De poireau</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Fanta</name>
 		<type>Boissons</type>
 		<description>Une canette de Fanta 355 ml</description>
@@ -157,11 +284,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>boeuf_bourguignon</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Boeuf Bourguignon</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/boeuf_bourguignon.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>De boeuf</ingredient>  <ingredient>De champignon</ingredient>  <ingredient>De carotte</ingredient>  <ingredient>De vin rouge</ingredient>  <ingredient>Des oignons</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Vin Blanc</name>
 		<type>Boissons</type>
 		<description>Une verre de Vin Blanc (boisson avec alcool)</description>
@@ -173,11 +314,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>ratatouille</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Ratatouille</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/ratatouille.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>De l'aubergine</ingredient>  <ingredient>De courgette</ingredient>  <ingredient>De poivron</ingredient>  <ingredient>De tomate</ingredient>  <ingredient>Des oignons</ingredient>  <ingredient>De persil</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Sprite</name>
 		<type>Boissons</type>
 		<description>Une canette de Sprite 355 ml</description>
@@ -189,11 +344,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>pasta_carbonara</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>shortDescription</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/pasta_carbonara.jpg</imagePath>
+		<price>12</price>
+		<ingredientsList>
+			 <ingredient>De lardon</ingredient>  <ingredient>Des oignos</ingredient>  <ingredient>Des œufs</ingredient>  <ingredient>La crème légère</ingredient>  <ingredient>De parmesan</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Vin Rouge</name>
 		<type>Boissons</type>
 		<description>Une verre de Vin Rouge (boisson avec alcool)</description>
@@ -205,11 +374,25 @@
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>poulet_curry</name>
+		<type>Plats</type>
+		<description>description</description>
+		<shortDescription>Poulet au curry</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/poulet_curry.jpg</imagePath>
+		<price>13</price>
+		<ingredientsList>
+			 <ingredient>De poulet</ingredient>  <ingredient>De farine</ingredient>  <ingredient>De curry</ingredient>  <ingredient>De persil</ingredient>  <ingredient>D'huile</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>curry</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Charcuteries Mixtes</name>
 		<type>Entrees</type>
 		<description>Un plat avec des tranches de jambon blanc, de salami, de viande séchée, de roti de boeuf et de porc avec un petite salade</description>
@@ -222,11 +405,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>vin_blanc</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Verre 35 cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_blanc.jpg</imagePath>
+		<price>5.5</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Oeufs farcis à la crème d'ail</name>
 		<type>Entrees</type>
 		<description>Oeufs farcis à la crème d'ail</description>
@@ -238,11 +435,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>oeufs</possibleAllergie>  <possibleAllergie>lait
+=======
+		<name>cafe</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Expresso</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/cafe.jpg</imagePath>
+		<price>2.2</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Salade de Crevettes</name>
 		<type>Entrees</type>
 		<description>Salade de Crevettes avec de sauce avec la mayonnaise, de Ketchup</description>
@@ -254,10 +465,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>crevette</possibleAllergie>  <possibleAllergie>gingembre</possibleAllergie> 
+=======
+		<name>coca_cola</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Canette 35cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/coca_cola.jpg</imagePath>
+		<price>2</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+</possibleAllergie> 
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Boeuf Bourguignon</name>
 		<type>Plats</type>
 		<description>Une estouffade de bœuf traditionnelle de la cuisine bourguignonne, cuisinée au vin rouge de Bourgogne et accompagnée en garniture de champignons, petits oignons et lardon</description>
@@ -269,11 +495,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>champignon
+=======
+		<name>evian</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Bouteille 35 cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/evian.jpg</imagePath>
+		<price>2.5</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Pâtes à la Carbonara</name>
 		<type>Plats</type>
 		<description>Un plat traditionnelle de l'Italie qui contient de pât, des lardons, de fromage parmesan et le poivre noir fraîchement moulu</description>
@@ -285,11 +525,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>fromage
+=======
+		<name>sprite</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Canette 35cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/sprite.jpg</imagePath>
+		<price>2</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Tikka Masala</name>
 		<type>Plats</type>
 		<description>Un plat composé de morceaux de poulets cuits (tikka) cuisinés dans une sauce de curry</description>
@@ -301,11 +555,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>noix de cajou
+=======
+		<name>fanta</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Canette 35cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/fanta.jpg</imagePath>
+		<price>2</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Pot au feu</name>
 		<type>Plats</type>
 		<description>Un plat de viande de bœuf cuisant longuement à feu très doux dans un bouillon aromatisé par des légumes et un bouquet garni</description>
@@ -317,11 +585,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>ice_the_mangue</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>shortDescription</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/ice_the_mangue.jpg</imagePath>
+		<price>price</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Carpaccio de boeuf</name>
 		<type>Plats</type>
 		<description>La viande de bœuf crue en tranches très fines, assaisonnée traditionnellement d'un filet d'huile d'olive, jus de citron, sel et poivre et parsemé</description>
@@ -333,11 +615,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>fromage
+=======
+		<name>vin_rouge</name>
+		<type>Boissons</type>
+		<description>description</description>
+		<shortDescription>Verre 35 cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_rouge.jpg</imagePath>
+		<price>5.5</price>
+		<ingredientsList>
+			 <ingredient>ing1</ingredient>  <ingredient>ing2</ingredient>  <ingredient>ing3</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1</possibleAllergie>  <possibleAllergie>all2</possibleAllergie>  <possibleAllergie>all3
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Hachis Parmentier</name>
 		<type>Plats</type>
 		<description>Un plat à base de purée de pommes de terre et de viande de bœuf hachée</description>
@@ -349,11 +645,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>lait
+=======
+		<name>tarte_pomme</name>
+		<type>Desserts</type>
+		<description>description</description>
+		<shortDescription>Tarte aux pommes</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/tarte_pomme.jpg</imagePath>
+		<price>5</price>
+		<ingredientsList>
+			 <ingredient>De pomme</ingredient>  <ingredient>Des oeufs</ingredient>  <ingredient> De crème liquide</ingredient>  <ingredient>De cannelle</ingredient>  <ingredient>De vanille</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>oeuf</possibleAllergie>  <possibleAllergie>lait
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Ratatouille</name>
 		<type>Plats</type>
 		<description>Composée de légumes cuits aubergines, courgettes, poivrons et tomates, ainsi que des oignons, de l'ail et de l'huile d'olive</description>
@@ -365,11 +675,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>tiramisu</name>
+		<type>Desserts</type>
+		<description>description</description>
+		<shortDescription>Tiramisu</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/tiramisu.jpg</imagePath>
+		<price>7</price>
+		<ingredientsList>
+			 <ingredient>De mascarpone</ingredient>  <ingredient>Des oeufs</ingredient>  <ingredient>De lait</ingredient>  <ingredient>De chocolat</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>fromage
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Poulet au curry</name>
 		<type>Plats</type>
 		<description>Un plat composé de morceaux de poulets cuits cuisinés dans une sauce de curry</description>
@@ -381,11 +705,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>curry
+=======
+		<name>mousse_chocolat</name>
+		<type>Desserts</type>
+		<description>description</description>
+		<shortDescription>Mousse de Chocolat</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/mousse_chocolat.jpg</imagePath>
+		<price>7</price>
+		<ingredientsList>
+			 <ingredient>De chocolat noir</ingredient>  <ingredient>De beurre</ingredient>  <ingredient>Des oeufs</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>oeuf
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Steak avec des frites</name>
 		<type>Plats</type>
 		<description>Compose d'un steak et de frites avec de sauce (mayonnaise, moutarde, béarnaise, ketchup, sauce Café de Paris)</description>
@@ -397,11 +735,25 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>lait
+=======
+		<name>salade_fruits</name>
+		<type>Desserts</type>
+		<description>description</description>
+		<shortDescription>Salade des fruits</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/salade_fruits.jpg</imagePath>
+		<price>5</price>
+		<ingredientsList>
+			 <ingredient>De pomme</ingredient>  <ingredient>De melon</ingredient>  <ingredient>De poire</ingredient>  <ingredient>De framboise</ingredient>  <ingredient>De banane</ingredient>  <ingredient>De juis d'orange</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>all1
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
 	 
 	<plat>
+<<<<<<< HEAD
 		<name>Poulet Basquaise</name>
 		<type>Plats</type>
 		<description>Un plat consiste en des morceaux de poulet sautés avec un mélange de tomates mûres et de poivrons rouges et vert</description>
@@ -413,6 +765,19 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>all1
+=======
+		<name>creme_brulee</name>
+		<type>Desserts</type>
+		<description>description</description>
+		<shortDescription>Crème Brûlée</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/creme_brulee.jpg</imagePath>
+		<price>7</price>
+		<ingredientsList>
+			 <ingredient>Des oeufs</ingredient>  <ingredient>De lait</ingredient>  <ingredient>De crème entière</ingredient>  <ingredient>De vainille</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait
+>>>>>>> fe0d02c610b99a56ef8354b7e9054960db6e90e1
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
