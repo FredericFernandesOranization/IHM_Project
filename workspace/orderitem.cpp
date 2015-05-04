@@ -68,13 +68,22 @@ OrderItem::OrderItem(Plat p, QWidget *parent) : QWidget(parent)
     QWidget* upperPart = new QWidget;
     QHBoxLayout *upperLayout = new QHBoxLayout;
     upperPart->setLayout(upperLayout);
-    QLabel *dishName = new QLabel(p.getName());
-    dishName->setStyleSheet("margin: 2px; font-family: Arial,sans-serif; font: bold; border-style: none; border-width: 1px; background: rgb(255,158,65); ");
 
+    //creating Name Label
+    QLabel *dishName = new QLabel();
+    //QString labelPrice("Price: " + QString::number(somme) + "€");
+    dishName->setText("<a style=\"font-size:13pt; font : bold;font-family: Arial,sans-serif; font: bold; background: rgb(255,158,65);\">" + p.getName() + "</a>");
+    dishName->setAlignment(Qt::AlignLeft);
+    dishName->setStyleSheet("border-style: none");
+    //dishName->setStyleSheet("margin: 2px; font-family: Arial,sans-serif; font: bold; border-style: none; border-width: 1px; background: rgb(255,158,65); ");
+
+    //create Price Label
     int somme = p.getPrice()*nbItem;
-    dishPrice = new QLabel("Price: " + QString::number(somme) + "€");
-    dishPrice->setStyleSheet("margin: 2px; font-family: Arial,sans-serif; font: bold; border-style: none; border-width: 1px; background: rgb(255,158,65); ");
-
+    QString labelPrice("Price: " + QString::number(somme) + "€");
+    dishPrice = new QLabel();
+    dishPrice->setText("<a style=\"font-size:13pt; font : bold;font-family: Arial,sans-serif; font: bold; background: rgb(255,158,65);\">" + labelPrice + "</a>");
+    dishPrice->setAlignment(Qt::AlignRight);
+    dishPrice->setStyleSheet("border-style: none");
     upperLayout->addWidget(dishName);
     upperLayout->addWidget(dishPrice);
 
@@ -84,7 +93,7 @@ OrderItem::OrderItem(Plat p, QWidget *parent) : QWidget(parent)
     lowerPart->setLayout(lowerLayout);
 
     minusSign = new QLabel("-");
-    //minusSign->
+    //minusSign->setText("<a style=\"font-size:13pt; font : bold;text-shadow: 5px 5px #558ABB; text-decoration : underline;font-family : Arial, Helvetica, sans-serif\">ENTREES</a>");
     minusSign->setStyleSheet("text-align: center; color: rgb(0, 255, 27)");
 
     quantityLabel = new QLabel(QString::number(nbItem));
