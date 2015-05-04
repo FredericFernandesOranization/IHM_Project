@@ -38,7 +38,7 @@ LeftZone::LeftZone() : QWidget()
     QList<QString> stringMenu = QList<QString>() << QString("Boissons") << QString("Entrees") << QString("Plats") << QString("Desserts");
     for(int i=0; i<4; i++){
         MenuButton *b = new MenuButton(stringMenu.at(i), this);
-        buttonLists.append(b);       
+        buttonLists.append(b);
         connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
         connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
         b->setFixedWidth(280);
@@ -52,11 +52,11 @@ LeftZone::LeftZone() : QWidget()
     commandBarScrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
     Commande *commandBar = Commande::getInstance();
     //commandBar->show();
-    QVBoxLayout *commandBarLayout = new QVBoxLayout;
-    commandBar->setLayout(commandBarLayout);
+    //QVBoxLayout *commandBarLayout = new QVBoxLayout;
+    //commandBar->setLayout(commandBarLayout);
     commandBarScrollArea->setWidget(commandBar);
     commandBarScrollArea->setWidgetResizable(true);
-    commandBarScrollArea->setLayout(commandBarLayout);
+    commandBarScrollArea->setLayout(commandBar->layout());
 
     //commandBarScrollArea->show();
     /*this->buttonLists = QList<MenuButton*>();
@@ -78,8 +78,8 @@ LeftZone::LeftZone() : QWidget()
     }*/
 
     //commandBarLayout->addWidget(new OrderItem(Database::getInstance()->getDish(1), this));
-
-    leftZoneStackedLayout->addWidget(commandBarScrollArea);
+    commandBarScrollArea->show();
+    //leftZoneStackedLayout->addWidget(commandBarScrollArea);
 
     connect(switchButton, SIGNAL(clicked()), switchButton, SLOT(changeLayout()));
     //leftZoneStackedLayout->setCurrentIndex(1);
@@ -108,7 +108,7 @@ void LeftZone::getUnclicked(QString label)
             this->setPalette(QPalette(QColor(70,130,180)));
         }
     }
-        /*if(this->label != label){
+    /*if(this->label != label){
         this->setAutoFillBackground(true);
         this->setPalette(QPalette(QColor(70,130,180)));
     }*/

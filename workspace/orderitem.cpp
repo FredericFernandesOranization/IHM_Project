@@ -145,11 +145,11 @@ void OrderItem::drow(){
 void OrderItem::mousePressEvent(QMouseEvent * event){
     qDebug()<<"click";
     QRect minusRect = minusSign->rect();
-    minusRect.moveRight(90);
-    minusRect.moveBottom(80);
+//    minusRect.moveRight(90);
+//    minusRect.moveBottom(80);
     QRect plusRect = plusSign->rect();
-    plusRect.moveRight(245);
-    plusRect.moveBottom(80);
+//    plusRect.moveRight(245);
+//    plusRect.moveBottom(80);
 
     if(plusRect.contains(event->pos())){
         qDebug()<<"plusSign";
