@@ -12,6 +12,7 @@
 #include "gallerieslayout.h"
 #include <QStringList>
 #include "detaileditem.h"
+#include "commande.h"
 
 class Gallery : public QWidget
 {

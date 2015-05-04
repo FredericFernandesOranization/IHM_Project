@@ -13,7 +13,7 @@ ImageLabel::ImageLabel(Plat plat,int imgSizeW,int imgSizeH ,QColor background, Q
     this->img = new QImage(plat.getImagePath());
     *img = img->scaled(imgSizeW, imgSizeH);
 
-    QLabel *labelPrice = new QLabel(QString::number(plat.getPrice()),this);
+    QLabel *labelPrice = new QLabel(QString::number(plat.getPrice()) + " €",this);
     QFont priceFont("Helvetica", 12, QFont::Bold);
     labelPrice->setFont(priceFont);
     labelPrice->move((imgSizeW)-15,(imgSizeH/2)-10);

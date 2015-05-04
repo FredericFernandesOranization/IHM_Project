@@ -83,7 +83,11 @@ void Gallery::showItem(Plat p){
     qDebug() << "FROM: \n" << from->getPlat().getId();
     DetailedItem* to = new DetailedItem(p);
     BackButton* back = to->getBackButton();
+    CommanderButton* commander = to->getCommanderButton();
     back->setFromGallery(p.getType());
+    Commande* commandeZone = Commande::getInstance();
+    connect(commander, SIGNAL(onClick(Plat)), commandeZone, SLOT(addDish(Plat)));
+    connect(commander, SIGNAL(clicked()), commander, SLOT(sendToCommandZone()));
     connect(back, SIGNAL(clicked()), back, SLOT(backToGallery()));
     from->setInstance(to);
     g->replaceWidget(from, to);

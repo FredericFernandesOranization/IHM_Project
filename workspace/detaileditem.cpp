@@ -14,9 +14,9 @@ DetailedItem::DetailedItem(Plat plat,int imgSizeW ,int imgSizeH, QColor backgrou
     this->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
 
     //creating buttons
-    this->commander = new CommanderButton(QString("commander"));
-    this->commander->setPlat(plat);
-    this->backButton = new BackButton(QString("Back"));
+    this->commander = new CommanderButton(QString("Ajouter au Panier"));
+    this->commander->setPlat(Plat(plat));
+    this->backButton = new BackButton(QString("Retour"));
 
     //creating image
     this->image = new ImageLabel(this->plat, 450, 300, background, this);
@@ -38,6 +38,7 @@ DetailedItem::DetailedItem(Plat plat,int imgSizeW ,int imgSizeH, QColor backgrou
     descriptionLabel->setPalette(QPalette(Qt::white));
     descriptionLabel->setPalette(pal);
     descriptionLabel->setMaximumWidth(imgSizeW-35);
+    descriptionLabel->setAlignment(Qt::AlignJustify);
     //descriptionLabel->setStyleSheet("font-family: Arial,sans-serif;font: Helvetica; padding-top: 7px; text-align: center;color: #000; border-radius: 8px;");
 
     //division left - right part
@@ -48,7 +49,7 @@ DetailedItem::DetailedItem(Plat plat,int imgSizeW ,int imgSizeH, QColor backgrou
     leftPartLayout->addWidget(nameLabel);
 
     QWidget* rightPart = new QWidget; //creating right part
-    FlowLayout *rightPartLayout = new FlowLayout;
+    QVBoxLayout *rightPartLayout = new QVBoxLayout;
     rightPart->setLayout(rightPartLayout);
     rightPartLayout->addWidget(descriptionLabel);
     rightPartLayout->addWidget(backButton);
@@ -57,6 +58,11 @@ DetailedItem::DetailedItem(Plat plat,int imgSizeW ,int imgSizeH, QColor backgrou
     //setting item layout and adding components
     itemLayout->addWidget(leftPart);
     itemLayout->addWidget(rightPart);
+}
+
+CommanderButton *DetailedItem::getAjouterButton()
+{
+    return this->commander;
 }
 
 void DetailedItem::update(){

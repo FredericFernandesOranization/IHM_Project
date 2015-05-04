@@ -23,7 +23,7 @@ LeftZone::LeftZone() : QWidget()
     switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     leftVerticalLayout->addWidget(switchButton);
     //switchButton->setStyleSheet("border: none; background-color: orange; padding: 6px;");
-    switchButton->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);");
+    switchButton->setStyleSheet("font-family: Arial,sans-serif;font: bold; width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);");
 
     //Creating the area to swap (commandBar and MenuBar)
     QWidget *leftBar = new QWidget;

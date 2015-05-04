@@ -22,7 +22,7 @@ class DetailedItem :public QWidget
     Q_OBJECT
 public:
     DetailedItem(Plat plat, int imgSizeW=450 ,int imgSizeH=300, QColor background=QColor(70,130,180), QWidget *parent = 0);
-
+    CommanderButton* getAjouterButton();
     BackButton* getBackButton();
     CommanderButton* getCommanderButton();
     static DetailedItem* getInstance() {
