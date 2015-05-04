@@ -10,9 +10,11 @@
 #include <QPainter>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include "commande.h"
 
 class Item :public QWidget
 {
+    Q_OBJECT
 public:
     Item(QString name);
     Item(Plat plat,int imgSizeW=150 ,int imgSizeH=100, QColor background=QColor(70,130,180),QWidget *parent = 0);
@@ -23,7 +25,12 @@ private:
     QImage *img;
     int imgSizeW;
     int imgSizeH;
+    Plat plat;
+private slots:
+    void buy();
 
+signals:
+    void commande(Plat);
 };
 
 #endif // ITEM_H

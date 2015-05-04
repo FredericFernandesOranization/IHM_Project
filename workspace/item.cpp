@@ -4,7 +4,7 @@ Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *pare
 {
     //order button
     QPushButton* commander = new QPushButton("Commander");
-
+    this->plat = plat;
     //creating image
     this->image = new ImageLabel(plat, imgSizeW, imgSizeH, background, this);
 
@@ -26,10 +26,15 @@ Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *pare
     itemLayout->addWidget(image);
     itemLayout->addWidget(labelShortDesc);
     itemLayout->addWidget(commander);
-
+    connect(commander,SIGNAL(clicked()),this,SLOT(buy()));
 }
 
 ImageLabel* Item::getImage(){ return this->image; }
+
+void Item::buy(){
+     //connect(commander, SIGNAL(onClick(Plat)),  Commande::getInstance(), SLOT(addDish(Plat)));
+     Commande::getInstance()->addDish(plat);
+}
 
 /*
 void Item::paintEvent(QPaintEvent *)
@@ -60,7 +65,7 @@ void Item::paintEvent(QPaintEvent *)
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(background));
     img = new QImage(plat.getImagePath());
-    *img = img->scaled(imgSizeW, imgSizeH);
+    img = img->scaled(imgSizeW, imgSizeH);
 */
 
 
