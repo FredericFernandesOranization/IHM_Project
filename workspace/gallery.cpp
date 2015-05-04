@@ -80,9 +80,15 @@ void Gallery::showItem(Plat p){
 */
     GalleriesLayout* g = GalleriesLayout::getInstance();
     DetailedItem* from = DetailedItem::getInstance();
+    qDebug() << "FROM: \n" << from->getPlat().getId();
     DetailedItem* to = new DetailedItem(p);
+    BackButton* back = to->getBackButton();
+    back->setFromGallery(p.getType());
+    connect(back, SIGNAL(clicked()), back, SLOT(backToGallery()));
+    from->setInstance(to);
     g->replaceWidget(from, to);
     g->setCurrentIndex(4);
+    qDebug() << "TO : \n " << to->getPlat().getId();
 }
 
 void Gallery::onBackClick(QString type){

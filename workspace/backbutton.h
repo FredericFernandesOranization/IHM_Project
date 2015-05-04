@@ -16,15 +16,14 @@ public:
     BackButton();
     BackButton(QString label);
     ~BackButton();
+    void setFromGallery(QString type);
 private:
     QString label;
-
+    QString fromGallery;
 public slots :
-    void backToGallery(){
-        qDebug() << " in back to gallery button";
-        GalleriesLayout::getInstance()->setCurrentIndex(0);
-
-    }
+    void backToGallery();
+signals:
+    void clicked(int index);
 
 };
 

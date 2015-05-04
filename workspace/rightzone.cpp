@@ -43,8 +43,8 @@ RightZone::RightZone() : QWidget()
     }
 
 
-    BackButton* button = detailedItem->getBackButton();
-    connect(button, SIGNAL(clicked()), button, SLOT(backToGallery()));
+    //BackButton* button = detailedItem->getBackButton();
+    //connect(button, SIGNAL(clicked()), button, SLOT(backToGallery()));
 
     CommanderButton* commander = detailedItem->getCommanderButton();
     Commande* commandeZone = Commande::getInstance();
