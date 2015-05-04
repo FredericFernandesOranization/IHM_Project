@@ -22,7 +22,7 @@ public:
     QString getName()const ;
     bool operator==(const OrderItem &item);
     inline void add(){nbItem++;drow();}
-    inline bool remove(){nbItem--;drow();return nbItem<=0;}
+    inline bool remove(){nbItem--;drow();return nbItem==0;}
 
     void mousePressEvent(QMouseEvent *event);
 private:
@@ -34,8 +34,10 @@ private:
     QLabel *minusSign;
     QLabel *plusSign;
 private slots:
-   // void paintEvent(QPaintEvent *e);
-
+    // void paintEvent(QPaintEvent *e);
+signals:
+    void remoove(Plat);
+    void add(Plat);
 };
 
 #endif // ORDERITEM_H

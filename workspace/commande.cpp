@@ -17,9 +17,11 @@ void Commande::addDish(Plat p)
         item->add();
     }else {
         qDebug()<<"not exist";
-         OrderItem *newItem = new OrderItem(p);
-         itemList.insert(p.getName(),newItem);
-         commandLayout->addWidget(newItem);
+        OrderItem *newItem = new OrderItem(p,this);
+        connect(newItem,SIGNAL(remoove(Plat)),this,SLOT(removeDish(Plat)));
+        connect(newItem,SIGNAL(add(Plat)),this,SLOT(addDish(Plat)));
+        itemList.insert(p.getName(),newItem);
+        commandLayout->addWidget(newItem);
     }
 }
 
@@ -29,8 +31,13 @@ void Commande::removeDish(Plat p){
     if(itemList.contains(p.getName())){ // already exist
         OrderItem *item = itemList.value(p.getName());
         if(item->remove()){ // return true item have 0 elem
+            qDebug()<<"delate";
             itemList.take(p.getName()); // remove
             commandLayout->removeWidget(item);
+            disconnect(item,SIGNAL(remoove(Plat)),this,SLOT(removeDish(Plat)));
+            disconnect(item,SIGNAL(add(Plat)),this,SLOT(addDish(Plat)));
+            delete item;
+            this->repaint();
         }
     }
 }

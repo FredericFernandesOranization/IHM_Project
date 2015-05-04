@@ -157,12 +157,11 @@ void OrderItem::mousePressEvent(QMouseEvent * event){
 
     if(plusRect.contains(event->pos())){
         qDebug()<<"plusSign";
-        this->add();
+         emit add(plat);
     }else if(minusRect.contains(event->pos())){
         qDebug()<<"minusSign";
-        if(this->remove()){
-            // emit itemEmpty(this);
-        }
+        emit remoove(plat);
+
     }else
         qDebug()<<"que dal";
 }
