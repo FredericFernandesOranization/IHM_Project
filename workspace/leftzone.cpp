@@ -78,8 +78,8 @@ LeftZone::LeftZone() : QWidget()
     }*/
 
     //commandBarLayout->addWidget(new OrderItem(Database::getInstance()->getDish(1), this));
-    commandBarScrollArea->show();
-    //leftZoneStackedLayout->addWidget(commandBarScrollArea);
+
+    leftZoneStackedLayout->addWidget(commandBarScrollArea);
 
     connect(switchButton, SIGNAL(clicked()), switchButton, SLOT(changeLayout()));
     //leftZoneStackedLayout->setCurrentIndex(1);
@@ -108,7 +108,7 @@ void LeftZone::getUnclicked(QString label)
             this->setPalette(QPalette(QColor(70,130,180)));
         }
     }
-    /*if(this->label != label){
+        /*if(this->label != label){
         this->setAutoFillBackground(true);
         this->setPalette(QPalette(QColor(70,130,180)));
     }*/
