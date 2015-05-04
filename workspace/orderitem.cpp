@@ -61,7 +61,7 @@ OrderItem::OrderItem(Plat p, QWidget *parent) : QWidget(parent)
     this->setLayout(mainLayout);
     mainLayout->setSpacing(0);
     this->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-    this->setStyleSheet("text-align: center; margin: 2px; font-family: Arial,sans-serif; font: bold; border-style: solid; border-width: 1px; background: rgb(255,158,65); ");
+    this->setStyleSheet("text-align: center; font-family: Arial,sans-serif; font: bold; border-style: solid; border-width: 1px; background: rgb(255,158,65); ");
     this->setAutoFillBackground(true);
 
     //upper part
