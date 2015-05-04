@@ -13,10 +13,15 @@ void Commande::addDish(Plat p)
         if(this->itemList.at(i)->getName().compare(p.getName()) == true){
             this->itemList.append(new OrderItem(p));
             this->quantities.insert(p.getName(), this->quantities.value(p.getName())+1);
+            return;
         }
     }
-    this->itemList.append(new OrderItem(p));
+    this->itemList.append(new OrderItem(p, this));
+    qDebug() << "nom du plat qu'on va append : " << p.getName();
+    qDebug() << "after append size: " << itemList.size();
     this->quantities.insert(p.getName(), 1);
+    //this->repaint();
+    qDebug() << "dans ItemList: " << this->itemList.at(0)->getName();
 
 }
 

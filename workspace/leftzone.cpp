@@ -25,12 +25,10 @@ LeftZone::LeftZone() : QWidget()
     //switchButton->setStyleSheet("border: none; background-color: orange; padding: 6px;");
     switchButton->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);border-radius: 8px;");
 
-
     //Creating the area to swap (commandBar and MenuBar)
     QWidget *leftBar = new QWidget;
     leftZoneStackedLayout = LeftBarLayout::getInstance();
     leftBar->setLayout(leftZoneStackedLayout);
-
 
     //Creating Left Menu Bar
     QWidget *menuBar = new QWidget;
@@ -52,14 +50,13 @@ LeftZone::LeftZone() : QWidget()
     //Creating Command Bar
     QScrollArea *commandBarScrollArea = new QScrollArea;
     commandBarScrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
-    //commandBarScrollArea->setFixedHeight(400);
-    QWidget *commandBar = new QWidget;
+    Commande *commandBar = new Commande;
     QVBoxLayout *commandBarLayout = new QVBoxLayout;
     commandBar->setLayout(commandBarLayout);
     commandBarScrollArea->setWidget(commandBar);
     commandBarScrollArea->setWidgetResizable(true);
     //commandBarScrollArea->setLayout(commandBarLayout);
-    this->buttonLists = QList<MenuButton*>();
+    /*this->buttonLists = QList<MenuButton*>();
     QList<QString> stringCommand = QList<QString>() << QString("PEUT IMPORTE") << QString("JE SAIS PAS QUOI") << QString("VOIR TOTAL") << QString("COMMANDER");
     for(int i=0; i<4; i++){
         MenuButton *b = new MenuButton(stringCommand.at(i), this);
@@ -75,8 +72,8 @@ LeftZone::LeftZone() : QWidget()
         //b->setFixedHeight(200);
         b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
         commandBarLayout->addWidget(b);
-    }
-    commandBarLayout->addWidget(new OrderItem(Database::getInstance()->getDish(0)));
+    }*/
+    //commandBarLayout->addWidget(new OrderItem(Database::getInstance()->getDish(1), this));
 
     leftZoneStackedLayout->addWidget(commandBarScrollArea);
     connect(switchButton, SIGNAL(clicked()), switchButton, SLOT(changeLayout()));

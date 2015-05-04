@@ -12,6 +12,7 @@ class OrderItem : public QWidget
 {
 public:
     OrderItem(Plat p);
+    OrderItem(Plat p, QWidget* parent);
     ~OrderItem();
     QString getName();
 private:

@@ -15,7 +15,7 @@ public:
     Plat(const Plat &pOther);
     ~Plat();
 
-
+    static Plat& copie(Plat p);
     Plat(QString name, QString description, QString imagePath, QString shortDescription,
          float price, QStringList ingredientsList, QStringList possibleAllergiesList,QString type);
     QString getName() const;
