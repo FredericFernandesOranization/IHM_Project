@@ -11,6 +11,7 @@
 #include "menubutton.h"
 #include "leftbarlayout.h"
 #include "confirmdialog.h"
+#include "orderitem.h"
 
 class LeftZone : public QWidget
 {

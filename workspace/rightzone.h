@@ -9,6 +9,8 @@
 #include <gallerieslayout.h>
 #include "detaileditem.h"
 #include "uppermenu.h"
+#include "commande.h"
+#include "commanderbutton.h"
 
 class RightZone : public QWidget
 {

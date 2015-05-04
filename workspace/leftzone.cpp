@@ -76,6 +76,7 @@ LeftZone::LeftZone() : QWidget()
         b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
         commandBarLayout->addWidget(b);
     }
+    commandBarLayout->addWidget(new OrderItem(Database::getInstance()->getDish(0)));
 
     leftZoneStackedLayout->addWidget(commandBarScrollArea);
     connect(switchButton, SIGNAL(clicked()), switchButton, SLOT(changeLayout()));

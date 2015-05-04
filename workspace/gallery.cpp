@@ -60,13 +60,15 @@ void Gallery::showType(QString type)
     }
 }
 
+
 void Gallery::onItemClick(Plat p){
     this->showItem(p);
 }
 
 void Gallery::showItem(Plat p){
-    qDebug() << "clicked on : " << p.getName();
+    //qDebug() << "clicked on : " << p->getName();
     //still need to show right plate
+    //DetailedItem::getInstance()->setPlat(p);
     GalleriesLayout::getInstance()->setCurrentIndex(4);
 }
 

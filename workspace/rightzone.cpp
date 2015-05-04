@@ -43,10 +43,16 @@ RightZone::RightZone() : QWidget()
        scroller->setLayout();
        scroller->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
        scroller->setWidget(g);*/
-       BackButton* button = detailedItem->getBackButton();
-       connect(button, SIGNAL(clicked()), button, SLOT(backToGallery()));
        galleriesLayout->addWidget(g);
     }
+
+    BackButton* button = detailedItem->getBackButton();
+    connect(button, SIGNAL(clicked()), button, SLOT(backToGallery()));
+
+    CommanderButton* commander = detailedItem->getCommanderButton();
+    Commande* commandeZone = Commande::getInstance();
+    connect(commander, SIGNAL(clicked()), commander, SLOT(sendToCommandZone()));
+    connect(commander, SIGNAL(onClick(Plat)), commandeZone, SLOT(addDish(Plat)));
 
     //adding detailed Widget to StackedLayout
     galleriesLayout->addWidget(detailedItem);

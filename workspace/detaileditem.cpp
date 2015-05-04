@@ -1,46 +1,10 @@
 #include "detaileditem.h"
 
-/*DetailedItem::DetailedItem(Plat plat,int imgSizeW ,int imgSizeH, QColor background, QWidget *parent) : QWidget(parent)
-{
-    //detailed item properties
-    this->plat = plat;
-    this->setAutoFillBackground(true);
-    this->setPalette(QPalette(QColor(70,130,180)));
-    this->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-
-    //creating buttons
-    QPushButton* commander = new QPushButton(QString("commander"));
-    this->backButton = new BackButton(QString("Back"));
-
-    //creating image
-    this->image = new ImageLabel(plat, imgSizeW, imgSizeH, background, this);
-
-    //creating name Label
-    QLabel *nameLabel = new QLabel(plat.getName(),this);
-    QFont shortDescFont("Helvetica", 12);
-    nameLabel->setFont(shortDescFont);
-    QPalette pal(nameLabel->palette());
-    pal.setColor(QPalette::WindowText, QColor(Qt::white));
-    nameLabel->setPalette(pal);
-
-    //creating description Label
-    QLabel *labelShortDesc = new QLabel(plat.getDescription(),this);
-    labelShortDesc->setFont(shortDescFont);
-    labelShortDesc->setPalette(QPalette(Qt::white));
-    labelShortDesc->setPalette(pal);
-    labelShortDesc->setMaximumWidth(imgSizeW);
-
-    //setting item layout and adding components
-    QHBoxLayout *itemLayout = new QHBoxLayout;
-    this->setLayout(itemLayout);
-    itemLayout->addWidget(image);
-    itemLayout->addWidget(labelShortDesc);
-    itemLayout->addWidget(commander);
-    itemLayout->addWidget(backButton);
-}*/
+DetailedItem* DetailedItem::instance = NULL;
 
 DetailedItem::DetailedItem(Plat plat,int imgSizeW ,int imgSizeH, QColor background, QWidget *parent) : QWidget(parent)
 {
+    this->plat = plat;
     //detailed item properties
     QHBoxLayout *itemLayout = new QHBoxLayout;
     this->setLayout(itemLayout);
@@ -50,14 +14,15 @@ DetailedItem::DetailedItem(Plat plat,int imgSizeW ,int imgSizeH, QColor backgrou
     this->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
 
     //creating buttons
-    QPushButton* commander = new QPushButton(QString("commander"));
+    this->commander = new CommanderButton(QString("commander"));
+    this->commander->setPlat(plat);
     this->backButton = new BackButton(QString("Back"));
 
     //creating image
-    this->image = new ImageLabel(plat, imgSizeW, imgSizeH, background, this);
+    this->image = new ImageLabel(this->plat, imgSizeW, imgSizeH, background, this);
 
     //creating name Label
-    QLabel *nameLabel = new QLabel(plat.getName(),this);
+    QLabel *nameLabel = new QLabel(this->plat.getName(),this);
     QFont shortDescFont("Helvetica", 80);
     nameLabel->setFont(shortDescFont);
     QPalette pal(nameLabel->palette());
@@ -67,7 +32,7 @@ DetailedItem::DetailedItem(Plat plat,int imgSizeW ,int imgSizeH, QColor backgrou
 
 
     //creating description Label
-    QLabel *descriptionLabel = new QLabel(plat.getDescription(),this);
+    QLabel *descriptionLabel = new QLabel(this->plat.getDescription(),this);
     QFont descriptionLabelFont("Helvetica", 25);
     descriptionLabel->setWordWrap(true);
     descriptionLabel->setFont(descriptionLabelFont);
@@ -89,16 +54,36 @@ DetailedItem::DetailedItem(Plat plat,int imgSizeW ,int imgSizeH, QColor backgrou
     rightPart->setLayout(rightPartLayout);
     rightPartLayout->addWidget(descriptionLabel);
     rightPartLayout->addWidget(backButton);
+    rightPartLayout->addWidget(commander);
+
 
     //setting item layout and adding components
     itemLayout->addWidget(leftPart);
     itemLayout->addWidget(rightPart);
-
-
 }
+/*
+DetailedItem::DetailedItem(Plat *plat,int imgSizeW ,int imgSizeH, QColor background, QWidget *parent) : QWidget(parent)
+{
+    //item properties
+    this->setAutoFillBackground(true);
+    this->setPalette(QPalette(QColor(70,130,180)));
+    this->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
+
+    //attributes initialization
+    this->itemLayout = new QHBoxLayout;
+    this->imgSizeH = imgSizeH;
+    this->imgSizeW = imgSizeW;
+    this->background = background;
+    this->setPlat(plat);
+}
+*/
+
 
 BackButton* DetailedItem::getBackButton(){ return this->backButton; }
 
+CommanderButton *DetailedItem::getCommanderButton(){ return this->commander; }
 
-
-
+Plat DetailedItem::getPlat()
+{
+    return this->plat;
+}

@@ -11,6 +11,7 @@
 #include <QScrollArea>
 #include "gallerieslayout.h"
 #include <QStringList>
+#include "detaileditem.h"
 
 class Gallery : public QWidget
 {

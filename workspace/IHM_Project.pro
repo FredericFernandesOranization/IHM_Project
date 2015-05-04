@@ -29,7 +29,10 @@ SOURCES += main.cpp\
     backbutton.cpp \
     leftbarlayout.cpp \
     confirmdialog.cpp \
-    uppermenu.cpp
+    uppermenu.cpp \
+    commande.cpp \
+    orderitem.cpp \
+    commanderbutton.cpp
     imagelabel.cpp
 
 HEADERS  += mainwindow.h \
@@ -47,7 +50,10 @@ HEADERS  += mainwindow.h \
     backbutton.h \
     leftbarlayout.h \
     confirmdialog.h \
-    uppermenu.h
+    uppermenu.h \
+    commande.h \
+    orderitem.h \
+    commanderbutton.h
     imagelabel.h
 
 FORMS    += mainwindow.ui \
