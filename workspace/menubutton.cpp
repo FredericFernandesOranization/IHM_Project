@@ -20,7 +20,13 @@ void MenuButton::changeLayout(){
       qDebug() << "dans ChangeLayout";
       int i = LeftBarLayout::getInstance()->currentIndex();
       LeftBarLayout::getInstance()->setCurrentIndex(1-i);
-
+      this->setText("VOIR MENUS");
+      this->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(70,130,180);");
+      if (1-i == 0){
+          //default style
+          this->setText("VOIR COMMANDES");
+          this->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);");
+      }
 //    int i = this->leftZoneStackedLayout->currentIndex();
 //    leftZoneStackedLayout->setCurrentIndex(i-1);
 }
