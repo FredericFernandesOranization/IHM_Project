@@ -4,7 +4,7 @@ UpperMenu::UpperMenu() : QWidget()
 {
     //left - right part separation
     this->upperMenuHorizontalLayout = new QHBoxLayout;
-    QWidget *upperMenu = new QWidget;
+    //QWidget *upperMenu = new QWidget;
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(QColor(70,130,180)));
     //this->setStyleSheet("padding : 0 ; margin : 0");
@@ -39,15 +39,26 @@ UpperMenu::UpperMenu() : QWidget()
     appelerServeur->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
 
     QPushButton* flag = new QPushButton("FR");
+    connect(flag,SIGNAL(clicked()),this,SLOT(openLangWindow()));
     flag->setFixedWidth(100);
     flag->setSizePolicy(QSizePolicy::Fixed, QSizePolicy::Expanding);
     flag->setStyleSheet("border-image:  url(:/images/resources/imagesPlats/flag.jpg) 0 0 0 0 stretch stretch; border-width: 0px;");
     rightPartLayout->addWidget(appelerServeur);
     rightPartLayout->addWidget(flag);
+
+
+
 }
 
 UpperMenu::~UpperMenu()
 {
 
+}
+
+void UpperMenu::openLangWindow()
+{
+    DialogLang *dial   = new DialogLang();
+    dial->setModal(true);
+    dial->show();
 }
 

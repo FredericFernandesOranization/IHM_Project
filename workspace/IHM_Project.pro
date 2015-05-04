@@ -32,7 +32,8 @@ SOURCES += main.cpp\
     uppermenu.cpp \
     commande.cpp \
     orderitem.cpp \
-    commanderbutton.cpp
+    commanderbutton.cpp \
+    dialoglang.cpp
     imagelabel.cpp
 
 HEADERS  += mainwindow.h \
@@ -53,11 +54,13 @@ HEADERS  += mainwindow.h \
     uppermenu.h \
     commande.h \
     orderitem.h \
-    commanderbutton.h
+    commanderbutton.h \
+    dialoglang.h
     imagelabel.h
 
 FORMS    += mainwindow.ui \
-    confirmdialog.ui
+    confirmdialog.ui \
+    dialoglang.ui
 
 OTHER_FILES += \
     replats.xml
