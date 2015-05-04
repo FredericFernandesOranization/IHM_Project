@@ -57,8 +57,9 @@ OrderItem::OrderItem(Plat p, QWidget *parent) : QWidget(parent)
     nbItem=1;
     //creating layout
     QVBoxLayout *mainLayout = new QVBoxLayout;
+
     this->setLayout(mainLayout);
-    mainLayout->setSpacing(1);
+    mainLayout->setSpacing(0);
     this->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
     this->setStyleSheet("text-align: center; margin: 2px; font-family: Arial,sans-serif; font: bold; border-style: solid; border-width: 1px; background: rgb(255,158,65); ");
     this->setAutoFillBackground(true);
@@ -99,6 +100,9 @@ OrderItem::OrderItem(Plat p, QWidget *parent) : QWidget(parent)
     //adding components to layout
     mainLayout->addWidget(upperPart);
     mainLayout->addWidget(lowerPart);
+    mainLayout->setSpacing(0);
+    //mainLayout->setSizeConstraint(QLayout::SetMaximumSize);
+
 
     //this->show();
 
@@ -145,11 +149,11 @@ void OrderItem::drow(){
 void OrderItem::mousePressEvent(QMouseEvent * event){
     qDebug()<<"click";
     QRect minusRect = minusSign->rect();
-//    minusRect.moveRight(90);
-//    minusRect.moveBottom(80);
+    minusRect.moveRight(90);
+    minusRect.moveBottom(80);
     QRect plusRect = plusSign->rect();
-//    plusRect.moveRight(245);
-//    plusRect.moveBottom(80);
+    plusRect.moveRight(245);
+    plusRect.moveBottom(80);
 
     if(plusRect.contains(event->pos())){
         qDebug()<<"plusSign";
