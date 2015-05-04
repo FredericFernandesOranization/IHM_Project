@@ -18,12 +18,12 @@ LeftZone::LeftZone() : QWidget()
     this->setLayout(leftVerticalLayout);
 
     //Creating Swap Button
-    switchButton = new MenuButton("Switch Button", this);
+    switchButton = new MenuButton("VOIR COMMANDES", this);
     switchButton->setFixedHeight(100);
     switchButton->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     leftVerticalLayout->addWidget(switchButton);
     //switchButton->setStyleSheet("border: none; background-color: orange; padding: 6px;");
-    switchButton->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);border-radius: 8px;");
+    switchButton->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);");
 
     //Creating the area to swap (commandBar and MenuBar)
     QWidget *leftBar = new QWidget;
@@ -31,7 +31,7 @@ LeftZone::LeftZone() : QWidget()
     leftBar->setLayout(leftZoneStackedLayout);
 
     //Creating Left Menu Bar
-    QWidget *menuBar = new QWidget;
+    QWidget *menuBar = new QWidget(this);
     QVBoxLayout *menuBarLayout = new QVBoxLayout;
     menuBar->setLayout(menuBarLayout);
     this->buttonLists = QList<MenuButton*>();
@@ -62,7 +62,7 @@ LeftZone::LeftZone() : QWidget()
     QPushButton *commandButton = new QPushButton("Commander", this);
     connect(commandButton,SIGNAL(clicked()),this,SLOT(openConfirmWindow()));
     commandButton->setFixedHeight(100);
-    commandButton->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);border-radius: 8px;");
+    commandButton->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);");
     leftVerticalLayout->addWidget(commandButton);
 }
 
