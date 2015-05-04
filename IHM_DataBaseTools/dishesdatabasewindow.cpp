@@ -8,6 +8,10 @@ DishesDataBaseWindow::DishesDataBaseWindow(QWidget *parent) :
     ui->setupUi(this);
     this->dataBase = Database::getInstance();
     ui->listDishDataBase->setIconSize(QSize(150, 150));
+    this->setAutoFillBackground(true);
+    this->setPalette(QPalette(QColor(80,142,150)));
+
+
     connect(ui->listDishDataBase,SIGNAL(itemClicked(QListWidgetItem*)),this,SLOT(fillIfos(QListWidgetItem*)));
 
     connect(ui->lineEditNom,SIGNAL(textEdited(QString)),this,SLOT(changedInfo()));

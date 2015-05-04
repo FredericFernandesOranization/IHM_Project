@@ -6,6 +6,8 @@ AllergieDataBaseWindow::AllergieDataBaseWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->dataBase = Database::getInstance();
+    this->setAutoFillBackground(true);
+    this->setPalette(QPalette(QColor(80,142,150)));
     updateUi();
 }
 

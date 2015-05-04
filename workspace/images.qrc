@@ -1,5 +1,11 @@
 <RCC>
     <qresource prefix="/images">
         <file>resources/imagesPlats/flag.jpg</file>
+        <file>resources/imagesPlats/italie.png</file>
+        <file>resources/imagesPlats/images.jpg</file>
+        <file>resources/imagesPlats/espagne.jpg</file>
+        <file>resources/imagesPlats/chine.png</file>
+        <file>resources/imagesPlats/Arabe.png</file>
+        <file>resources/imagesPlats/anglais.png</file>
     </qresource>
 </RCC>

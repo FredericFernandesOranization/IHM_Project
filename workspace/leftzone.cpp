@@ -91,5 +91,6 @@ void LeftZone::getUnclicked(QString label)
 
 void LeftZone::openConfirmWindow(){
     ConfirmDialog *conf = new ConfirmDialog(this);
+    conf->setModal(true);
     conf->show();
 }
