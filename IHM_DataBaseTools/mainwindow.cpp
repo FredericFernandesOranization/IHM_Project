@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setAutoFillBackground(true);
+    this->setPalette(QPalette(QColor(80,142,150)));
     ingrWindows = new IngredientDataBaseWindow(this);
     ingrWindows->setModal(true);
 

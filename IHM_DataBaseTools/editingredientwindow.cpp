@@ -10,6 +10,8 @@ EditIngredientWindow::EditIngredientWindow(QListWidgetItem *item,QWidget *parent
     QVariant qv = item->data(Qt::UserRole);
     this->plat = qv.value<Plat>();
     this->item = item;
+    this->setAutoFillBackground(true);
+    this->setPalette(QPalette(QColor(80,142,150)));
     updateUi();
 }
 
