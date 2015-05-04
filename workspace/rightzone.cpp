@@ -32,19 +32,16 @@ RightZone::RightZone() : QWidget()
     galleriesList->setLayout(galleriesLayout);
 
     //Creating Detailled Widget
-    DetailedItem* detailedItem = new DetailedItem(Database::getInstance()->getDish(0));
+    DetailedItem* detailedItem = DetailedItem::getInstance();
+    //DetailedItem* detailedItem = new DetailedItem(Database::getInstance()->getDish(0));
 
     //Adding Galleries To StackedLayout
     QList<QString> galleriesLabels = QList<QString>() << QString("Entrees") << QString("Boissons") << QString("Plats") << QString("Desserts");
     for(int i=0; i<4; i++){
        Gallery* g = new Gallery(galleriesLabels.at(i));
-       //galleriesLayout->addWidget(new Gallery(galleriesLabels.at(i)));
-       /*QScrollArea *scroller = new QScrollArea;
-       scroller->setLayout();
-       scroller->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
-       scroller->setWidget(g);*/
        galleriesLayout->addWidget(g);
     }
+
 
     BackButton* button = detailedItem->getBackButton();
     connect(button, SIGNAL(clicked()), button, SLOT(backToGallery()));

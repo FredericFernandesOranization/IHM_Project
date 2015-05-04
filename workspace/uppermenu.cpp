@@ -24,7 +24,7 @@ UpperMenu::UpperMenu() : QWidget()
 
         //b->setFixedHeight(85);
         //b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
-        b->setStyleSheet("border: none; background-color: rgb(60,68,84); ");
+        b->setStyleSheet("border: none; background-color: rgb(60,68,84); color: rgb(255,255,255) ");
         leftPartLayout->addWidget(b);
     }
 

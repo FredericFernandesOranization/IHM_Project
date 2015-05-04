@@ -5,6 +5,7 @@ Commande::Commande(QWidget *parent) : QWidget(parent)
 {
     commandLayout = new QVBoxLayout;
     this->setLayout(commandLayout);
+    //this->setStyleSheet("background: rgb(255,158,65)");
 
 }
 
@@ -12,11 +13,11 @@ void Commande::addDish(Plat p)
 {
     qDebug() << "dish added: " << p.getName();
     if(itemList.contains(p.getName())){ // already exist
-        qDebug()<<"exist";
+        //qDebug()<<"exist";
         OrderItem *item = itemList.value(p.getName());
         item->add();
     }else {
-        qDebug()<<"not exist";
+        //qDebug()<<"not exist";
         OrderItem *newItem = new OrderItem(p,this);
         connect(newItem,SIGNAL(remoove(Plat)),this,SLOT(removeDish(Plat)));
         connect(newItem,SIGNAL(add(Plat)),this,SLOT(addDish(Plat)));
@@ -27,7 +28,7 @@ void Commande::addDish(Plat p)
 
 //only called when item is in command list
 void Commande::removeDish(Plat p){
-    qDebug() << "removeDish dish : " << p.getName();
+    //qDebug() << "removeDish dish : " << p.getName();
     if(itemList.contains(p.getName())){ // already exist
         OrderItem *item = itemList.value(p.getName());
         if(item->remove()){ // return true item have 0 elem

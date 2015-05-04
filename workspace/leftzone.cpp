@@ -51,34 +51,9 @@ LeftZone::LeftZone() : QWidget()
     QScrollArea *commandBarScrollArea = new QScrollArea;
     commandBarScrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
     Commande *commandBar = Commande::getInstance();
-    //commandBar->show();
-    //QVBoxLayout *commandBarLayout = new QVBoxLayout;
-    //commandBar->setLayout(commandBarLayout);
     commandBarScrollArea->setWidget(commandBar);
     commandBarScrollArea->setWidgetResizable(true);
     commandBarScrollArea->setLayout(commandBar->layout());
-
-    //commandBarScrollArea->show();
-    /*this->buttonLists = QList<MenuButton*>();
-    QList<QString> stringCommand = QList<QString>() << QString("PEUT IMPORTE") << QString("JE SAIS PAS QUOI") << QString("VOIR TOTAL") << QString("COMMANDER");
-    for(int i=0; i<4; i++){
-        MenuButton *b = new MenuButton(stringCommand.at(i), this);
-
-        buttonLists.append(b);
-        connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
-        connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
-
-        //connect(b, SIGNAL(clicked()), b, SLOT(onClick()));
-        //connect(b, SIGNAL(setUnclicked(QString)), this, SLOT(getUnclicked(QString)));
-
-        b->setFixedWidth(280);
-        //b->setFixedHeight(200);
-        b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
-        commandBarLayout->addWidget(b);
-    }*/
-
-    //commandBarLayout->addWidget(new OrderItem(Database::getInstance()->getDish(1), this));
-    //commandBarScrollArea->show();
     leftZoneStackedLayout->addWidget(commandBarScrollArea);
 
     connect(switchButton, SIGNAL(clicked()), switchButton, SLOT(changeLayout()));

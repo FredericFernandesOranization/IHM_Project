@@ -51,6 +51,7 @@ Gallery::Gallery(QString type) : QWidget()
 
 void Gallery::showType(QString type)
 {
+    //qDebug() << "in showType function";
     QList<Plat*> listePlats = this->database->filterType(type);
     for(int i=0; i<listePlats.size(); i++){
         Item *item = new Item(*listePlats.at(i));
@@ -66,10 +67,22 @@ void Gallery::onItemClick(Plat p){
 }
 
 void Gallery::showItem(Plat p){
-    //qDebug() << "clicked on : " << p->getName();
+    //qDebug() << "showItem: -> clicked on : \n" << p.toString();
     //still need to show right plate
-    //DetailedItem::getInstance()->setPlat(p);
-    GalleriesLayout::getInstance()->setCurrentIndex(4);
+    /*GalleriesLayout::getInstance()->removeWidget(DetailedItem::getInstance());
+    DetailedItem::getInstance()->setPlat(Plat(p));
+    qDebug() << "dans detailedItem: \n" << DetailedItem::getInstance()->getPlat().toString();
+    //GalleriesLayout::getInstance()->setCurrentIndex(4);
+
+    DetailedItem::getInstance()->update();
+    GalleriesLayout::getInstance()->addWidget(DetailedItem::getInstance());
+    GalleriesLayout::getInstance()->setCurrentWidget(DetailedItem::getInstance());
+*/
+    GalleriesLayout* g = GalleriesLayout::getInstance();
+    DetailedItem* from = DetailedItem::getInstance();
+    DetailedItem* to = new DetailedItem(p);
+    g->replaceWidget(from, to);
+    g->setCurrentIndex(4);
 }
 
 void Gallery::onBackClick(QString type){

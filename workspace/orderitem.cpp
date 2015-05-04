@@ -163,7 +163,7 @@ void OrderItem::drow(){
 //     painter.drawRect(plusRect);
 //}
 void OrderItem::mousePressEvent(QMouseEvent * event){
-    qDebug()<<"click";
+   // qDebug()<<"click";
     QRect minusRect = minusSign->rect();
     minusRect.moveRight(90);
     minusRect.moveBottom(80);
