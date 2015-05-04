@@ -50,12 +50,15 @@ LeftZone::LeftZone() : QWidget()
     //Creating Command Bar
     QScrollArea *commandBarScrollArea = new QScrollArea;
     commandBarScrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
-    Commande *commandBar = new Commande;
+    Commande *commandBar = Commande::getInstance();
+    //commandBar->show();
     QVBoxLayout *commandBarLayout = new QVBoxLayout;
     commandBar->setLayout(commandBarLayout);
     commandBarScrollArea->setWidget(commandBar);
     commandBarScrollArea->setWidgetResizable(true);
-    //commandBarScrollArea->setLayout(commandBarLayout);
+    commandBarScrollArea->setLayout(commandBarLayout);
+
+    //commandBarScrollArea->show();
     /*this->buttonLists = QList<MenuButton*>();
     QList<QString> stringCommand = QList<QString>() << QString("PEUT IMPORTE") << QString("JE SAIS PAS QUOI") << QString("VOIR TOTAL") << QString("COMMANDER");
     for(int i=0; i<4; i++){
@@ -73,9 +76,11 @@ LeftZone::LeftZone() : QWidget()
         b->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
         commandBarLayout->addWidget(b);
     }*/
+
     //commandBarLayout->addWidget(new OrderItem(Database::getInstance()->getDish(1), this));
 
     leftZoneStackedLayout->addWidget(commandBarScrollArea);
+
     connect(switchButton, SIGNAL(clicked()), switchButton, SLOT(changeLayout()));
     //leftZoneStackedLayout->setCurrentIndex(1);
     leftVerticalLayout->addWidget(leftBar);

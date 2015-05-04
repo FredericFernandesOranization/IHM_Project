@@ -1,37 +1,36 @@
 #include "commande.h"
 
 Commande *Commande::instance = NULL;
-Commande::Commande() : QScrollArea()
+Commande::Commande(QWidget *parent) : QWidget(parent)
 {
     commandLayout = new QVBoxLayout;
+    this->setLayout(commandLayout);
+
 }
 
 void Commande::addDish(Plat p)
 {
     qDebug() << "dish added: " << p.getName();
-    for(int i = 0; i < this->itemList.size(); i++){
-        if(this->itemList.at(i)->getName().compare(p.getName()) == true){
-            this->itemList.append(new OrderItem(p));
-            this->quantities.insert(p.getName(), this->quantities.value(p.getName())+1);
-            return;
-        }
+    if(itemList.contains(p.getName())){ // already exist
+        qDebug()<<"exist";
+        OrderItem *item = itemList.value(p.getName());
+        item->add();
+    }else {
+        qDebug()<<"not exist";
+         OrderItem *newItem = new OrderItem(p);
+         itemList.insert(p.getName(),newItem);
+         commandLayout->addWidget(newItem);
     }
-    this->itemList.append(new OrderItem(p, this));
-    qDebug() << "nom du plat qu'on va append : " << p.getName();
-    qDebug() << "after append size: " << itemList.size();
-    this->quantities.insert(p.getName(), 1);
-    //this->repaint();
-    qDebug() << "dans ItemList: " << this->itemList.at(0)->getName();
-
 }
 
 //only called when item is in command list
-void Commande::removeDish(Plat p)
-{
-    this->quantities.remove(p.getName());
-    for(int i = 0; i < this->itemList.size(); i++){
-        if(this->itemList.at(i)->getName().compare(p.getName()) == true){
-            this->itemList.removeAt(i);
+void Commande::removeDish(Plat p){
+    qDebug() << "removeDish dish : " << p.getName();
+    if(itemList.contains(p.getName())){ // already exist
+        OrderItem *item = itemList.value(p.getName());
+        if(item->remove()){ // return true item have 0 elem
+            itemList.take(p.getName()); // remove
+            commandLayout->removeWidget(item);
         }
     }
 }

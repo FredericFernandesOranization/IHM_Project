@@ -15,7 +15,10 @@ public:
     Plat(const Plat &pOther);
     ~Plat();
 
-    static Plat& copie(Plat p);
+    //static Plat& copie(Plat p);
+    inline Plat* clone(const Plat p){return new Plat(p);}
+
+   // Plat* clone(const Plat p);
     Plat(QString name, QString description, QString imagePath, QString shortDescription,
          float price, QStringList ingredientsList, QStringList possibleAllergiesList,QString type);
     QString getName() const;

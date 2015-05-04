@@ -28,20 +28,20 @@ Plat::~Plat()
     possibleAllergiesList.clear();
 }
 
-Plat& Plat::copie(Plat pOther)
-{
-    Plat& plat = pOther;
-    plat.id = pOther.id;
-    plat.name = QString(pOther.name);
-    plat.type = QString(pOther.type);
-    plat.description = QString(pOther.description);
-    plat.imagePath = QString(pOther.imagePath);
-    plat.shortDescription = QString(pOther.shortDescription);
-    plat.price = pOther.price;
-    //this->ingredientsList = pOther.ingredientsList;
-    //this->possibleAllergiesList = pOther.possibleAllergiesList;
+//Plat& Plat::copie(Plat pOther)
+//{
+//    Plat& plat = pOther;
+//    plat.id = pOther.id;
+//    plat.name = QString(pOther.name);
+//    plat.type = QString(pOther.type);
+//    plat.description = QString(pOther.description);
+//    plat.imagePath = QString(pOther.imagePath);
+//    plat.shortDescription = QString(pOther.shortDescription);
+//    plat.price = pOther.price;
+//    //this->ingredientsList = pOther.ingredientsList;
+//    //this->possibleAllergiesList = pOther.possibleAllergiesList;
+//}
 
-}
 
 Plat::Plat(QString name, QString description, QString imagePath, QString shortDescription,
            float price, QStringList ingredientsList, QStringList possibleAllergiesList, QString type)
