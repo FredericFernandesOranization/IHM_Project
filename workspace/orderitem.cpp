@@ -93,14 +93,19 @@ OrderItem::OrderItem(Plat p, QWidget *parent) : QWidget(parent)
     lowerPart->setLayout(lowerLayout);
 
     minusSign = new QLabel("-");
-    //minusSign->setText("<a style=\"font-size:13pt; font : bold;text-shadow: 5px 5px #558ABB; text-decoration : underline;font-family : Arial, Helvetica, sans-serif\">ENTREES</a>");
-    minusSign->setStyleSheet("text-align: center; color: rgb(0, 255, 27)");
+    minusSign->setAlignment(Qt::AlignCenter);
+    minusSign->setText("<a style=\"font-size:13pt; font : bold;font-family: Arial,sans-serif; font: bold; background: rgb(255,158,65); color: rgb(0, 255, 27)\">-</a>");
+    //minusSign->setStyleSheet("text-align: center; color: rgb(0, 255, 27)");
 
-    quantityLabel = new QLabel(QString::number(nbItem));
-    quantityLabel->setStyleSheet("margin: 2px; font-family: Arial,sans-serif; font: bold; text-align: center; color: rgb(255, 255, 255)");
+    quantityLabel = new QLabel();
+    quantityLabel->setAlignment(Qt::AlignCenter);
+    quantityLabel->setText("<a style=\"font-size:13pt; font : bold;font-family: Arial,sans-serif; font: bold; background: rgb(255,158,65); color: rgb(255, 255, 255);\">" + QString::number(nbItem) + "</a>");
+    //quantityLabel->setStyleSheet("margin: 2px; font-family: Arial,sans-serif; font: bold; text-align: center; color: rgb(255, 255, 255)");
 
     plusSign = new QLabel("+");
-    plusSign->setStyleSheet("margin: 2px; width: 5px; height:5px; font-family: Arial,sans-serif; font: bold;text-align: center; color: rgb(255, 0, 43)");
+    plusSign->setAlignment(Qt::AlignCenter);
+    plusSign->setText("<a style=\"font-size:13pt; font : bold;font-family: Arial,sans-serif; font: bold; background: rgb(255,158,65); color: rgb(255, 0, 43)\">+</a>");
+    //plusSign->setStyleSheet("margin: 2px; width: 5px; height:5px; font-family: Arial,sans-serif; font: bold;text-align: center; color: rgb(255, 0, 43)");
 
     lowerLayout->addWidget(minusSign);
     lowerLayout->addWidget(quantityLabel);
@@ -136,8 +141,10 @@ bool OrderItem::operator==( const OrderItem &item)
 
 void OrderItem::drow(){
     int somme = this->plat.getPrice()*nbItem;
-    dishPrice->setText("Price: " + QString::number(somme) + "€");
-    quantityLabel->setText(QString::number(nbItem));
+    QString labelPrice("Price: " + QString::number(somme) + "€");
+    dishPrice->setText("<a style=\"font-size:13pt; font : bold;font-family: Arial,sans-serif; font: bold; background: rgb(255,158,65);\">" + labelPrice + "</a>");
+    quantityLabel->setText("<a style=\"font-size:13pt; font : bold;font-family: Arial,sans-serif; font: bold; background: rgb(255,158,65); color: rgb(255, 255, 255);\">" + QString::number(nbItem) + "</a>");
+    //quantityLabel->setText(QString::number(nbItem));
 }
 
 //void OrderItem::paintEvent(QPaintEvent *e)
