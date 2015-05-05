@@ -14,6 +14,8 @@ ConfirmDialog::ConfirmDialog(QWidget *parent) :
     //this->setStyleSheet();
     //this->setPalette(QPalette(QColor(70,130,180)));
     //this->setWindowFlags(Qt::Popup);
+    //QPixmap pix("../workspace/resources/imagesPlats/confirmation.jpg");
+
     QPixmap pix("../workspace/resources/imagesPlats/images.jpg");
     pix = pix.scaled(ui->lblImg->rect().size());
     ui->lblImg->setPixmap(pix);

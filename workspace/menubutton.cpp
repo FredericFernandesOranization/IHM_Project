@@ -20,17 +20,30 @@ void MenuButton::changeLayout(){
       qDebug() << "dans ChangeLayout";
       int i = LeftBarLayout::getInstance()->currentIndex();
       LeftBarLayout::getInstance()->setCurrentIndex(1-i);
-      this->setText("VOIR MENUS");
-      this->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(70,130,180);");
+      //this->setText("VOIR MENU");
+      this->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);");
       if (1-i == 0){
           //default style
-          this->setText("VOIR COMMANDES");
+          this->setText("VOIR COMMANDE\n" + this->currentPriceText);
+          //this->setText("VOIR COMMANDES");
           this->setStyleSheet("font-family: Arial,sans-serif;font: bold;width: 200px;height: 43px;padding-top: 7px;text-align: center;color: #000; background: rgb(255,158,65);");
       }
+      else
+          this->setText("VOIR MENU\n" + this->currentPriceText);
+
 //    int i = this->leftZoneStackedLayout->currentIndex();
 //    leftZoneStackedLayout->setCurrentIndex(i-1);
 }
 
+void MenuButton::updateCurrentText(int el, int tot){
+    int i = LeftBarLayout::getInstance()->currentIndex();
+    //LeftBarLayout::getInstance()->setCurrentIndex(1-i);
+    this->currentPriceText = QString::number(el) + " élements " + QString::number(tot) +" €";
+    if(i-1 != 0)
+        this->setText("VOIR COMMANDE\n" + QString::number(el) + " élements " + QString::number(tot) +" €");
+    else
+        this->setText("VOIR MENU\n" + QString::number(el) + " élements " + QString::number(tot) +" €");
+}
 
 void MenuButton::onClick(){
     //this->setPalette(QPalette(QPalette::dark));

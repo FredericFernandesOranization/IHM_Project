@@ -1,146 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <lesIngredients>
 	 
-    <name>De cannelle</name>
+    <name>carotte</name>
    	 
-    <name>De crème entière</name>
+    <name>jambon</name>
    	 
-    <name>De chocolat noir</name>
+    <name>céleri</name>
    	 
-    <name>Des oignos</name>
+    <name>chocolat noir</name>
    	 
-    <name>De courgette</name>
+    <name>citron</name>
    	 
-    <name>Des œufs</name>
+    <name>porc</name>
    	 
-    <name>De boeuf</name>
+    <name>boeuf</name>
    	 
-    <name>De pomme</name>
+    <name>persil</name>
    	 
-    <name>De noix de cajou</name>
+    <name>poivre vert</name>
    	 
-    <name>De carotte</name>
+    <name>aubergine</name>
    	 
-    <name>La crème légère</name>
+    <name>crème fraîche</name>
    	 
-    <name>De parmesan</name>
+    <name>champignon</name>
    	 
-    <name> De crème liquide</name>
+    <name>Cafe moulu</name>
    	 
-    <name>De lait</name>
+    <name>cannelle</name>
    	 
-    <name>De cognac</name>
+    <name>parmesan</name>
    	 
-    <name>D'huile</name>
+    <name>poulet</name>
    	 
-    <name>De l'aubergine</name>
+    <name>ciboulette</name>
    	 
-    <name>De citron</name>
+    <name>mascarpone</name>
    	 
-    <name>De vin rouge</name>
+    <name>lait</name>
    	 
-    <name>De céleri</name>
+    <name>vainille</name>
    	 
-    <name>De poivron</name>
+    <name>vanille</name>
    	 
-    <name>Des oeufs</name>
+    <name>crème légère</name>
    	 
-    <name>De crème fraîche</name>
+    <name>crème liquide</name>
    	 
-    <name>De poire</name>
+    <name>oignon</name>
    	 
-    <name>De vainille</name>
+    <name>noix de cajou</name>
    	 
-    <name>Des crevettes cuites</name>
+    <name>laitue</name>
    	 
-    <name>De poivre noir</name>
+    <name>pomme</name>
    	 
-    <name>De farine</name>
+    <name>yagourt</name>
    	 
-    <name>De framboise</name>
+    <name>gingembre</name>
    	 
-    <name>De poivre vert</name>
+    <name>mayonnaise</name>
    	 
-    <name>De mascarpone</name>
+    <name>salade</name>
    	 
-    <name>De melon</name>
+    <name>framboise</name>
    	 
-    <name>De échalote</name>
+    <name>courgette</name>
    	 
-    <name>De salami</name>
+    <name>farine</name>
    	 
-    <name>De tomate</name>
+    <name>noix muscade</name>
    	 
-    <name>De roti de boeuf et de porc</name>
+    <name>beurre</name>
    	 
-    <name>De salade</name>
+    <name>vinagre balsamique</name>
    	 
-    <name>De jambon blanc</name>
+    <name>oeuf</name>
    	 
-    <name>De champignon</name>
+    <name>oigno</name>
    	 
-    <name>De mayonnaise</name>
+    <name>poivre noir</name>
    	 
-    <name>Des oignons</name>
+    <name>banane</name>
    	 
-    <name>De banane</name>
+    <name>salami</name>
    	 
-    <name>De viande séchée</name>
+    <name>curry</name>
    	 
-    <name>De chou</name>
+    <name>ardon</name>
    	 
-    <name>De poireau</name>
+    <name>poireau</name>
    	 
-    <name>De piment jalapeno</name>
+    <name>échalote</name>
    	 
-    <name>De poulet</name>
+    <name>ketchup</name>
    	 
-    <name>De curry</name>
+    <name>melon</name>
    	 
-    <name>De gingembre</name>
+    <name>pomme de terre</name>
    	 
-    <name>De beurre</name>
+    <name>poivron</name>
    	 
-    <name>Des pommes de terre</name>
+    <name>viande</name>
    	 
-    <name>De chocolat</name>
+    <name>tomate</name>
    	 
-    <name>De noix muscade</name>
+    <name>juis d'orange</name>
    	 
-    <name>De ciboultte</name>
+    <name>piment jalapeno</name>
    	 
-    <name>De persil</name>
+    <name>ail</name>
    	 
-    <name>De carottes</name>
+    <name>huile</name>
    	 
-    <name>De crème</name>
+    <name>chou</name>
    	 
-    <name>De poireaux</name>
+    <name>chocolat</name>
    	 
-    <name>De laitue</name>
+    <name>vin rouge</name>
    	 
-    <name>ing1</name>
+    <name>crevette</name>
    	 
-    <name>De vanille</name>
-   	 
-    <name>De juis d'orange</name>
-   	 
-    <name>D'ail</name>
-   	 
-    <name>De yagourt</name>
-   	 
-    <name>ing2</name>
-   	 
-    <name>De vinagre balsamique</name>
-   	 
-    <name>De ketchup</name>
-   	 
-    <name>ing3</name>
-   	 
-    <name>De  beurre</name>
-   	 
-    <name>De lardon</name>
-   	 
-    <name>Des échalotes</name>
+    <name>poire</name>
    	
 </lesIngredients>			

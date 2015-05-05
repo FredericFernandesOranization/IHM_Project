@@ -3,6 +3,7 @@
 Commande *Commande::instance = NULL;
 Commande::Commande(QWidget *parent) : QWidget(parent)
 {
+    //commandLayout = new FlowLayout;
     commandLayout = new QVBoxLayout;
     this->setLayout(commandLayout);
     //this->setStyleSheet("background: rgb(255,158,65)");
@@ -24,7 +25,17 @@ void Commande::addDish(Plat p)
         itemList.insert(p.getName(),newItem);
         commandLayout->addWidget(newItem);
     }
+    int somme = 0;
+    QList<OrderItem*> el = itemList.values();
+
+    for(int i = 0; i<el.size(); i++){
+        somme += el.at(i)->getPrice() * el.at(i)->getNbItem();
+    }
+
+    emit updatePrice(this->itemList.size(), somme);
+
 }
+
 
 //only called when item is in command list
 void Commande::removeDish(Plat p){
@@ -41,4 +52,12 @@ void Commande::removeDish(Plat p){
             this->repaint();
         }
     }
+    int somme = 0;
+    QList<OrderItem*> el = itemList.values();
+
+    for(int i = 0; i<el.size(); i++){
+        somme += el.at(i)->getPrice() * el.at(i)->getNbItem();
+    }
+    emit updatePrice(this->itemList.size(), somme);
+
 }

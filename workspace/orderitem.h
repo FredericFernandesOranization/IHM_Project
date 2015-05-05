@@ -20,10 +20,11 @@ public:
     OrderItem(Plat p, QWidget* parent=0);
     ~OrderItem();
     QString getName()const ;
+    int getPrice()const ;
     bool operator==(const OrderItem &item);
     inline void add(){nbItem++;drow();}
     inline bool remove(){nbItem--;drow();return nbItem==0;}
-
+    int getNbItem();
     void mousePressEvent(QMouseEvent *event);
 private:
     void drow();

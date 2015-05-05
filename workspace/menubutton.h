@@ -21,9 +21,11 @@ public:
 public slots:
     void onClick();
     void changeLayout();
+    void updateCurrentText(int el, int tot);
 signals:
     void setUnclicked(QString label);
 private:
+    QString currentPriceText;
     QString label;
 
 };

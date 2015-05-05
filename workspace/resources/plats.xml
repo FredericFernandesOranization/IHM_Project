@@ -2,214 +2,6 @@
 <lesPlats>
 	 
 	<plat>
-		<name>Tiramisu</name>
-		<type>Desserts</type>
-		<description>Un dessert italienne qui a la superposition de couches de biscuits plus ou moins crémeux</description>
-		<shortDescription>Tiramisu</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Desserts/tiramisu.jpg</imagePath>
-		<price>7</price>
-		<ingredientsList>
-			 <ingredient>mascarpone</ingredient>  <ingredient>oeuf</ingredient>  <ingredient>lait</ingredient>  <ingredient>chocolat</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>fromage
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Mousse de Chocolat</name>
-		<type>Desserts</type>
-		<description>Un mousse de Chocolat noir très consistant  </description>
-		<shortDescription>Mousse de Chocolat</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Desserts/mousse_chocolat.jpg</imagePath>
-		<price>7</price>
-		<ingredientsList>
-			 <ingredient>chocolat noir</ingredient>  <ingredient>beurre</ingredient>  <ingredient>oeuf</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>oeuf
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Crème Brûlée</name>
-		<type>Desserts</type>
-		<description>Une crème caramélisée avec une croûte sur le dessus chaude et croustillante</description>
-		<shortDescription>Crème Brûlée</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Desserts/creme_brulee.jpg</imagePath>
-		<price>7</price>
-		<ingredientsList>
-			 <ingredient>oeuf</ingredient>  <ingredient>lait</ingredient>  <ingredient>crème fraîche</ingredient>  <ingredient>vainille</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>oeuf
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Tarte aux pommes</name>
-		<type>Desserts</type>
-		<description>Une tarte croustillante aux pommes caramélisées</description>
-		<shortDescription>Tarte aux pommes</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Desserts/tarte_pomme.jpg</imagePath>
-		<price>5</price>
-		<ingredientsList>
-			 <ingredient>pomme</ingredient>  <ingredient>oeuf</ingredient>  <ingredient>crème liquide</ingredient>  <ingredient>cannelle</ingredient>  <ingredient>vanille</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>oeuf</possibleAllergie>  <possibleAllergie>lait
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Salade des fruits</name>
-		<type>Desserts</type>
-		<description>Salade des fruits exotique avec de la banane, des fruits rouges, des pommes, des melons accompagne d'un sirop d'orange, parfumé à la vanille.</description>
-		<shortDescription>Salade des fruits</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Desserts/salade_fruits.jpg</imagePath>
-		<price>5</price>
-		<ingredientsList>
-			 <ingredient>pomme</ingredient>  <ingredient>melon</ingredient>  <ingredient>poire</ingredient>  <ingredient>framboise</ingredient>  <ingredient>banane</ingredient>  <ingredient>juis d'orange</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>fruits rouges</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Eau Evian</name>
-		<type>Boissons</type>
-		<description>Une bouteille d'eau Evian 330 ml</description>
-		<shortDescription>Bouteille 33 cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/evian.jpg</imagePath>
-		<price>2.5</price>
-		<ingredientsList>
-			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Coca Cola</name>
-		<type>Boissons</type>
-		<description>Une canette de Coca Cola 355 ml</description>
-		<shortDescription>Canette 35cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/coca_cola.jpg</imagePath>
-		<price>2</price>
-		<ingredientsList>
-			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Thé Glacé à la Mangue</name>
-		<type>Boissons</type>
-		<description>Une canette de Thé glacé à la Mangue 355 ml</description>
-		<shortDescription>Canette 35cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/ice_the_mangue.jpg</imagePath>
-		<price>2</price>
-		<ingredientsList>
-			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Café Expresso</name>
-		<type>Boissons</type>
-		<description>Un tasse de café expresso</description>
-		<shortDescription>Café Expresso</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/cafe.jpg</imagePath>
-		<price>2.2</price>
-		<ingredientsList>
-			 <ingredient>Cafe moulu</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Fanta</name>
-		<type>Boissons</type>
-		<description>Une canette de Fanta 355 ml</description>
-		<shortDescription>Canette 35cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/fanta.jpg</imagePath>
-		<price>2</price>
-		<ingredientsList>
-			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Vin Blanc</name>
-		<type>Boissons</type>
-		<description>Une verre de Vin Blanc (boisson avec alcool)</description>
-		<shortDescription>Verre 35 cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_blanc.jpg</imagePath>
-		<price>5.5</price>
-		<ingredientsList>
-			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Sprite</name>
-		<type>Boissons</type>
-		<description>Une canette de Sprite 355 ml</description>
-		<shortDescription>Canette 35cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/sprite.jpg</imagePath>
-		<price>2</price>
-		<ingredientsList>
-			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Vin Rouge</name>
-		<type>Boissons</type>
-		<description>Une verre de Vin Rouge (boisson avec alcool)</description>
-		<shortDescription>Verre 35 cl</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_rouge.jpg</imagePath>
-		<price>5.5</price>
-		<ingredientsList>
-			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
 		<name>Charcuteries Mixtes</name>
 		<type>Entrees</type>
 		<description>Un plat avec des tranches de jambon blanc, de salami, de viande séchée, de roti de boeuf et de porc avec un petite salade</description>
@@ -258,38 +50,6 @@ Charcuteries Mixtes</shortDescription>
 	</plat>
 	 
 	<plat>
-		<name>Boeuf Bourguignon</name>
-		<type>Plats</type>
-		<description>Une estouffade de bœuf traditionnelle de la cuisine bourguignonne, cuisinée au vin rouge de Bourgogne et accompagnée en garniture de champignons, petits oignons et lardon</description>
-		<shortDescription>Boeuf Bourguignon</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Plats/boeuf_bourguignon.jpg</imagePath>
-		<price>15</price>
-		<ingredientsList>
-			 <ingredient>boeuf</ingredient>  <ingredient>champignon</ingredient>  <ingredient>carotte</ingredient>  <ingredient>vin rouge</ingredient>  <ingredient>oignon</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>champignon</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Pâtes à la Carbonara</name>
-		<type>Plats</type>
-		<description>Un plat traditionnelle de l'Italie qui contient de pât, des lardons, de fromage parmesan et le poivre noir fraîchement moulu</description>
-		<shortDescription>Pâtes à la Carbonara</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Plats/pasta_carbonara.jpg</imagePath>
-		<price>12</price>
-		<ingredientsList>
-			 <ingredient>ardon</ingredient>  <ingredient>oigno</ingredient>  <ingredient>oeuf</ingredient>  <ingredient>crème légère</ingredient>  <ingredient>parmesan</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>fromage
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
 		<name>Tikka Masala</name>
 		<type>Plats</type>
 		<description>Un plat composé de morceaux de poulets cuits (tikka) cuisinés dans une sauce de curry</description>
@@ -322,6 +82,22 @@ Charcuteries Mixtes</shortDescription>
 	</plat>
 	 
 	<plat>
+		<name>Poulet Basquaise</name>
+		<type>Plats</type>
+		<description>Un plat consiste en des morceaux de poulet sautés avec un mélange de tomates mûres et de poivrons rouges et vert</description>
+		<shortDescription>Poulet Basquaise</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/poulet_basquaise.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>poulet</ingredient>  <ingredient>poivron</ingredient>  <ingredient>tomate</ingredient>  <ingredient>échalote</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
 		<name>Carpaccio de boeuf</name>
 		<type>Plats</type>
 		<description>La viande de bœuf crue en tranches très fines, assaisonnée traditionnellement d'un filet d'huile d'olive, jus de citron, sel et poivre et parsemé</description>
@@ -333,54 +109,6 @@ Charcuteries Mixtes</shortDescription>
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>fromage</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Hachis Parmentier</name>
-		<type>Plats</type>
-		<description>Un plat à base de purée de pommes de terre et de viande de bœuf hachée</description>
-		<shortDescription>Hachis Parmentier</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Plats/hachis_parmentier.jpg</imagePath>
-		<price>15</price>
-		<ingredientsList>
-			 <ingredient>pomme de terre</ingredient>  <ingredient>lait</ingredient>  <ingredient>beurre</ingredient>  <ingredient>noix muscade</ingredient>  <ingredient>échalote</ingredient>  <ingredient>poireau</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Ratatouille</name>
-		<type>Plats</type>
-		<description>Composée de légumes cuits aubergines, courgettes, poivrons et tomates, ainsi que des oignons, de l'ail et de l'huile d'olive</description>
-		<shortDescription>Ratatouille</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Plats/ratatouille.jpg</imagePath>
-		<price>15</price>
-		<ingredientsList>
-			 <ingredient>aubergine</ingredient>  <ingredient>courgette</ingredient>  <ingredient>poivron</ingredient>  <ingredient>tomate</ingredient>  <ingredient>oignon</ingredient>  <ingredient>persil</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
-</possibleAllergie> 
-		</possibleAllergiesList>
-	</plat>
-	 
-	<plat>
-		<name>Poulet au curry</name>
-		<type>Plats</type>
-		<description>Un plat composé de morceaux de poulets cuits cuisinés dans une sauce de curry</description>
-		<shortDescription>Poulet au curry</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Plats/poulet_curry.jpg</imagePath>
-		<price>13</price>
-		<ingredientsList>
-			 <ingredient>poulet</ingredient>  <ingredient>farine</ingredient>  <ingredient>curry</ingredient>  <ingredient>persil</ingredient>  <ingredient>huile</ingredient> 
-		</ingredientsList>
-		<possibleAllergiesList>
-			 <possibleAllergie>curry</possibleAllergie>  <possibleAllergie>None
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>
@@ -402,17 +130,289 @@ Charcuteries Mixtes</shortDescription>
 	</plat>
 	 
 	<plat>
-		<name>Poulet Basquaise</name>
+		<name>Hachis Parmentier</name>
 		<type>Plats</type>
-		<description>Un plat consiste en des morceaux de poulet sautés avec un mélange de tomates mûres et de poivrons rouges et vert</description>
-		<shortDescription>Poulet Basquaise</shortDescription>
-		<imagePath>../workspace/resources/imagesPlats/Plats/poulet_basquaise.jpg</imagePath>
+		<description>Un plat à base de purée de pommes de terre et de viande de bœuf hachée</description>
+		<shortDescription>Hachis Parmentier</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/hachis_parmentier.jpg</imagePath>
 		<price>15</price>
 		<ingredientsList>
-			 <ingredient>poulet</ingredient>  <ingredient>poivron</ingredient>  <ingredient>tomate</ingredient>  <ingredient>échalote</ingredient> 
+			 <ingredient>pomme de terre</ingredient>  <ingredient>lait</ingredient>  <ingredient>beurre</ingredient>  <ingredient>noix muscade</ingredient>  <ingredient>échalote</ingredient>  <ingredient>poireau</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Boeuf Bourguignon</name>
+		<type>Plats</type>
+		<description>Une estouffade de bœuf traditionnelle de la cuisine bourguignonne, cuisinée au vin rouge de Bourgogne et accompagnée en garniture de champignons, petits oignons et lardon</description>
+		<shortDescription>Boeuf Bourguignon</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/boeuf_bourguignon.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>boeuf</ingredient>  <ingredient>champignon</ingredient>  <ingredient>carotte</ingredient>  <ingredient>vin rouge</ingredient>  <ingredient>oignon</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>champignon</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Ratatouille</name>
+		<type>Plats</type>
+		<description>Composée de légumes cuits aubergines, courgettes, poivrons et tomates, ainsi que des oignons, de l'ail et de l'huile d'olive</description>
+		<shortDescription>Ratatouille</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/ratatouille.jpg</imagePath>
+		<price>15</price>
+		<ingredientsList>
+			 <ingredient>aubergine</ingredient>  <ingredient>courgette</ingredient>  <ingredient>poivron</ingredient>  <ingredient>tomate</ingredient>  <ingredient>oignon</ingredient>  <ingredient>persil</ingredient> 
 		</ingredientsList>
 		<possibleAllergiesList>
 			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Pâtes à la Carbonara</name>
+		<type>Plats</type>
+		<description>Un plat traditionnelle de l'Italie qui contient de pât, des lardons, de fromage parmesan et le poivre noir fraîchement moulu</description>
+		<shortDescription>Pâtes à la Carbonara</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/pasta_carbonara.jpg</imagePath>
+		<price>12</price>
+		<ingredientsList>
+			 <ingredient>ardon</ingredient>  <ingredient>oigno</ingredient>  <ingredient>oeuf</ingredient>  <ingredient>crème légère</ingredient>  <ingredient>parmesan</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>fromage
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Poulet au curry</name>
+		<type>Plats</type>
+		<description>Un plat composé de morceaux de poulets cuits cuisinés dans une sauce de curry</description>
+		<shortDescription>Poulet au curry</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Plats/poulet_curry.jpg</imagePath>
+		<price>13</price>
+		<ingredientsList>
+			 <ingredient>poulet</ingredient>  <ingredient>farine</ingredient>  <ingredient>curry</ingredient>  <ingredient>persil</ingredient>  <ingredient>huile</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>curry</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Vin Blanc</name>
+		<type>Boissons</type>
+		<description>Une verre de Vin Blanc (boisson avec alcool)</description>
+		<shortDescription>Verre 35 cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_blanc.jpg</imagePath>
+		<price>5.5</price>
+		<ingredientsList>
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Café Expresso</name>
+		<type>Boissons</type>
+		<description>Un tasse de café expresso</description>
+		<shortDescription>Café Expresso</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/cafe.jpg</imagePath>
+		<price>2.2</price>
+		<ingredientsList>
+			 <ingredient>Cafe moulu</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Coca Cola</name>
+		<type>Boissons</type>
+		<description>Une canette de Coca Cola 355 ml</description>
+		<shortDescription>Canette 35cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/coca_cola.jpg</imagePath>
+		<price>2</price>
+		<ingredientsList>
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Eau Evian</name>
+		<type>Boissons</type>
+		<description>Une bouteille d'eau Evian 330 ml</description>
+		<shortDescription>Bouteille 33 cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/evian.jpg</imagePath>
+		<price>2.5</price>
+		<ingredientsList>
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Sprite</name>
+		<type>Boissons</type>
+		<description>Une canette de Sprite 355 ml</description>
+		<shortDescription>Canette 35cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/sprite.jpg</imagePath>
+		<price>2</price>
+		<ingredientsList>
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Fanta</name>
+		<type>Boissons</type>
+		<description>Une canette de Fanta 355 ml</description>
+		<shortDescription>Canette 35cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/fanta.jpg</imagePath>
+		<price>2</price>
+		<ingredientsList>
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Thé Glacé à la Mangue</name>
+		<type>Boissons</type>
+		<description>Une canette de Thé glacé à la Mangue 355 ml</description>
+		<shortDescription>Canette 35cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/ice_the_mangue.jpg</imagePath>
+		<price>2</price>
+		<ingredientsList>
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Vin Rouge</name>
+		<type>Boissons</type>
+		<description>Une verre de Vin Rouge (boisson avec alcool)</description>
+		<shortDescription>Verre 35 cl</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Boissons/vin_rouge.jpg</imagePath>
+		<price>5.5</price>
+		<ingredientsList>
+			 <ingredient>None</ingredient>  <ingredient>None</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>None</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Tarte aux pommes</name>
+		<type>Desserts</type>
+		<description>Une tarte croustillante aux pommes caramélisées</description>
+		<shortDescription>Tarte aux pommes</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/tarte_pomme.jpg</imagePath>
+		<price>5</price>
+		<ingredientsList>
+			 <ingredient>pomme</ingredient>  <ingredient>oeuf</ingredient>  <ingredient>crème liquide</ingredient>  <ingredient>cannelle</ingredient>  <ingredient>vanille</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>oeuf</possibleAllergie>  <possibleAllergie>lait
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Tiramisu</name>
+		<type>Desserts</type>
+		<description>Un dessert italienne qui a la superposition de couches de biscuits plus ou moins crémeux</description>
+		<shortDescription>Tiramisu</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/tiramisu.jpg</imagePath>
+		<price>7</price>
+		<ingredientsList>
+			 <ingredient>mascarpone</ingredient>  <ingredient>oeuf</ingredient>  <ingredient>lait</ingredient>  <ingredient>chocolat</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>fromage
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Mousse de Chocolat</name>
+		<type>Desserts</type>
+		<description>Un mousse de Chocolat noir très consistant  </description>
+		<shortDescription>Mousse de Chocolat</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/mousse_chocolat.jpg</imagePath>
+		<price>7</price>
+		<ingredientsList>
+			 <ingredient>chocolat noir</ingredient>  <ingredient>beurre</ingredient>  <ingredient>oeuf</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>oeuf
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Salade des fruits</name>
+		<type>Desserts</type>
+		<description>Salade des fruits exotique avec de la banane, des fruits rouges, des pommes, des melons accompagne d'un sirop d'orange, parfumé à la vanille.</description>
+		<shortDescription>Salade des fruits</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/salade_fruits.jpg</imagePath>
+		<price>5</price>
+		<ingredientsList>
+			 <ingredient>pomme</ingredient>  <ingredient>melon</ingredient>  <ingredient>poire</ingredient>  <ingredient>framboise</ingredient>  <ingredient>banane</ingredient>  <ingredient>juis d'orange</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>fruits rouges</possibleAllergie>  <possibleAllergie>None
+</possibleAllergie> 
+		</possibleAllergiesList>
+	</plat>
+	 
+	<plat>
+		<name>Crème Brûlée</name>
+		<type>Desserts</type>
+		<description>Une crème caramélisée avec une croûte sur le dessus chaude et croustillante</description>
+		<shortDescription>Crème Brûlée</shortDescription>
+		<imagePath>../workspace/resources/imagesPlats/Desserts/creme_brulee.jpg</imagePath>
+		<price>7</price>
+		<ingredientsList>
+			 <ingredient>oeuf</ingredient>  <ingredient>lait</ingredient>  <ingredient>crème fraîche</ingredient>  <ingredient>vainille</ingredient> 
+		</ingredientsList>
+		<possibleAllergiesList>
+			 <possibleAllergie>lait</possibleAllergie>  <possibleAllergie>oeuf
 </possibleAllergie> 
 		</possibleAllergiesList>
 	</plat>

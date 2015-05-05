@@ -8,6 +8,7 @@ LeftZone::LeftZone() : QWidget()
     //this->resize(500, 100);
     this->setAutoFillBackground(true);
     this->setPalette(QPalette(QColor(70,130,180)));
+
     //this->setStyleSheet("background-color: rgb(70,130,180)");
     this->setSizePolicy(sizePolicy);
 
@@ -53,10 +54,14 @@ LeftZone::LeftZone() : QWidget()
     Commande *commandBar = Commande::getInstance();
     commandBarScrollArea->setWidget(commandBar);
     commandBarScrollArea->setWidgetResizable(true);
-    commandBarScrollArea->setLayout(commandBar->layout());
+    //TO UNCOMMENT
+    //commandBarScrollArea->setLayout(commandBar->layout());
     leftZoneStackedLayout->addWidget(commandBarScrollArea);
 
     connect(switchButton, SIGNAL(clicked()), switchButton, SLOT(changeLayout()));
+
+    //comment to avoid last update
+    connect(commandBar, SIGNAL(updatePrice(int,int)), switchButton, SLOT(updateCurrentText(int,int)));
     //leftZoneStackedLayout->setCurrentIndex(1);
     leftVerticalLayout->addWidget(leftBar);
     QPushButton *commandButton = new QPushButton("Commander", this);

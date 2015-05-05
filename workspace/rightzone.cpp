@@ -7,7 +7,6 @@ RightZone::RightZone() : QWidget()
     //this->resize(1000,50);
     //this->setSizePolicy(QSizePolicy::Expanding,QSizePolicy::Expanding);
     this->setAutoFillBackground(true);
-    this->setPalette(QPalette(Qt::gray));
 //    this->setFixedHeight(400);
 
     //Separation UpperMenu - Gallery

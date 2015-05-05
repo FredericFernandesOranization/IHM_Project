@@ -3,7 +3,7 @@
 Item::Item(Plat plat,int imgSizeW,int imgSizeH ,QColor background, QWidget *parent): QWidget(parent)
 {
     //order button
-    QPushButton* commander = new QPushButton("Commander");
+    QPushButton* commander = new QPushButton("Ajouter");
     this->plat = plat;
     //creating image
     this->image = new ImageLabel(plat, imgSizeW, imgSizeH, background, this);

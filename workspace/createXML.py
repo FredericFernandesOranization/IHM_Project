@@ -50,12 +50,46 @@ class ListePlats:
 				imageInfo = open(imageInfoPath).read().split("\n\n")
 				self.listePlats.append(Plat(imageInfo[0], imageDir, imageInfo[1], imageInfo[2], "../workspace/" + image, imageInfo[3], imageInfo[4].split(';'), imageInfo[5].split(';')))
 
-	def toXML(self, filePath):
-		output = self.template.render(listePlats = self.listePlats)
+	def writeXMLtoFile(self, filePath, output):
 		with open(filePath, "wb") as f:
 			f.write('<?xml version="1.0" encoding="UTF-8"?>')
 			f.write(output)
-		print "XML created...\n"
+		print "XML", filePath, "created...\n"
+
+
+	"""create Plats Database XML file"""
+	def platsToXML(self, filePath):
+		output = self.template.render(listePlats = self.listePlats)
+		self.writeXMLtoFile(filePath, output)
+
+	def ingredientsToXML(self, filePath):
+		listeIngredients = set([ingredient for plat in self.listePlats for ingredient in plat.ingredients if ingredient != "None"])
+		ingredientsTemplate = Template("""
+<lesIngredients>
+	{% for ingredient in listeIngredients %} 
+    <name>{{ingredient}}</name>
+   	{% endfor %}
+</lesIngredients>			
+""")	
+		output = ingredientsTemplate.render(listeIngredients = listeIngredients)
+		self.writeXMLtoFile(filePath, output)
+
+	def allergiesToXML(self, filePath):
+		listeAllergies = set([allergy for plat in self.listePlats for allergy in plat.possibleAllergies if allergy != "None"])
+		allergiesTemplate = Template("""
+<lesAllergies>
+	{% for allergy in listeAllergies %} 
+    <name>{{allergy}}</name>
+   	{% endfor %}
+</lesAllergies>			
+""")	
+		output = allergiesTemplate.render(listeAllergies = listeAllergies)
+		self.writeXMLtoFile(filePath, output)
+
+	def createXMLDatabase(self):
+		self.platsToXML("resources/plats.xml")
+		self.ingredientsToXML("resources/ingredients.xml")
+		self.allergiesToXML("resources/allergies.xml")
 
 class Plat:
 	def __init__(self, name, typePlat, description, shortDescription, imagePath, price, ingredients, possibleAllergies):
@@ -69,8 +103,7 @@ class Plat:
 		self.possibleAllergies = possibleAllergies
 
 liste = ListePlats("resources/imagesPlats/")
-output = liste.toXML("resources/plats.xml")
-
+liste.createXMLDatabase()
 
 
 
